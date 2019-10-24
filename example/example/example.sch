@@ -54,22 +54,16 @@ Wire Wire Line
 Wire Wire Line
 	650  3450 650  3400
 Connection ~ 650  3400
-Text Label 2600 3300 0    50   ~ 0
-Row0
 Text Label 2600 3400 0    50   ~ 0
-Row1
+Row0
 Text Label 2600 3500 0    50   ~ 0
-Row2
+Row1
 Text Label 2600 3600 0    50   ~ 0
-Row3
+Row2
 Text Label 2600 3700 0    50   ~ 0
-Row4
+Row3
 Text Label 2600 3800 0    50   ~ 0
-Row5
-Text Label 2600 3000 0    50   ~ 0
-Col15
-Text Label 2600 2900 0    50   ~ 0
-Col14
+Row4
 Text Label 2600 2800 0    50   ~ 0
 Col13
 Text Label 2600 2700 0    50   ~ 0
@@ -140,17 +134,11 @@ Wire Wire Line
 Wire Wire Line
 	2600 2800 2300 2800
 Wire Wire Line
-	2300 2900 2600 2900
-Wire Wire Line
-	2600 3000 2300 3000
-Wire Wire Line
-	2300 3300 2600 3300
-Wire Wire Line
 	2300 3400 2600 3400
 Wire Wire Line
-	2600 3500 2300 3500
+	2300 3500 2600 3500
 Wire Wire Line
-	2300 3600 2600 3600
+	2600 3600 2300 3600
 Wire Wire Line
 	2300 3700 2600 3700
 Wire Wire Line
@@ -216,10 +204,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tlc5971.pdf" H 3500 1950 50  0001 C CNN
 	1    3500 2250
 	1    0    0    -1  
 $EndComp
-Text Label 2600 3150 0    50   ~ 0
-Col16
-Wire Wire Line
-	2600 3150 2300 3150
 Wire Wire Line
 	2300 2150 3100 2150
 Wire Wire Line
