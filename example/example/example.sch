@@ -35,7 +35,7 @@ Wire Wire Line
 	750  3000 750  2950
 Connection ~ 750  2950
 $Comp
-L keyboard_parts:GND #PWR?
+L example-rescue:GND-keyboard_parts #PWR?
 U 1 1 5DB147FE
 P 650 3400
 F 0 "#PWR?" H 650 3450 20  0001 C CNN
@@ -144,7 +144,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 3800 2600 3800
 $Comp
-L keyboard_parts:GND #PWR?
+L example-rescue:GND-keyboard_parts #PWR?
 U 1 1 5DB2C0BD
 P 3300 600
 F 0 "#PWR?" H 3300 650 20  0001 C CNN
@@ -170,7 +170,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 800  3300 600 
 $Comp
-L keyboard_parts:TEENSY2.0 U1
+L example-rescue:TEENSY2.0-keyboard_parts U1
 U 1 1 5DB10FCA
 P 1700 2500
 F 0 "U1" H 1700 4047 60  0000 C CNN
@@ -183,7 +183,7 @@ $EndComp
 Wire Wire Line
 	3500 3050 3500 3400
 $Comp
-L keyboard_parts:GND #PWR?
+L example-rescue:GND-keyboard_parts #PWR?
 U 1 1 5DB23CD2
 P 3500 3400
 F 0 "#PWR?" H 3500 3450 20  0001 C CNN
@@ -209,7 +209,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 2050 3100 2050
 $Comp
-L keyboard_parts:KEYSW K0
+L example-rescue:KEYSW-keyboard_parts K0
 U 1 1 5DB4E54F
 P 5700 1500
 F 0 "K0" H 5700 1500 60  0000 C CNN
@@ -220,7 +220,7 @@ F 3 "" H 5700 1500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:D D0
+L example-rescue:D-keyboard_parts D0
 U 1 1 5DB4FA1E
 P 5350 1700
 F 0 "D0" H 5222 1650 60  0000 R CNN
@@ -239,7 +239,7 @@ Col0
 Text Label 5100 1800 0    50   ~ 0
 Row0
 $Comp
-L keyboard_parts:KEYSW K1
+L example-rescue:KEYSW-keyboard_parts K1
 U 1 1 5DB58E5D
 P 5700 2000
 F 0 "K1" H 5700 2000 60  0000 C CNN
@@ -250,7 +250,7 @@ F 3 "" H 5700 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:D D1
+L example-rescue:D-keyboard_parts D1
 U 1 1 5DB58E63
 P 5350 2200
 F 0 "D1" H 5222 2150 60  0000 R CNN
@@ -265,7 +265,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 2000 5400 2000
 $Comp
-L keyboard_parts:KEYSW K2
+L example-rescue:KEYSW-keyboard_parts K2
 U 1 1 5DB5C4FE
 P 5700 2500
 F 0 "K2" H 5700 2500 60  0000 C CNN
@@ -276,7 +276,7 @@ F 3 "" H 5700 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:D D2
+L example-rescue:D-keyboard_parts D2
 U 1 1 5DB5C504
 P 5350 2700
 F 0 "D2" H 5222 2650 60  0000 R CNN
@@ -291,7 +291,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 2500 5400 2500
 $Comp
-L keyboard_parts:KEYSW K3
+L example-rescue:KEYSW-keyboard_parts K3
 U 1 1 5DB5EB78
 P 5700 3050
 F 0 "K3" H 5700 3050 60  0000 C CNN
@@ -302,7 +302,7 @@ F 3 "" H 5700 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:D D3
+L example-rescue:D-keyboard_parts D3
 U 1 1 5DB5EB7E
 P 5350 3250
 F 0 "D3" H 5222 3200 60  0000 R CNN
@@ -323,7 +323,7 @@ Row2
 Text Label 5100 3350 0    50   ~ 0
 Row3
 $Comp
-L keyboard_parts:KEYSW K4
+L example-rescue:KEYSW-keyboard_parts K4
 U 1 1 5DB823F7
 P 6550 1500
 F 0 "K4" H 6550 1500 60  0000 C CNN
@@ -334,7 +334,7 @@ F 3 "" H 6550 1500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:D D4
+L example-rescue:D-keyboard_parts D4
 U 1 1 5DB823FD
 P 6200 1700
 F 0 "D4" H 6072 1650 60  0000 R CNN
@@ -351,7 +351,7 @@ Wire Wire Line
 Text Label 6900 1150 0    50   ~ 0
 Col1
 $Comp
-L keyboard_parts:KEYSW K5
+L example-rescue:KEYSW-keyboard_parts K5
 U 1 1 5DB8556D
 P 6550 2000
 F 0 "K5" H 6550 2000 60  0000 C CNN
@@ -362,7 +362,7 @@ F 3 "" H 6550 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:D D5
+L example-rescue:D-keyboard_parts D5
 U 1 1 5DB85573
 P 6200 2200
 F 0 "D5" H 6072 2150 60  0000 R CNN
@@ -377,7 +377,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 2000 6250 2000
 $Comp
-L keyboard_parts:KEYSW K6
+L example-rescue:KEYSW-keyboard_parts K6
 U 1 1 5DB865DD
 P 6550 2500
 F 0 "K6" H 6550 2500 60  0000 C CNN
@@ -388,7 +388,7 @@ F 3 "" H 6550 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:D D6
+L example-rescue:D-keyboard_parts D6
 U 1 1 5DB865E3
 P 6200 2700
 F 0 "D6" H 6072 2650 60  0000 R CNN
@@ -403,7 +403,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 2500 6250 2500
 $Comp
-L keyboard_parts:KEYSW K7
+L example-rescue:KEYSW-keyboard_parts K7
 U 1 1 5DB87746
 P 6550 3050
 F 0 "K7" H 6550 3050 60  0000 C CNN
@@ -414,7 +414,7 @@ F 3 "" H 6550 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:D D7
+L example-rescue:D-keyboard_parts D7
 U 1 1 5DB8774C
 P 6200 3250
 F 0 "D7" H 6072 3200 60  0000 R CNN
@@ -689,7 +689,7 @@ Connection ~ 6650 5350
 Wire Wire Line
 	6650 5350 6650 6300
 $Comp
-L keyboard_parts:GND #PWR?
+L example-rescue:GND-keyboard_parts #PWR?
 U 1 1 5DC6258A
 P 5950 6600
 F 0 "#PWR?" H 5950 6650 20  0001 C CNN
@@ -700,7 +700,7 @@ F 3 "" H 5950 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:GND #PWR?
+L example-rescue:GND-keyboard_parts #PWR?
 U 1 1 5DC62BAA
 P 5100 6600
 F 0 "#PWR?" H 5100 6650 20  0001 C CNN
