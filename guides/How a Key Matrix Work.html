@@ -1,0 +1,508 @@
+<link rel="stylesheet" type="text/css" href="http://pcbheaven.com/scripts/shadestab.css" />
+<script>
+<!-- <link rel="stylesheet" type="text/css" href="http://pcbheaven.com/scripts/thumbup/enlargeitdemo.css" /> -->
+<script type="text/javascript" src="http://pcbheaven.com/scripts/thumbup/enlargeit.js"></script>
+<script type="text/javascript">
+//More at http://enlargeit.timos-welt.de/english/11/demomachine.php
+enl_ani = 3;
+enl_brdcolor = '#FFFFFF';
+enl_titletxtcol = '#444444';
+enl_ajaxcolor = '#d0d0d0';
+enl_brdsize = 28;
+enl_maxstep = 30;
+enl_speed = 12;
+enl_shadow = 1;
+enl_shadowintens = 20;
+enl_shadowsize = 1;
+enl_center = 0;
+enl_dark = 1;
+enl_darkprct = 20;
+enl_preload = 1;
+enl_drgdrop = 0;
+enl_darksteps = 5;
+enl_keynav = 0;
+enl_wheelnav = 0;
+enl_opaglide = 30;
+enl_minuscur='minuscur.cur';
+enl_brdround = 1;
+//enl_brdbck = 'b_paper.png';
+enl_brdbck = '';
+//enl_buttonurl[0] = 'prev';
+//enl_buttontxt[0] = 'Previous picture [left arrow key]';
+//enl_buttonoff[0] = -216;
+//enl_buttonurl[1] = 'next';
+//enl_buttontxt[1] = 'Next picture [right arrow key]';
+//enl_buttonoff[1] = -234;
+enl_buttonurl[0] = 'close';
+enl_buttontxt[0] = 'Close';
+enl_buttonoff[0] = -0;
+enl_gifpath = 'http://pcbheaven.com/scripts/thumbup/';
+enl_btnact='bact.png';
+enl_btninact='binact.png';
+
+
+function ShowFile(FileName){
+	loadFragmentNoReturn("../fileview.php?fn="+escape(FileName));
+	window.location="../files/"+FileName;
+}
+function  Expand_CollapseCodeTable(CodeFormNumber){
+	var ElementInnerHTML=document.getElementById("ExpandCollapseCodeTable_"+CodeFormNumber).innerHTML;
+	if (ElementInnerHTML=="Collapse"){
+		document.forms[CodeFormNumber].elements[0].style.height=120;
+		document.getElementById("ExpandCollapseCodeTable_"+CodeFormNumber).innerHTML="Expand";
+	}else{
+		document.forms[CodeFormNumber].elements[0].style.height=450;
+		document.getElementById("ExpandCollapseCodeTable_"+CodeFormNumber).innerHTML="Collapse";
+	}
+}
+function ChangeToSelectedPage(){
+	var Element=document.getElementById('selDocumentPage');
+	var PageName="?p="+Element.value;
+	window.location=PageName;
+	
+}
+</script>
+<style type="text/css">
+.thumbnail { border-width: 1px; border-style: solid; border-color: black; }
+</style>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="PCB Heaven! Electronic theory, schematic circuits and PIC tutorials">
+<title>How a Key Matrix Work</title>
+<META NAME="RATING" CONTENT="General">
+<META NAME="REVISIT-AFTER" CONTENT="1 Week">
+
+<link rel="alternate" type="application/rss+xml" href="http://pcbheaven.com/rss/rss.xml" />
+<link href="http://pcbheaven.com/scripts/styles.css" rel="stylesheet" type="text/css">
+<link href="http://pcbheaven.com/scripts/pages.css" rel="stylesheet" type="text/css">
+<link href="http://pcbheaven.com/scripts/hints.css" rel="stylesheet" type="text/css">
+<LINK REL='SHORTCUT ICON' HREF='http://pcbheaven.com/pics/main/main.ico'>
+<script src="http://pcbheaven.com/scripts/javascripts.js"></script>
+<script src="http://pcbheaven.com/scripts/tigra_hints.js"></script>
+<script src="http://pcbheaven.com/scripts/myslideshow.js"></script>
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+
+</head>
+
+<body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="00">
+<NOSCRIPT><br><B>Your browser has JavaScript turned off.</B><BR>You will experience a more enjoyable time at this Web site if you turn JavaScript on.<HR><br></NOSCRIPT>
+<div align="right">
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com" class="tos">Home</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/contact" class="tos">Contact</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/projectpages/" class="tos">Projects</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/exppages/" class="tos">Experiments</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/circuitpages/" class="tos">Circuits</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/wikipages/" class="tos">Theory</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/blogpages" class="tos">BLOG</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/picpages/" class="tos">PIC Tutorials</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/opendir/" class="tos">Time for Science</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/rss/rss.xml" class="tos">RSS</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/m_pages/tos.php" class="tos">Terms of services</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pcbheaven.com/m_pages/prvs.php" class="tos">Privacy policy</a>&nbsp;&nbsp;
+
+</div>
+<TABLE bgColor=#5884a8 border=0 borderColor=#111111 cellPadding=0 cellSpacing=0 height=76 width=100%>
+	<TR> 
+		<TD colSpan=2 height=5><IMG border=0 height=4 src="http://www.pcbheaven.com/pics/main/topline.jpg" width=100%></TD>
+	</TR>
+	
+	<TR><TD align="center">
+		<TABLE bgColor=#5884a8 border=0 cellPadding=0 cellSpacing=0 height=76 width=960 align="center">
+			<TR> 
+				<TD align="center" bgColor=#5884a8 height=67><a href="http://www.pcbheaven.com"><img border=0 src="http://pcbheaven.com/pics/main/topbanner.jpg"></a>&nbsp;&nbsp;&nbsp;
+                <a href="/" class="topmenu"><img src="/pics/home_ico.png" border=0  height=32 title="PCB Heaven Home page"></a>
+                <a href="/contact" class="topmenu"><img src="/pics/mail_ico.png" border=0  height=32 title="Contact with me via email"></a>
+                
+				<a href="/forum" class="topmenu"><img src="/pics/forum_ico.png" border=0  height=32 title="Discussion forum"></a>
+                <a href="http://www.youtube.com/user/pcbheaven?feature=results_main" class="topmenu"><img src="/pics/youtube.png" border=0 width=32 height=32 title="Watch us on Youtube"></a>
+                <a href="http://www.facebook.com/pcbheaven" class="topmenu"><img src="/pics/fcb_ico.png" border=0 width=32 height=32 title="Find us on facebook"></a>
+                <a href="http://twitter.com/pcbheaven" class="topmenu"><img src="/pics/twit_ico.png" border=0  width=32 height=32 title="PCB Heaven chirps on twitter"></a>
+                <a href="/rss/rss.xml" class="topmenu"><img src="/pics/rss_ico.png" border=0  width=32 height=32 title="Subscribe on our RSS feed"></a>
+                </td></tr>
+			<tr><TD align="center">
+				<a href="http://www.pcbheaven.com/" class="topmenu"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/home.png">&nbsp;Home</a>
+&nbsp;&nbsp;&nbsp;
+				<a href="http://www.pcbheaven.com/projectpages/" class="topmenu"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/wrench.png">&nbsp;Projects</a>&nbsp;&nbsp;&nbsp;				
+				<a href="http://www.pcbheaven.com/exppages/" class="topmenu"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/gear.png">&nbsp;Experiments</a>&nbsp;&nbsp;&nbsp;				
+				<a href="http://www.pcbheaven.com/circuitpages/" class="topmenu"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/circuit.png">&nbsp;Circuits</a>&nbsp;&nbsp;&nbsp;				
+				<a href="http://www.pcbheaven.com/wikipages/" class="topmenu"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/theory.png">&nbsp;Theory</a>&nbsp;&nbsp;&nbsp;				
+				<a href="http://www.pcbheaven.com/blogpages/" class="topmenu"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/blog.png">&nbsp;BLOG</a>&nbsp;&nbsp;&nbsp;
+				<a href="http://www.pcbheaven.com/picpages/" class="topmenu"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/chip.png">&nbsp;PIC Tutorials</a>&nbsp;&nbsp;&nbsp;
+				<a href="http://www.pcbheaven.com/opendir/" class="topmenu"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/science_ico.png">&nbsp;Time for Science</a>&nbsp;&nbsp;&nbsp;
+			
+				
+				</TD></TR>
+		</TABLE>
+		
+	</TD></TR>
+	<TR> 
+		<TD colSpan=2 height=5><IMG border=0 height=4 src="http://www.pcbheaven.com/pics/main/bottomline.jpg" width=100%></TD>
+	</TR>
+</TABLE>
+
+<br>
+<TABLE border=0 cellSpacing=0 height=800 width=960 align="center" class="BorderedSimple" cellpadding="12">
+<tr><TD align="left" valign="top">
+<script>
+function SubmitComment(PageName){
+	var query='txtName='+escape(document.getElementById('txtName').value);
+	query+='&txtEmail='+escape(document.getElementById('txtEmail').value);
+	query+='&txtWebsite='+escape(document.getElementById('txtWebsite').value);
+	
+	if (document.getElementById('chkMailConfirm').checked){
+		query+='&chkMailConfirm=1';
+	}else{
+		query+='&chkMailConfirm=0';
+	}
+	query+='&comments_confirm_ses='+escape(document.getElementById('comments_confirm_ses').value);
+	query+='&comments_confirm_val='+escape(document.getElementById('comments_confirm_val').value);
+	query+='&txtLocation='+escape(document.location.href);
+	query+='&txtTitle='+escape(document.title);
+	query+='&txtPageName='+PageName;
+	query+='&txtComments='+escape(document.getElementById('txtComments').value);
+	
+	document.getElementById('frmCommentThisPage').innerHTML='<center><img src="/pics/indicator.gif"></center>';
+	postFragmentinnerHTML('/scripts/comments_actions.php',query,'frmCommentThisPage');
+
+}
+
+function ReplyToUser(UserName){
+	var obj=document.getElementById('txtComments');
+	obj.value='@'+UserName+' '+obj.value;
+}
+</script>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Image Show 728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9887055930206585"
+     data-ad-slot="6344926625"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div align=right><font color="#00571D"><b>27 June 2010</b></font></div><div align=right><strong>Author:</strong> <font color="#00179C"><b>Giorgos Lazaridis</b></font></div><a class="Title" href=".">How a Key Matrix Work</a><hr><br><div class="rightFloatBox"  SPAN style="width:200;"><div align=center><a target="_blank" href="/scripts/imagepresent.php?filename=%2Fwikipages%2Fimages%2Fhowkeymatricesworks_1277634699.jpg"><img src="/wikipages/images/thumbs/howkeymatricesworks_1277634699.jpg" border="0" title="Click to enlarge" class="thumbnail thumb"  height=120 ></a><br><font class="Type1">A typical PC keyboard with 109 keys</font></div></div>
+<div class="rightFloatBox"  SPAN style="width:200;"><div align=center><a target="_blank" href="/scripts/imagepresent.php?filename=%2Fwikipages%2Fimages%2Fhowkeymatricesworks_1277634722.jpg"><img src="/wikipages/images/thumbs/howkeymatricesworks_1277634722.jpg" border="0" title="Click to enlarge" class="thumbnail thumb"  height=120 ></a><br><font class="Type1">This is all the PCB that hides inside a keyboard. Only 26 connectors are used to interface all 109 keys! Thanks to the matrices.</font></div></div>
+
+
+<p class='blog'>What you probably have in front of you, is a keyboard with more than 100 keys on it... If you are not familiar with the key matrices, then you may think that inside this keyboard, there is a chip (probably a microcontroller) that has at least the same number of inputs to read each key separately. Well, this is far from true...</p>
+
+
+<br><br><br>
+
+<font class='SubTitle'>What are the key matrices?</font><hr>
+
+<p class='blog'>The matrices are actually an interface technique. It can be used to interface inputs like the PC keyboard keys, but also to control multiple outputs like LEDs. According to this technique, the I/O are divided into two sections: the columns and the rows. You can imagine a matrix as an excel sheet. Here is a 4 x 4 matrix</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277635652.png">
+<br><br>
+
+<p class='blog'>The blue lines are the columns and the red lines the rows. There are 16 knots that the rows and columns intersect. The columns and the rows are NOT in contact! Suppose that we want to make a key matrix. To do this, we will have to connect a button to each knot. The buttons will have a push-to-make contact. When the operator pushes this button, it will connect the column and the row that it corresponds to. Now i will put the push-to-make buttons onto the matrix</p> 
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277637426.png">
+<br><br>
+
+<p class='blog'>The buttons are named with the Column:Row name that they connect. For example, the top-left button is named A1 and the bottom right is named D4. </p>
+
+
+<br><br><br>
+
+<font class='SubTitle'>How does a key-matrix works?</font><hr>
+
+<p class='blog'>To understand the operation principle, i will re-draw the above matrix without colors. I will also put connection pins to each row and column wire. Then, i will give power to only one column, the column B. The wire that is red, indicates that it has power, and the button that is purple indicates that the button is pressed. Then, i will simulate a button press to button number B3:</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277637947.png">
+<br><br>
+
+<p class='blog'>Watch the above animation. The column wire B has power all the time. No other wire has power, until the button B3 is pressed. This button makes contact between the column B and the row 3. Because column B has power, the row 3 will also have power as long as the button B3 is pressed! What this means it that, if we know which column has currently power, and we watch the rows, then we can understand which button was pressed, if we detect power on a row! If for example we know that the column B has power, and we detect also power to row 3, then we understand that the button B3 is pressed.</p>
+
+<br><br><br>
+<font class='SubTitle'>A matrix in the real life</font><hr>
+
+<p class='blog'>So, how does a matrix finally works? If you have understand the previous example, then it will be very easy for you to follow. The matrix is controlled by a microcontroller. For the above 16-button 4x4 matrix, 8 pins of the micro controller will be used. The first 4 pins will be OUTPUTS and will be connected to the COLUMN wires, while the other 4 pins will be INPUTS and will be connected to the ROW wires. The OUTPUTS of the microcontroller will NOT all have power at the same time. The outputs will go high one by one in cycle. This happens many times per second, but i will slow things down...</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277639564.gif">
+<br><br>
+
+<p class='blog'>So,this is -in VERY VERY slow motion-  how a typical microcontroller would cycle its outputs. During this time, it will also monitor the inputs for a signal. As long as all inputs are LOW (with a pull down resistor or with internal uC pull-down resistors), the uC will take no action. Now, suppose that the operator presses the button 3C. Look what happens:</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277649177.gif">
+<br><br>
+
+<p class='blog'>The microcontroller loops its outputs normally. The operator has pressed the C3 button. This button has connect the matrix col C, with the matrix row 3. When the output C of the microcontroller becomes HIGH, the signal arrives also at the input 3 of the microcontroller, through the pressed button. The uC monitors the 4 inputs and detects that when the specific output (C) is high, there is a HIGH signal at the input 3. So, this means that the input C3 is pressed! Easy it is not?</p>
+
+
+<br><br>
+<script id='mNCC' language='javascript'>  medianet_width='336';  medianet_height= '280';  medianet_crid='121648674';  </script>  <script id='mNSC' src='http://contextual.media.net/nmedianet.js?cid=8CUZX8B20' language='javascript'></script>
+<br><br>
+
+<font class='SubTitle'>Pressing multiple buttons on a matrix</font><hr>
+
+<p class='blog'>Pressing multiple buttons simultaneously on a matrix is not always a good idea. There are situations that the matrix operates normally, but not always. Suppose for example that someone pressed the buttons B1, B2 and B3 simultaneously. What will happen? Let's take a look:</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277649558.png">
+<br><br>
+
+<p class='blog'>When the output B becomes HIGH, then the three inputs 1,2 and 3 of the microcontroller will also become HIGH. Supposing that the firmware is written in a way that can handle such an event, the operation will be carried out normally. The uC will understand that the buttons B1, B2 and B3 are pressed. Let's see another situation where the buttons A3, B3 and C3 are pressed:</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277650138.gif">
+<br><br>
+
+<p class='blog'>In this situation, the matrix will also work normally. The microcontroller will detect a signal at input number 3, when the output A, B and C are HIGH. When the output D is HIGH, no signal is detected.</p>
+
+<br><br><br>
+
+<font class='SubTitle'>The ghosting problem</font><hr>
+
+<p class='blog'>I will continue the above examples with another situation, where the buttons C2, B2 and B3 are pressed simultaneously:</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277650492.png">
+<br><br>
+
+<p class='blog'>When the output C is HIGH, then the input 2 will also become HIGH. The uC will understand that the button C2 is pressed. But something else happens here. The button B2 is also pressed! This means that the HIGH signal will go through the button B2 to the column B. And due to the fact that the button B3 is pressed, the signal will arrive simultaneously at input #3 as well! But the microcontroller knows that at this moment, only the output C is HIGH, and because it detects HIGH signal at inputs 2 and 3, it will think that buttons C2 and C3 are pressed, something that is wrong! The button C3 is NOT actually pressed! This is known as <b>ghosting</b>, and usually gives a headache to PC gamers, especially when the game requires multiple buttons to be pressed simultaneously. Take for example the MAME console, which simulates arcade games. If you play samurai shodown 1v1, and one player has low defense and kicks while the other is flying high and uses the sword, this will require 6 keys to be pressed! Yawks! Ghosting occurs. (that's why i made my <a href="http://pcbheaven.com/circuitpages/MAME_Arcade-console_circuit" target="_blank">MAME arcade console</a>)</p>
+
+
+<br><br><br>
+<font class='SubTitle'>The masking problem</font><hr>
+
+P]The masking problem comes in continue to the ghosting. When masking is occurred, the controller cannot detect a key change that has occur. Suppose for example that the ghosting problem has occur, by pressing C2, B2 and B3 simultaneously, like the previous example. The controller will think that the button C2 C3 is pressed, although the operator has not pressed C3. Now, the operator presses the button C3 without releasing any other button. Nothing changes at the microcontroller. And now the operator releases the button C2... What happens? Nothing! The microcontroller still thinks that C2 is pressed and cannot detect the button release! This is the masking problem, also a gamers headache.[/P]
+
+
+
+<br>
+<TABLE width=100%>
+<TR>
+<TD align=center width=33%><a target="_blank" href="/scripts/imagepresent.php?filename=%2Fwikipages%2Fimages%2Fhowkeymatricesworks_1277650492.png"><img src="/wikipages/images/thumbs/howkeymatricesworks_1277650492.png" border="0" title="Click to enlarge" class="thumbnail thumb"  height=120 ></a></td>
+<TD align=center width=33%><a target="_blank" href="/scripts/imagepresent.php?filename=%2Fwikipages%2Fimages%2Fhowkeymatricesworks_1277651662.png"><img src="/wikipages/images/thumbs/howkeymatricesworks_1277651662.png" border="0" title="Click to enlarge" class="thumbnail thumb"  height=120 ></a></td>
+<TD align=center width=33%><a target="_blank" href="/scripts/imagepresent.php?filename=%2Fwikipages%2Fimages%2Fhowkeymatricesworks_1277651668.png"><img src="/wikipages/images/thumbs/howkeymatricesworks_1277651668.png" border="0" title="Click to enlarge" class="thumbnail thumb"  height=120 ></a></td>
+</tr>
+<TR>
+<TD align=center valign=top><b><font class="Type1">By pressing buttons C2, B2 and B3 simultaneously, the ghosting problem occurs.</font></b></td>
+<TD align=center valign=top><b><font class="Type1">The operator presses button C3, yet nothing changes</font></b></td>
+<TD align=center valign=top><b><font class="Type1">Now the operator releases button C2. Still nothing changes and the uC cannot detect the button release! Masking has occur.</font></b></td>
+</tr>
+</table>
+<br><br>
+
+
+<br><br>
+<font class='SubTitle'>Any solution to the ghosting and masking?</font><hr>
+
+<p class='blog'>Yes there is! And it is a cheap one. Using a diode for each button, the masking and ghosting problems are instantly solved! This is how it works:</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277655319.gif">
+<br><br>
+
+<p class='blog'>The above situation would normally cause ghosting. Yet, the diodes prevents the current to go backwards. For better understanding, you can see the 3 steps of the above animation here (as always, click to enlarge images):</p>
+
+<br>
+<TABLE width=100%>
+<TR>
+<TD align=center width=33%><a target="_blank" href="/scripts/imagepresent.php?filename=%2Fwikipages%2Fimages%2Fhowkeymatricesworks_1277655342.png"><img src="/wikipages/images/thumbs/howkeymatricesworks_1277655342.png" border="0" title="Click to enlarge" class="thumbnail thumb"  height=120 ></a></td>
+<TD align=center width=33%><a target="_blank" href="/scripts/imagepresent.php?filename=%2Fwikipages%2Fimages%2Fhowkeymatricesworks_1277655350.png"><img src="/wikipages/images/thumbs/howkeymatricesworks_1277655350.png" border="0" title="Click to enlarge" class="thumbnail thumb"  height=120 ></a></td>
+<TD align=center width=33%><a target="_blank" href="/scripts/imagepresent.php?filename=%2Fwikipages%2Fimages%2Fhowkeymatricesworks_1277655355.png"><img src="/wikipages/images/thumbs/howkeymatricesworks_1277655355.png" border="0" title="Click to enlarge" class="thumbnail thumb"  height=120 ></a></td>
+</tr>
+</table>
+<br><br>
+
+<p class='blog'>Because the cycling speed must be quite fast (some Khz), you should choose proper diodes. A cheap solution is the 1N4148 general purpose diodes. If you plan to have many keys and thus you need faster sampling, then select a schottkey diode instead.</p>
+
+<br><br><br>
+
+<font class='SubTitle'>And what about a matrix with outputs instead of inputs?</font><hr>
+
+<p class='blog'>This is also a very interesting chapter with matrices. Using matrices, you can control for example 9 LEDs each one separately, with only 6 outputs. Look how it works:</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277657675.png">
+<br><br>
+
+<p class='blog'>Above there is a typical 3 x 3 LED matrix. All microcontroller pins, for both columns and rows are now OUTPUTS. Suppose now that all outputs are HIGH. All LEDs will have HIGH on both anode and cathode, and this means than none LED will light! This is how to turn completely off the LED matrix, by giving either HIGH or LOW to all outputs. Now suppose that we want to turn on the middle LED. To do this, we give HIGH to column 2 and rows 1 and 3, and LOW to column 1 and 3 and row 2. This is what will happen:</p>
+
+<br><br>
+<img border=0   class="thumb" src="/wikipages/images/howkeymatricesworks_1277658667.png">
+<br><br>
+
+<p class='blog'>The middle LED is forward biased and therefore it lights. All other LEDs are either reverse biased, or they have the same voltage (positive or negative) to their both leads, and therefore they do not light. This way, someone can control for example 64 LEDs each one separately, with an 8x8 matrix, using only 16 outputs from a microcontroller.</p>
+
+
+
+
+
+
+
+
+
+<br><br><hr><br><br><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Main_336x280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9887055930206585"
+     data-ad-slot="4329413020"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><br><br><a href="javascript:" class="title">Comments</a><hr><br><table class="HelpYesNo" cellpadding="8" width="100%" height="10" ><TR><TD align="left" valign="middle" id="cellYesNoPoll"><form name="frmCommentThisPage" id="frmCommentThisPage">
+<input class="formtexts" type="text" name="txtName" value="" id="txtName" style="width:250px">&nbsp;&nbsp;Name<br><br><input class="formtexts" type="text" name="txtEmail" value="" id="txtEmail" style="width:250px">&nbsp;&nbsp;Email (shall not be published)<br><br><input class="formtexts" type="text" name="txtWebsite" value="" id="txtWebsite" style="width:250px">&nbsp;&nbsp;Website<br><br><input type="checkbox" name="chkMailConfirm" value="1" id="chkMailConfirm"> Notify me of new posts via email<br><br><br><strong>Write your comments below:</strong><br><font style="color:#CC0000"><b>BEFORE you post a comment:</b></font>You are welcome to comment for corrections and suggestions on this page. But if you have questions <a href="/forum">please use the <b>forum</b></a> instead to post it. Thank you.<br><br><textarea name="txtComments" id="txtComments" style="width:600px;height:180px"></textarea><br><img align="absmiddle" src="../../scripts/confirmation/createconfimage.php?l=high&confirm_ses=b918a391891a05a9">&nbsp;<input type="hidden" name="comments_confirm_ses" id="comments_confirm_ses" value="b918a391891a05a9"><input name="comments_confirm_val" id="comments_confirm_val" type="text" style="width:80px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="txtSubmit" value="Submit your comment" onClick="SubmitComment('howkeymatricesworks');"></form></TD></TR></table><br><table class="HelpYesNo" cellpadding="8" width="100%" height="10"><TR><TD align="left" valign="middle" id="cellYesNoPoll"><li class="Normal">At <font color="#023C00">16 February 2016, 13:01:57</font> user <font color="#00095E"><b>nagavikas</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('nagavikas')">[reply @ nagavikas]</a></li><ul>thanks for what a neat presentation,<br />
+can u send me the proteus and hex file for above project...?<br />
+and plz send me the related file too that would be more helpful to me<br />
+thank you in advance.........................!!!!!!1</ul><hr><br><li class="Normal">At <font color="#023C00">3 December 2015, 8:19:32</font> user <font color="#00095E"><b>Ben Zuniga</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Ben Zuniga')">[reply @ Ben Zuniga]</a></li><ul>@Andy I wouldn&#039;t think you would need to turn a keyboard like that into a matrix, unless you mean you are customizing the keyboard to be a custom input device for something other than a computer.</ul><hr><br><li class="Normal">At <font color="#023C00">2 December 2015, 8:07:27</font> user <font color="#00095E"><b>Andy</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Andy')">[reply @ Andy]</a></li><ul>Thanks for a very clear and simple explanation. Been looking at getting an Ergodox but not quite satisfied with the design so I&#039;m planning on converting my Razer Blackwidow into a matrix keyboard.</ul><hr><br><li class="Normal">At <font color="#023C00">1 October 2015, 8:35:05</font> user <font color="#00095E"><b>Giorgos Lazaridis</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Giorgos Lazaridis')">[reply @ Giorgos Lazaridis]</a></li><ul>@Vladimir for a 2x2 matrix you will need 4 wires to control 4 buttons, so why bother with a matrix and not just interface the buttons directly?</ul><hr><br><li class="Normal">At <font color="#023C00">16 September 2015, 15:54:40</font> user <font color="#00095E"><b>Vladimir</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Vladimir')">[reply @ Vladimir]</a></li><ul>What about 2x2 buttons grid? With Arduino and default buttons it does not work. (or may be i do something wrong). Please help</ul><hr><br><li class="Normal">At <font color="#023C00">29 August 2015, 20:05:24</font> user <font color="#00095E"><b>Cris</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Cris')">[reply @ Cris]</a></li><ul>Well, just realized that was a stupid question.....</ul><hr><br><li class="Normal">At <font color="#023C00">29 August 2015, 19:59:28</font> user <font color="#00095E"><b>Cris</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Cris')">[reply @ Cris]</a></li><ul>Hey and why don&#039;t they just make one row with all the 128 keys? you just have to divide a second into 128 parts... A 10mhz controller should do the job....</ul><hr><br><li class="Normal">At <font color="#023C00">23 July 2015, 11:37:41</font> user <font color="#00095E"><b>Nandakumar</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Nandakumar')">[reply @ Nandakumar]</a></li><ul>Thanks for the good and clear article.</ul><hr><br><li class="Normal">At <font color="#023C00">27 June 2015, 4:24:40</font> user <font color="#00095E"><b>paulsin</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('paulsin')">[reply @ paulsin]</a></li><ul>I have made a simple technique to connect an 4*4 button pad to arduino using four digital pins of arduino instead of 8. Read more at :<br />
+<br />
+http://www.haberocean.com/2015/05/circuit-for-44-button-keypad-using-74165-and-74595-part-1/</ul><hr><br><li class="Normal">At <font color="#023C00">22 February 2015, 23:17:41</font> user <font color="#00095E"><b>okti</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('okti')">[reply @ okti]</a></li><ul>Hello,<br />
+I have a keypad with this algorithm working very well.The next step in my project is to test if my code is working well without the keypad.I need to simulate my keypad and to test all the combinations for the keypad using 2 microcontrollers.Do you know how can I do this step?</ul><hr><br><li class="Normal">At <font color="#023C00">9 January 2015, 14:09:36</font> user <font color="#00095E"><b>mike</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('mike')">[reply @ mike]</a></li><ul>thanks, I was trying to wrap my mind around avoiding using the analog inputs, but I don&#039;t think it&#039;s possible. very good article.</ul><hr><br><li class="Normal">At <font color="#023C00">22 July 2014, 16:12:48</font> user <font color="#00095E"><b>Giorgos</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Giorgos')">[reply @ Giorgos]</a></li><ul>@ledforever You can&#039;t turn them on simultaneous. This is how multiplexing works. You turn them on for a period one after the other. The eye cannot catch the on-off delay.</ul><hr><br><li class="Normal">At <font color="#023C00">22 July 2014, 11:00:02</font> user <font color="#00095E"><b>ledforever</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('ledforever')">[reply @ ledforever]</a></li><ul>I didn&#039;t understand soemthing.<br />
+what if I want to turn on only 3leds . a1,c1 and b2 ?</ul><hr><br><li class="Normal">At <font color="#023C00">4 April 2014, 0:06:48</font> user <font color="#00095E"><b>Edgar</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Edgar')">[reply @ Edgar]</a></li><ul>Very nice explanation, really a good work!</ul><hr><br><li class="Normal">At <font color="#023C00">4 February 2014, 23:50:10</font> user <font color="#00095E"><b>Ben Zuniga</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Ben Zuniga')">[reply @ Ben Zuniga]</a></li><ul>@Grotty <br />
+From my fix with the Teensyduino with the same feature, this will not work. This is because the voltage on the pin needs to be driven down to around .7 volt to register as a low active. the pull up resister is very large and therefore have a man sum of the voltage drop from 5 to 0, undepowering the diode preventing it from cunducting, and if it did, assuming a silicon diode then you would get .7 volts and this could be read like static because of how close to the active zone, it is within drifting room.</ul><hr><br><li class="Normal">At <font color="#023C00">2 February 2014, 9:25:09</font> user <font color="#00095E"><b>Giorgos Lazaridis</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Giorgos Lazaridis')">[reply @ Giorgos Lazaridis]</a></li><ul>@Grotty the inputs are always pulled H or L to work properly, otherwise the uC input will float</ul><hr><br><li class="Normal">At <font color="#023C00">30 January 2014, 20:29:39</font> user <font color="#00095E"><b>HARIKRISHNAN V</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('HARIKRISHNAN V')">[reply @ HARIKRISHNAN V]</a></li><ul>Simply and intelligently done. Great work!</ul><hr><br><li class="Normal">At <font color="#023C00">23 January 2014, 16:05:08</font> user <font color="#00095E"><b>aravind</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('aravind')">[reply @ aravind]</a></li><ul>Simplified and superb Explanation.</ul><hr><br><li class="Normal">At <font color="#023C00">16 January 2014, 4:21:49</font> user <font color="#00095E"><b>Grotty</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Grotty')">[reply @ Grotty]</a></li><ul>This is really good. Thank-you for publishing it!<br />
+<br />
+One question though; will the diode fix for ghosting work when the inputs use pull-up resistors (as the arduinos do nowadays) simply by switching direction of the diodes and using a 0v output as the &quot;active&quot; line?<br />
+<br />
+(Alas I don&#039;t have the kit to test this, and don&#039;t want to end up wasting money)</ul><hr><br><li class="Normal">At <font color="#023C00">1 January 2014, 2:44:23</font> user <font color="#00095E"><b>Ben Zuniga</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Ben Zuniga')">[reply @ Ben Zuniga]</a></li><ul>This is great!<br />
+I was Having a ghosting problem, But this helped greatly, Thank You!</ul><hr><br><li class="Normal">At <font color="#023C00">16 August 2013, 8:06:32</font> user <font color="#00095E"><b>Lefteris</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Lefteris')">[reply @ Lefteris]</a></li><ul>Very nice article. Keep inspiring!</ul><hr><br><li class="Normal">At <font color="#023C00">11 July 2013, 20:45:53</font> user <font color="#00095E"><b>Jordan</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Jordan')">[reply @ Jordan]</a></li><ul>Thanks for this! Key matrices and LED matricies were super confusing to me until now.</ul><hr><br><li class="Normal">At <font color="#023C00">24 June 2013, 0:25:28</font> user <font color="#00095E"><b>muttonsandwich</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('muttonsandwich')">[reply @ muttonsandwich]</a></li><ul>I&#039;ve been trying to understand this concept for ages! Thanks man!</ul><hr><br><li class="Normal">At <font color="#023C00">6 June 2013, 16:44:00</font> user <font color="#00095E"><b>roopa jayvardhan</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('roopa jayvardhan')">[reply @ roopa jayvardhan]</a></li><ul>clear explanation easy to understand its nice &amp; thanx</ul><hr><br><li class="Normal">At <font color="#023C00">26 May 2013, 4:20:27</font> user <font color="#00095E"><b>sameera</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('sameera')">[reply @ sameera]</a></li><ul>thanks boss..... :D</ul><hr><br><li class="Normal">At <font color="#023C00">26 April 2013, 2:31:45</font> user <font color="#00095E"><b>khan</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('khan')">[reply @ khan]</a></li><ul>good work ...really very nice explanation ....keep it up:)</ul><hr><br><li class="Normal">At <font color="#023C00">11 April 2013, 20:33:58</font> user <font color="#00095E"><b>John McGeorge</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('John McGeorge')">[reply @ John McGeorge]</a></li><ul>How can I make the down arrow and c on old keyboard work together.Thanks</ul><hr><br><li class="Normal">At <font color="#023C00">5 April 2013, 17:42:26</font> user <font color="#00095E"><b>Kalpesh Wani</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Kalpesh Wani')">[reply @ Kalpesh Wani]</a></li><ul>@nikhilr57 : Hi Nikhil , even I am working on similar chessboard. If u want to share ur experience/ want some input from my side, contact me on kalpeshswani@gmail.com</ul><hr><br><li class="Normal">At <font color="#023C00">18 February 2013, 9:58:57</font> user <font color="#00095E"><b>Prince</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Prince')">[reply @ Prince]</a></li><ul>Thanks for this nice article</ul><hr><br><li class="Normal">At <font color="#023C00">3 December 2012, 13:34:25</font> user <font color="#00095E"><b>pmg</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('pmg')">[reply @ pmg]</a></li><ul>@nikhilr57 ATmega32 could do the job. It has 32 I/O pins, so you could use 16 for 8*8 matrix and other 16 for driving that LCD.</ul><hr><br><li class="Normal">At <font color="#023C00">6 November 2012, 11:58:59</font> user <font color="#00095E"><b>Giorgos Lazaridis</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Giorgos Lazaridis')">[reply @ Giorgos Lazaridis]</a></li><ul>@nikhilr57 With key matrix that wont be possible. So you can use any microcontroller with I/O expansion chips. Search for I/O expansion or SIPO shift registers.</ul><hr><br><li class="Normal">At <font color="#023C00">5 November 2012, 11:50:45</font> user <font color="#00095E"><b>nikhilr57</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('nikhilr57')">[reply @ nikhilr57]</a></li><ul>I want to use 8x8 matrix keypad, (64 buttons), And multiple keys at same time, and 16*2 LCD display.... Would you also recommend me appropriate micro controller that will allow me to read multiple key press at same time (PIC or AVR)... also with high memory because in want to generate PGN of chess board ... I&#039;ll consider my 8*8 keypad as chess board and will track the chess moves and display PGN on LCD..<br />
+<br />
+..Thanks for your time.</ul><hr><br><li class="Normal">At <font color="#023C00">3 November 2012, 5:13:07</font> user <font color="#00095E"><b>Giorgos Lazaridis</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Giorgos Lazaridis')">[reply @ Giorgos Lazaridis]</a></li><ul>@nikhilr57 data port ok of course, but half must be inputs and half outputs</ul><hr><br><li class="Normal">At <font color="#023C00">31 October 2012, 14:16:18</font> user <font color="#00095E"><b>nikhilr57</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('nikhilr57')">[reply @ nikhilr57]</a></li><ul>Yes. I made both row and column as data ports</ul><hr><br><li class="Normal">At <font color="#023C00">31 October 2012, 7:32:08</font> user <font color="#00095E"><b>Giorgos Lazaridis</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Giorgos Lazaridis')">[reply @ Giorgos Lazaridis]</a></li><ul>@nikhilr57 Are you sure you have inputs declared as inputs?</ul><hr><br><li class="Normal">At <font color="#023C00">30 October 2012, 18:24:39</font> user <font color="#00095E"><b>nikhilr57</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('nikhilr57')">[reply @ nikhilr57]</a></li><ul>I am facing a problem, When i High the column one by one, and if switch is pressed, the column drains, instead of row becoming high. In 8051, AVR, or PIC18..<br />
+<br />
+I firstly did rowport= 0x00,to make it a input dataport and high the column pins one by one.<br />
+I have 8x8 matrix keypad, which I want to read multiple keys pressed (maximum 32 at a time, as I am designing it for chess board)<br />
+<br />
+I am new to embedded<br />
+Thanks :)</ul><hr><br><li class="Normal">At <font color="#023C00">3 October 2012, 16:15:34</font> user <font color="#00095E"><b>Shan</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Shan')">[reply @ Shan]</a></li><ul>A very good article and i appreciate the person who wrote it you make it very very clear and it is easy to learn.<br />
+Thanksallot for publishing such a nice article</ul><hr><br><li class="Normal">At <font color="#023C00">25 September 2012, 4:58:48</font> user <font color="#00095E"><b>qwerty</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('qwerty')">[reply @ qwerty]</a></li><ul>gd.....useful</ul><hr><br><li class="Normal">At <font color="#023C00">22 August 2012, 21:48:41</font> user <font color="#00095E"><b>bmee</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('bmee')">[reply @ bmee]</a></li><ul>i just want to thank you for taking the time to make it clear, especially for those of us whom have tight work schedules......Thank You!</ul><hr><br><li class="Normal">At <font color="#023C00">2 July 2012, 1:03:18</font> user <font color="#00095E"><b>Mr. Bzik</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Mr. Bzik')">[reply @ Mr. Bzik]</a></li><ul>Finally somebody could explain me that case with matrix buttons.:)))  Thanks!!</ul><hr><br><li class="Normal">At <font color="#023C00">5 June 2012, 11:24:49</font> user <font color="#00095E"><b>John</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('John')">[reply @ John]</a></li><ul>Thank you for a truly illumination article. I had been struggling with this and thanks to you I have now succeeded.</ul><hr><br><li class="Normal">At <font color="#023C00">8 April 2012, 21:11:52</font> user <font color="#00095E"><b>Giorgos Lazaridis</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Giorgos Lazaridis')">[reply @ Giorgos Lazaridis]</a></li><ul>@Michael i&#039;ve never used one before, except from a PIC that i used once just for test. sorry.</ul><hr><br><li class="Normal">At <font color="#023C00">8 April 2012, 13:48:21</font> user <font color="#00095E"><b>Michael</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Michael')">[reply @ Michael]</a></li><ul>Hi Thanks for the article, quite helpful, could you give me some example of micro-controllers that could be used for the I/O of the keyboard matrix in your article.</ul><hr><br><li class="Normal">At <font color="#023C00">30 March 2012, 20:34:45</font> user <font color="#00095E"><b>MAH</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('MAH')">[reply @ MAH]</a></li><ul>That&#039;s Great . Thanks .</ul><hr><br><li class="Normal">At <font color="#023C00">26 March 2012, 16:03:25</font> user <font color="#00095E"><b>aditi</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('aditi')">[reply @ aditi]</a></li><ul>beautiful site.</ul><hr><br><li class="Normal">At <font color="#023C00">3 March 2012, 20:39:33</font> user <font color="#00095E"><b>Ion</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Ion')">[reply @ Ion]</a></li><ul>Your site it is AMAZING !!!</ul><hr><br><li class="Normal">At <font color="#023C00">31 January 2012, 7:50:49</font> user <font color="#00095E"><b>IdesofMarch</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('IdesofMarch')">[reply @ IdesofMarch]</a></li><ul>This is a great article!!</ul><hr><br><li class="Normal">At <font color="#023C00">5 February 2011, 10:32:26</font> user <font color="#00095E"><b>Kammenos</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Kammenos')">[reply @ Kammenos]</a></li><ul>Mister Li, the link is wrong.</ul><hr><br><li class="Normal">At <font color="#023C00">5 February 2011, 6:34:36</font> user <font color="#00095E"><b>Mister Li</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Mister Li')">[reply @ Mister Li]</a></li><ul>I have a keyboard matrix problem that maybe you can help with.<br />
+<br />
+Can you please look at:<br />
+<br />
+http://www.youtube.com/my_videos?feature=mhum<br />
+<br />
+Video #1 and #2 to see if it's possible for you to help me fix a seemingly defective key matrix?</ul><hr><br><li class="Normal">At <font color="#023C00">20 January 2011, 15:26:34</font> user <font color="#00095E"><b>Kammenos</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Kammenos')">[reply @ Kammenos]</a></li><ul>pratik, i did not understand your question. The interval has to do with the microcontroller you use. There is no standard calculation for this. I usually go to 1mSec, but that is not a rule.</ul><hr><br><li class="Normal">At <font color="#023C00">20 January 2011, 14:08:28</font> user <font color="#00095E"><b>pratik</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('pratik')">[reply @ pratik]</a></li><ul>how do i calculate time interval between two key press</ul><hr><br><li class="Normal">At <font color="#023C00">22 December 2010, 14:59:11</font> user <font color="#00095E"><b>Kammenos</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Kammenos')">[reply @ Kammenos]</a></li><ul>yes of course you can use the other 250 with a parallel circuit. Make sure you want draw more though.</ul><hr><br><li class="Normal">At <font color="#023C00">22 December 2010, 3:57:53</font> user <font color="#00095E"><b>snippets</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('snippets')">[reply @ snippets]</a></li><ul>Thanks Kammenos!<br />
+<br />
+Following the lines takes time.<br />
+<br />
+my circuit has 4-18-4 pins.<br />
+So obviously. it's for 8x18 matrix.<br />
+<br />
+Base on the specs, it draws 250mA.<br />
+Since usb ports supplies 500mA.<br />
+Can I just do a parallel connection to get the other 250mA?<br />
+I will use that 250mA to power another circuit.<br />
+That circuit will be use to automate the clicks of the keyboard's circuit.<br />
+<br />
+This is fun! =)</ul><hr><br><li class="Normal">At <font color="#023C00">21 December 2010, 15:33:15</font> user <font color="#00095E"><b>Kammenos</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Kammenos')">[reply @ Kammenos]</a></li><ul>That is really something that you need to discover it yourself. Most probably, there will be an 8 by 18 matrix, but this ha only to do with the manufacturer. Trial and error is the only way. Or, you can reverse-engineer the buttons. Follow the lines one by one.</ul><hr><br><li class="Normal">At <font color="#023C00">21 December 2010, 10:24:28</font> user <font color="#00095E"><b>snippets</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('snippets')">[reply @ snippets]</a></li><ul>Nice. One-page article says it all. =)<br />
+<br />
+I have now the usb keyboard circuit.<br />
+<br />
+How to distinguish the input and outputs here?<br />
+I mean the two sections: the columns and the rows?</ul><hr><br><li class="Normal">At <font color="#023C00">25 November 2010, 12:01:10</font> user <font color="#00095E"><b>pratik</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('pratik')">[reply @ pratik]</a></li><ul>did not get how the diodes will solve the problem please explain in detail</ul><hr><br><li class="Normal">At <font color="#023C00">11 August 2010, 9:46:02</font> user <font color="#00095E"><b>Kammenos</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('Kammenos')">[reply @ Kammenos]</a></li><ul>I suppose you want to make a 10x10 led array (to control 100 LEDs). The best way is to use a microcontroller with at least 20 I/Os, such as the PIC16F1937 or the PIC16F886</ul><hr><br><li class="Normal">At <font color="#023C00">10 August 2010, 22:12:08</font> user <font color="#00095E"><b>marioyee</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('marioyee')">[reply @ marioyee]</a></li><ul>What components i need change to work with 96 paralel white led array?</ul><hr><br><li class="Normal">At <font color="#023C00">14 July 2010, 22:28:35</font> user <font color="#00095E"><b>elvy</b></font> wrote:&nbsp;&nbsp;&nbsp;<a href="javascript:ReplyToUser('elvy')">[reply @ elvy]</a></li><ul>kick ass article!<br />
+Thanks!</ul></TD></TR></table><br><br></td><td width=180 style="border-style:solid;border-left-width:1px;border-right-width:0px;border-top-width:0px;border-bottom-width:0px;" valign=top><table style="border-style:solid;border-width:1px;" width=100% border=0 cellpadding=10 cellspacing=0 background="http://pcbheaven.com/pics/back1.gif"><tr><td align=left>
+<form action="http://pcbheaven.com/searchresults.php" id="cse-search-box"><div align="center"><input type="hidden" name="cx" id="cx" value="partner-pub-9887055930206585:9l3xtf-42op" /><input type="hidden" name="cof" id="cof" value="FORID:9" /><input type="hidden" name="ie" value="ISO-8859-1" /><input onKeypress="CheckEnter(event)" type="text" style="width:160px" id="q" name="q"><br>
+<input type="submit" value="Search"></div></form></td></tr></table><br><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=392942320826294&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="https://www.facebook.com/PCBHeaven" data-width="160" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div><table width=100% cellpadding=0 cellspacing=8>
+<tr><td><g:plusone></g:plusone></td></tr>
+
+<tr><td><iframe title="Twitter Tweet Button" style="width: 110px; height: 20px;" class="twitter-share-button twitter-count-horizontal" src="https://platform.twitter.com/widgets/tweet_button.1332442903.html#_=1333028035005&amp;count=horizontal&amp;id=twitter-widget-42&amp;lang=en&amp;original_referer=https%3A%2F%2Ftwitter.com%2Fabout%2Fresources%2Fbuttons%23tweet&amp;size=m&amp;text=How+a+Key+Matrix+Work&amp;url=http%3A%2F%2Fpcbheaven.com%2Fwikipages%2FHow_Key_Matrices_Works%2F&amp;via=pcbheaven" allowtransparency="true" frameborder="0" scrolling="no"></iframe></td></tr>
+
+<tr><td><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fpcbheaven.com%2Fwikipages%2FHow_Key_Matrices_Works%2F&amp;send=false&amp;layout=button_count&amp;width=180&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=15975692413" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:21px;" allowTransparency="true"></iframe></td></tr>
+
+<tr><td><script src="http://www.stumbleupon.com/hostedbadge.php?s=2"></script></td></tr>
+<tr><td><a id="delicious" href="http://del.icio.us/post?v=2&amp;url=http%3A%2F%2Fpcbheaven.com%2Fwikipages%2FHow_Key_Matrices_Works%2F&amp;title=How+a+Key+Matrix+Work" target="_blank"><img src="/pics/social/delicious.gif" alt="delicious" border="0"></a></td></tr>
+<tr><td><a class="DiggThisButton DiggMedium" href="http://digg.com/submit?phase=2&url=http%3A%2F%2Fpcbheaven.com%2Fwikipages%2FHow_Key_Matrices_Works%2F&amp;title=How+a+Key+Matrix+Work&amp;bodytext=In+this+article+i+explain+how+the+key+matrices+works.+A+key+matrix+is+a+technique+to+interface+multiple+buttons+into+a+microcontroller%2C+using+as+less+ports+as+possible.+Such+a+technique+is+used+in+your+PC+keyboard+to+interface+all+101+%28or+more%29+keys+using+around+26+ports.+Also+i+explain+what+the+ghosting+and+masking+problem+is+and+how+to+deal+with+it.&amp;topic=design" rev="news, design" target="_blank"><img src="/pics/social/digg.gif" alt="digg"  border="0"></a></td></tr><tr><td><a id="reddit" href="http://www.reddit.com/submit?url=http%3A%2F%2Fpcbheaven.com%2Fwikipages%2FHow_Key_Matrices_Works%2F&amp;title=How+a+Key+Matrix+Work" target="_blank"><img src="/pics/social/reddit.png" alt="reddit this" border="0"> Reddit this</a></td></tr><tr><td><a href="http://faves.com/Authoring.aspx?u=http%3A%2F%2Fpcbheaven.com%2Fwikipages%2FHow_Key_Matrices_Works%2F%2F&t=How+a+Key+Matrix+Work" target="_blank"><img src="/pics/social/faves.png" alt="Faves" border="0"></a></td></tr></table><br><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Main 160x600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-9887055930206585"
+     data-ad-slot="1700680024"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<br /><br />
+<script id="mNCC" language="javascript">  medianet_width='160';  medianet_height= '600';  medianet_crid='280587182';  </script>  <script id="mNSC" src="http://contextual.media.net/nmedianet.js?cid=8CUZX8B20" language="javascript"></script> 
+
+<table class="BorderedPages" width=100%><TR><TD bgcolor=white id="SunscriptionRow" align="center">
+
+<img src="/pics/flame.png" width=16 heght=16 border=0>&nbsp;<strong><font style="color:#970000" class="subtitle">H</font><font style="color:#D10000" class="subtitle">O</font><font style="color:#D16900" class="subtitle">T</font> in <font style="color:#328127" class="subtitle"><em>h</em></font>eaven!</strong>
+<br><br>
+
+<a href="http://twitter.com/pcbheaven"><img src="/pics/twitter.jpg" border=0></a>
+
+</TD></TR>
+</table>
+
+
+
+<br>
+
+<table class="BorderedPages" width=100%><TR><TD bgcolor=white id="SunscriptionRow" align="center">
+
+
+<img src="/pics/news_icon.jpg" border=0><strong><font style="color:#FF8C00" class="subtitle">NEW</font> in <font style="color:#328127" class="subtitle"><em>h</em></font>eaven!</strong>
+<br><br>
+
+
+<center><a href="http://www.pcbheaven.com/userpages/AC_electric_motor_working_principle" target="_self"><img src=/userpages/images/med_thumbs/AC_electric_motor_working_principle_1.jpg width=153 align=top border=1 hspace=5<br><br><br>New Theory: <b>AC electric motor working principle</b></a></b></center></TD></TR>
+</table>
+
+<br>
+
+</td></tr></table></TD></tr></TABLE>
+<br>
+
+<hr width="100%">
+
+<table width=100% border="0" cellpadding="0" cellspacing="5" background="http://pcbheaven.com/pics/main/sb.gif"><TR><TD>
+<div align="center">
+
+<a href="http://www.pcbheaven.com/contact/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/contact.png">&nbsp;Contact</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/forum/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/forum.png">&nbsp;Forum</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/projectpages/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/wrench.png">&nbsp;Projects</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/exppages/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/gear.png">&nbsp;Experiments</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/circuitpages/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/circuit.png">&nbsp;Circuits</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/wikipages/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/theory.png">&nbsp;Theory</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/blogpages/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/blog.png">&nbsp;BLOG</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/picpages/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/chip.png">&nbsp;PIC Tutorials</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/opendir/"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/science_ico.png">&nbsp;Time for Science</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.pcbheaven.com/rss/rss.xml"><img border=0 align="absmiddle" src="http://pcbheaven.com/pics/main/rss.png">&nbsp;RSS</a>&nbsp;&nbsp;&nbsp;
+				
+
+<font><br><br>
+Site design: Giorgos Lazaridis<br>
+<strong>&copy; Copyright 2008</strong><br>
+Please read the <a href="http://www.pcbheaven.com/m_pages/tos.php">Terms of services</a> and the <a href="http://www.pcbheaven.com/m_pages/prvs.php">Privacy policy</a><br>
+</TD></TR></table>
+<hr width="100%"><hr width="100%"><hr width="100%"><br><br>
+</font>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2277309-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>	
+<!-- NEW PLUTO	 -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5781402-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>		
+</body>
+</html>

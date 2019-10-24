@@ -1,0 +1,757 @@
+EESchema Schematic File Version 4
+LIBS:example-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR?
+U 1 1 5DB1443D
+P 750 2950
+F 0 "#PWR?" H 750 2800 50  0001 C CNN
+F 1 "VCC" V 768 3077 50  0000 L CNN
+F 2 "" H 750 2950 50  0001 C CNN
+F 3 "" H 750 2950 50  0001 C CNN
+	1    750  2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1100 2900 750  2900
+Wire Wire Line
+	750  2900 750  2950
+Wire Wire Line
+	1100 3000 750  3000
+Wire Wire Line
+	750  3000 750  2950
+Connection ~ 750  2950
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5DB147FE
+P 650 3400
+F 0 "#PWR?" H 650 3450 20  0001 C CNN
+F 1 "GND" V 650 3429 30  0000 L CNN
+F 2 "" H 650 3400 60  0000 C CNN
+F 3 "" H 650 3400 60  0000 C CNN
+	1    650  3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	650  3350 650  3400
+Wire Wire Line
+	650  3350 1100 3350
+Wire Wire Line
+	1100 3450 650  3450
+Wire Wire Line
+	650  3450 650  3400
+Connection ~ 650  3400
+Text Label 2600 3300 0    50   ~ 0
+Row0
+Text Label 2600 3400 0    50   ~ 0
+Row1
+Text Label 2600 3500 0    50   ~ 0
+Row2
+Text Label 2600 3600 0    50   ~ 0
+Row3
+Text Label 2600 3700 0    50   ~ 0
+Row4
+Text Label 2600 3800 0    50   ~ 0
+Row5
+Text Label 2600 3000 0    50   ~ 0
+Col15
+Text Label 2600 2900 0    50   ~ 0
+Col14
+Text Label 2600 2800 0    50   ~ 0
+Col13
+Text Label 2600 2700 0    50   ~ 0
+Col12
+Text Label 2600 2600 0    50   ~ 0
+Col11
+Text Label 2600 2500 0    50   ~ 0
+Col10
+Text Label 2600 2400 0    50   ~ 0
+Col9
+Text Label 2600 2300 0    50   ~ 0
+Col8
+Text Label 2600 1900 0    50   ~ 0
+Col7
+Text Label 2600 1800 0    50   ~ 0
+Col6
+Text Label 2600 1700 0    50   ~ 0
+Col5
+Text Label 2600 1600 0    50   ~ 0
+Col4
+Text Label 2600 1500 0    50   ~ 0
+Col3
+Text Label 2600 1400 0    50   ~ 0
+Col2
+Text Label 2600 1300 0    50   ~ 0
+Col1
+Text Label 2600 1200 0    50   ~ 0
+Col0
+$Comp
+L power:VCC #PWR?
+U 1 1 5DB23621
+P 3500 1250
+F 0 "#PWR?" H 3500 1100 50  0001 C CNN
+F 1 "VCC" H 3517 1423 50  0000 C CNN
+F 2 "" H 3500 1250 50  0001 C CNN
+F 3 "" H 3500 1250 50  0001 C CNN
+	1    3500 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1250 3500 1450
+Wire Wire Line
+	2300 1200 2600 1200
+Wire Wire Line
+	2300 1300 2600 1300
+Wire Wire Line
+	2300 1400 2600 1400
+Wire Wire Line
+	2600 1500 2300 1500
+Wire Wire Line
+	2300 1600 2600 1600
+Wire Wire Line
+	2600 1700 2300 1700
+Wire Wire Line
+	2300 1800 2600 1800
+Wire Wire Line
+	2300 1900 2600 1900
+Wire Wire Line
+	2300 2300 2600 2300
+Wire Wire Line
+	2300 2400 2600 2400
+Wire Wire Line
+	2300 2500 2600 2500
+Wire Wire Line
+	2300 2600 2600 2600
+Wire Wire Line
+	2300 2700 2600 2700
+Wire Wire Line
+	2600 2800 2300 2800
+Wire Wire Line
+	2300 2900 2600 2900
+Wire Wire Line
+	2600 3000 2300 3000
+Wire Wire Line
+	2300 3300 2600 3300
+Wire Wire Line
+	2300 3400 2600 3400
+Wire Wire Line
+	2600 3500 2300 3500
+Wire Wire Line
+	2300 3600 2600 3600
+Wire Wire Line
+	2300 3700 2600 3700
+Wire Wire Line
+	2300 3800 2600 3800
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5DB2C0BD
+P 3300 600
+F 0 "#PWR?" H 3300 650 20  0001 C CNN
+F 1 "GND" H 3300 659 30  0000 C CNN
+F 2 "" H 3300 600 60  0000 C CNN
+F 3 "" H 3300 600 60  0000 C CNN
+	1    3300 600 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5DB2C3CF
+P 3300 900
+F 0 "C1" H 3392 946 50  0000 L CNN
+F 1 "1uf" H 3392 855 50  0000 L CNN
+F 2 "" H 3300 900 50  0001 C CNN
+F 3 "~" H 3300 900 50  0001 C CNN
+	1    3300 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1450 3300 1000
+Wire Wire Line
+	3300 800  3300 600 
+$Comp
+L keyboard_parts:TEENSY2.0 U1
+U 1 1 5DB10FCA
+P 1700 2500
+F 0 "U1" H 1700 4047 60  0000 C CNN
+F 1 "TEENSY2.0" H 1700 3941 60  0000 C CNN
+F 2 "" H 1700 2500 60  0000 C CNN
+F 3 "" H 1700 2500 60  0000 C CNN
+	1    1700 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3050 3500 3400
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5DB23CD2
+P 3500 3400
+F 0 "#PWR?" H 3500 3450 20  0001 C CNN
+F 1 "GND" H 3500 3459 30  0000 C CNN
+F 2 "" H 3500 3400 60  0000 C CNN
+F 3 "" H 3500 3400 60  0000 C CNN
+	1    3500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:TLC5971PWP U2
+U 1 1 5DB1BD58
+P 3500 2250
+F 0 "U2" H 3500 1361 50  0000 C CNN
+F 1 "TLC5971PWP" H 3500 1270 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm_Mask2.75x3.43mm_ThermalVias" H 3550 1400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc5971.pdf" H 3500 1950 50  0001 C CNN
+	1    3500 2250
+	1    0    0    -1  
+$EndComp
+Text Label 2600 3150 0    50   ~ 0
+Col16
+Wire Wire Line
+	2600 3150 2300 3150
+Wire Wire Line
+	2300 2150 3100 2150
+Wire Wire Line
+	2300 2050 3100 2050
+$Comp
+L keyboard_parts:KEYSW K0
+U 1 1 5DB4E54F
+P 5700 1500
+F 0 "K0" H 5700 1500 60  0000 C CNN
+F 1 "KEYSW" H 5700 1400 60  0001 C CNN
+F 2 "" H 5700 1500 60  0000 C CNN
+F 3 "" H 5700 1500 60  0000 C CNN
+	1    5700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D0
+U 1 1 5DB4FA1E
+P 5350 1700
+F 0 "D0" H 5222 1650 60  0000 R CNN
+F 1 "D" V 5500 1650 60  0001 C CNN
+F 2 "" H 5350 1700 60  0000 C CNN
+F 3 "" H 5350 1700 60  0000 C CNN
+	1    5350 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 1550 5350 1500
+Wire Wire Line
+	5350 1500 5400 1500
+Text Label 6050 1150 0    50   ~ 0
+Col0
+Text Label 5100 1800 0    50   ~ 0
+Row0
+$Comp
+L keyboard_parts:KEYSW K1
+U 1 1 5DB58E5D
+P 5700 2000
+F 0 "K1" H 5700 2000 60  0000 C CNN
+F 1 "KEYSW" H 5700 1900 60  0001 C CNN
+F 2 "" H 5700 2000 60  0000 C CNN
+F 3 "" H 5700 2000 60  0000 C CNN
+	1    5700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D1
+U 1 1 5DB58E63
+P 5350 2200
+F 0 "D1" H 5222 2150 60  0000 R CNN
+F 1 "D" V 5500 2150 60  0001 C CNN
+F 2 "" H 5350 2200 60  0000 C CNN
+F 3 "" H 5350 2200 60  0000 C CNN
+	1    5350 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 2050 5350 2000
+Wire Wire Line
+	5350 2000 5400 2000
+$Comp
+L keyboard_parts:KEYSW K2
+U 1 1 5DB5C4FE
+P 5700 2500
+F 0 "K2" H 5700 2500 60  0000 C CNN
+F 1 "KEYSW" H 5700 2400 60  0001 C CNN
+F 2 "" H 5700 2500 60  0000 C CNN
+F 3 "" H 5700 2500 60  0000 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D2
+U 1 1 5DB5C504
+P 5350 2700
+F 0 "D2" H 5222 2650 60  0000 R CNN
+F 1 "D" V 5500 2650 60  0001 C CNN
+F 2 "" H 5350 2700 60  0000 C CNN
+F 3 "" H 5350 2700 60  0000 C CNN
+	1    5350 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 2550 5350 2500
+Wire Wire Line
+	5350 2500 5400 2500
+$Comp
+L keyboard_parts:KEYSW K3
+U 1 1 5DB5EB78
+P 5700 3050
+F 0 "K3" H 5700 3050 60  0000 C CNN
+F 1 "KEYSW" H 5700 2950 60  0001 C CNN
+F 2 "" H 5700 3050 60  0000 C CNN
+F 3 "" H 5700 3050 60  0000 C CNN
+	1    5700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D3
+U 1 1 5DB5EB7E
+P 5350 3250
+F 0 "D3" H 5222 3200 60  0000 R CNN
+F 1 "D" V 5500 3200 60  0001 C CNN
+F 2 "" H 5350 3250 60  0000 C CNN
+F 3 "" H 5350 3250 60  0000 C CNN
+	1    5350 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 3100 5350 3050
+Wire Wire Line
+	5350 3050 5400 3050
+Text Label 5100 2300 0    50   ~ 0
+Row1
+Text Label 5100 2800 0    50   ~ 0
+Row2
+Text Label 5100 3350 0    50   ~ 0
+Row3
+$Comp
+L keyboard_parts:KEYSW K4
+U 1 1 5DB823F7
+P 6550 1500
+F 0 "K4" H 6550 1500 60  0000 C CNN
+F 1 "KEYSW" H 6550 1400 60  0001 C CNN
+F 2 "" H 6550 1500 60  0000 C CNN
+F 3 "" H 6550 1500 60  0000 C CNN
+	1    6550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D4
+U 1 1 5DB823FD
+P 6200 1700
+F 0 "D4" H 6072 1650 60  0000 R CNN
+F 1 "D" V 6350 1650 60  0001 C CNN
+F 2 "" H 6200 1700 60  0000 C CNN
+F 3 "" H 6200 1700 60  0000 C CNN
+	1    6200 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 1550 6200 1500
+Wire Wire Line
+	6200 1500 6250 1500
+Text Label 6900 1150 0    50   ~ 0
+Col1
+$Comp
+L keyboard_parts:KEYSW K5
+U 1 1 5DB8556D
+P 6550 2000
+F 0 "K5" H 6550 2000 60  0000 C CNN
+F 1 "KEYSW" H 6550 1900 60  0001 C CNN
+F 2 "" H 6550 2000 60  0000 C CNN
+F 3 "" H 6550 2000 60  0000 C CNN
+	1    6550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D5
+U 1 1 5DB85573
+P 6200 2200
+F 0 "D5" H 6072 2150 60  0000 R CNN
+F 1 "D" V 6350 2150 60  0001 C CNN
+F 2 "" H 6200 2200 60  0000 C CNN
+F 3 "" H 6200 2200 60  0000 C CNN
+	1    6200 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 2050 6200 2000
+Wire Wire Line
+	6200 2000 6250 2000
+$Comp
+L keyboard_parts:KEYSW K6
+U 1 1 5DB865DD
+P 6550 2500
+F 0 "K6" H 6550 2500 60  0000 C CNN
+F 1 "KEYSW" H 6550 2400 60  0001 C CNN
+F 2 "" H 6550 2500 60  0000 C CNN
+F 3 "" H 6550 2500 60  0000 C CNN
+	1    6550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D6
+U 1 1 5DB865E3
+P 6200 2700
+F 0 "D6" H 6072 2650 60  0000 R CNN
+F 1 "D" V 6350 2650 60  0001 C CNN
+F 2 "" H 6200 2700 60  0000 C CNN
+F 3 "" H 6200 2700 60  0000 C CNN
+	1    6200 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 2550 6200 2500
+Wire Wire Line
+	6200 2500 6250 2500
+$Comp
+L keyboard_parts:KEYSW K7
+U 1 1 5DB87746
+P 6550 3050
+F 0 "K7" H 6550 3050 60  0000 C CNN
+F 1 "KEYSW" H 6550 2950 60  0001 C CNN
+F 2 "" H 6550 3050 60  0000 C CNN
+F 3 "" H 6550 3050 60  0000 C CNN
+	1    6550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:D D7
+U 1 1 5DB8774C
+P 6200 3250
+F 0 "D7" H 6072 3200 60  0000 R CNN
+F 1 "D" V 6350 3200 60  0001 C CNN
+F 2 "" H 6200 3250 60  0000 C CNN
+F 3 "" H 6200 3250 60  0000 C CNN
+	1    6200 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 3100 6200 3050
+Wire Wire Line
+	6200 3050 6250 3050
+Wire Wire Line
+	6200 1750 6200 1800
+Wire Wire Line
+	6200 1800 5350 1800
+Wire Wire Line
+	5350 1750 5350 1800
+Connection ~ 5350 1800
+Wire Wire Line
+	5350 1800 5100 1800
+Wire Wire Line
+	6200 2250 6200 2300
+Wire Wire Line
+	6200 2300 5350 2300
+Wire Wire Line
+	5350 2250 5350 2300
+Connection ~ 5350 2300
+Wire Wire Line
+	5350 2300 5100 2300
+Wire Wire Line
+	6200 2750 6200 2800
+Wire Wire Line
+	6200 2800 5350 2800
+Wire Wire Line
+	5350 2750 5350 2800
+Connection ~ 5350 2800
+Wire Wire Line
+	5350 2800 5100 2800
+Wire Wire Line
+	6200 3300 6200 3350
+Wire Wire Line
+	6200 3350 5350 3350
+Wire Wire Line
+	5350 3300 5350 3350
+Connection ~ 5350 3350
+Wire Wire Line
+	5350 3350 5100 3350
+Wire Wire Line
+	6000 3050 6050 3050
+Wire Wire Line
+	6050 3050 6050 2500
+Wire Wire Line
+	6000 1500 6050 1500
+Connection ~ 6050 1500
+Wire Wire Line
+	6050 1500 6050 1150
+Wire Wire Line
+	6050 2000 6000 2000
+Connection ~ 6050 2000
+Wire Wire Line
+	6050 2000 6050 1500
+Wire Wire Line
+	6000 2500 6050 2500
+Connection ~ 6050 2500
+Wire Wire Line
+	6050 2500 6050 2000
+Wire Wire Line
+	6900 1150 6900 1500
+Wire Wire Line
+	6900 3050 6850 3050
+Wire Wire Line
+	6850 2500 6900 2500
+Connection ~ 6900 2500
+Wire Wire Line
+	6900 2500 6900 3050
+Wire Wire Line
+	6900 2000 6850 2000
+Connection ~ 6900 2000
+Wire Wire Line
+	6900 2000 6900 2500
+Wire Wire Line
+	6850 1500 6900 1500
+Connection ~ 6900 1500
+Wire Wire Line
+	6900 1500 6900 2000
+$Comp
+L Device:LED_RCBG RGB0
+U 1 1 5DBB9229
+P 5350 4150
+F 0 "RGB0" H 5350 4647 50  0000 C CNN
+F 1 "LED_RCBG" H 5350 4556 50  0000 C CNN
+F 2 "" H 5350 4100 50  0001 C CNN
+F 3 "~" H 5350 4100 50  0001 C CNN
+	1    5350 4150
+	1    0    0    -1  
+$EndComp
+Text Label 4150 1650 0    50   ~ 0
+R0
+Text Label 4150 1750 0    50   ~ 0
+G0
+Text Label 4150 1850 0    50   ~ 0
+B0
+Wire Wire Line
+	4150 1650 3900 1650
+Wire Wire Line
+	3900 1750 4150 1750
+Wire Wire Line
+	4150 1850 3900 1850
+$Comp
+L Device:LED_RCBG RGB3
+U 1 1 5DBED732
+P 6200 4150
+F 0 "RGB3" H 6200 4647 50  0000 C CNN
+F 1 "LED_RCBG" H 6200 4556 50  0000 C CNN
+F 2 "" H 6200 4100 50  0001 C CNN
+F 3 "~" H 6200 4100 50  0001 C CNN
+	1    6200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG RGB1
+U 1 1 5DBF2572
+P 5350 5150
+F 0 "RGB1" H 5350 5647 50  0000 C CNN
+F 1 "LED_RCBG" H 5350 5556 50  0000 C CNN
+F 2 "" H 5350 5100 50  0001 C CNN
+F 3 "~" H 5350 5100 50  0001 C CNN
+	1    5350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG RGB4
+U 1 1 5DBF3529
+P 6200 5150
+F 0 "RGB4" H 6200 5647 50  0000 C CNN
+F 1 "LED_RCBG" H 6200 5556 50  0000 C CNN
+F 2 "" H 6200 5100 50  0001 C CNN
+F 3 "~" H 6200 5100 50  0001 C CNN
+	1    6200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG RGB2
+U 1 1 5DBF3919
+P 5350 6100
+F 0 "RGB2" H 5350 6597 50  0000 C CNN
+F 1 "LED_RCBG" H 5350 6506 50  0000 C CNN
+F 2 "" H 5350 6050 50  0001 C CNN
+F 3 "~" H 5350 6050 50  0001 C CNN
+	1    5350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG RGB5
+U 1 1 5DBF3EB4
+P 6200 6100
+F 0 "RGB5" H 6200 6597 50  0000 C CNN
+F 1 "LED_RCBG" H 6200 6506 50  0000 C CNN
+F 2 "" H 6200 6050 50  0001 C CNN
+F 3 "~" H 6200 6050 50  0001 C CNN
+	1    6200 6100
+	1    0    0    -1  
+$EndComp
+Text Label 5600 3750 0    50   ~ 0
+R0
+Text Label 5800 3750 0    50   ~ 0
+B0
+Text Label 5700 3750 0    50   ~ 0
+G0
+Wire Wire Line
+	5600 3750 5600 3950
+Wire Wire Line
+	5600 5900 5550 5900
+Wire Wire Line
+	5600 4950 5550 4950
+Connection ~ 5600 4950
+Wire Wire Line
+	5600 4950 5600 5900
+Wire Wire Line
+	5550 3950 5600 3950
+Connection ~ 5600 3950
+Wire Wire Line
+	5600 3950 5600 4950
+Wire Wire Line
+	5700 3750 5700 4150
+Wire Wire Line
+	5700 6100 5550 6100
+Wire Wire Line
+	5800 3750 5800 4350
+Wire Wire Line
+	5800 6300 5550 6300
+Wire Wire Line
+	5550 4150 5700 4150
+Connection ~ 5700 4150
+Wire Wire Line
+	5700 4150 5700 5150
+Wire Wire Line
+	5550 4350 5800 4350
+Connection ~ 5800 4350
+Wire Wire Line
+	5800 4350 5800 5350
+Wire Wire Line
+	5550 5150 5700 5150
+Connection ~ 5700 5150
+Wire Wire Line
+	5700 5150 5700 6100
+Wire Wire Line
+	5550 5350 5800 5350
+Connection ~ 5800 5350
+Wire Wire Line
+	5800 5350 5800 6300
+Text Label 6450 3750 0    50   ~ 0
+R1
+Text Label 6550 3750 0    50   ~ 0
+G1
+Text Label 6650 3750 0    50   ~ 0
+B1
+Text Label 4150 1950 0    50   ~ 0
+R1
+Text Label 4150 2050 0    50   ~ 0
+G1
+Text Label 4150 2150 0    50   ~ 0
+B1
+Wire Wire Line
+	4150 1950 3900 1950
+Wire Wire Line
+	3900 2050 4150 2050
+Wire Wire Line
+	4150 2150 3900 2150
+Wire Wire Line
+	6450 3750 6450 3950
+Wire Wire Line
+	6450 5900 6400 5900
+Wire Wire Line
+	6550 3750 6550 4150
+Wire Wire Line
+	6550 6100 6400 6100
+Wire Wire Line
+	6650 3750 6650 5350
+Wire Wire Line
+	6650 6300 6400 6300
+Wire Wire Line
+	6400 3950 6450 3950
+Connection ~ 6450 3950
+Wire Wire Line
+	6450 3950 6450 4950
+Wire Wire Line
+	6400 4150 6550 4150
+Connection ~ 6550 4150
+Wire Wire Line
+	6550 4150 6550 4350
+Wire Wire Line
+	6550 4350 6400 4350
+Connection ~ 6550 4350
+Wire Wire Line
+	6550 4350 6550 5150
+Wire Wire Line
+	6400 4950 6450 4950
+Connection ~ 6450 4950
+Wire Wire Line
+	6450 4950 6450 5900
+Wire Wire Line
+	6400 5150 6550 5150
+Connection ~ 6550 5150
+Wire Wire Line
+	6550 5150 6550 6100
+Wire Wire Line
+	6400 5350 6650 5350
+Connection ~ 6650 5350
+Wire Wire Line
+	6650 5350 6650 6300
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5DC6258A
+P 5950 6600
+F 0 "#PWR?" H 5950 6650 20  0001 C CNN
+F 1 "GND" H 5950 6659 30  0000 C CNN
+F 2 "" H 5950 6600 60  0000 C CNN
+F 3 "" H 5950 6600 60  0000 C CNN
+	1    5950 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR?
+U 1 1 5DC62BAA
+P 5100 6600
+F 0 "#PWR?" H 5100 6650 20  0001 C CNN
+F 1 "GND" H 5100 6659 30  0000 C CNN
+F 2 "" H 5100 6600 60  0000 C CNN
+F 3 "" H 5100 6600 60  0000 C CNN
+	1    5100 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4150 5100 4150
+Wire Wire Line
+	5100 4150 5100 5150
+Wire Wire Line
+	5150 5150 5100 5150
+Connection ~ 5100 5150
+Wire Wire Line
+	5100 5150 5100 6100
+Wire Wire Line
+	5100 6100 5150 6100
+Connection ~ 5100 6100
+Wire Wire Line
+	5100 6100 5100 6600
+Wire Wire Line
+	6000 4150 5950 4150
+Wire Wire Line
+	5950 4150 5950 5150
+Wire Wire Line
+	6000 5150 5950 5150
+Connection ~ 5950 5150
+Wire Wire Line
+	5950 5150 5950 6100
+Wire Wire Line
+	6000 6100 5950 6100
+Connection ~ 5950 6100
+Wire Wire Line
+	5950 6100 5950 6600
+$EndSCHEMATC

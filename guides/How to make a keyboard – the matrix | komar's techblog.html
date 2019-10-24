@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>How to make a keyboard &#8211; the matrix | komar&#039;s techblog</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://blog.komar.be/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://blog.komar.be/wp-content/themes/twentyfourteen/js/html5.js"></script>
+	<![endif]-->
+	<link rel="alternate" type="application/rss+xml" title="komar&#039;s techblog &raquo; Feed" href="http://blog.komar.be/feed/" />
+<link rel="alternate" type="application/rss+xml" title="komar&#039;s techblog &raquo; Comments Feed" href="http://blog.komar.be/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="komar&#039;s techblog &raquo; How to make a keyboard - the matrix Comments Feed" href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/blog.komar.be\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://blog.komar.be/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-arduino-ide-css'  href='http://blog.komar.be/wp-content/plugins/crayon-syntax-highlighter/themes/arduino-ide/arduino-ide.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-liberation-mono-css'  href='http://blog.komar.be/wp-content/plugins/crayon-syntax-highlighter/fonts/liberation-mono.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfourteen-lato-css'  href='//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://blog.komar.be/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfourteen-style-css'  href='http://blog.komar.be/wp-content/themes/twentyfourteen-child/style.css?ver=4.5.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfourteen-ie-css'  href='http://blog.komar.be/wp-content/themes/twentyfourteen/css/ie.css?ver=20131205' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jquery.lightbox.min.css-css'  href='http://blog.komar.be/wp-content/plugins/wp-jquery-lightbox/styles/lightbox.min.css?ver=1.4.6' type='text/css' media='all' />
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var quicktagsL10n = {"closeAllOpenTags":"Close all open tags","closeTags":"close tags","enterURL":"Enter the URL","enterImageURL":"Enter the URL of the image","enterImageDescription":"Enter a description of the image","textdirection":"text direction","toggleTextdirection":"Toggle Editor Text Direction","dfw":"Distraction-free writing mode","strong":"Bold","strongClose":"Close bold tag","em":"Italic","emClose":"Close italic tag","link":"Insert link","blockquote":"Blockquote","blockquoteClose":"Close blockquote tag","del":"Deleted text (strikethrough)","delClose":"Close deleted text tag","ins":"Inserted text","insClose":"Close inserted text tag","image":"Insert image","ul":"Bulleted list","ulClose":"Close bulleted list tag","ol":"Numbered list","olClose":"Close numbered list tag","li":"List item","liClose":"Close list item tag","code":"Code","codeClose":"Close code tag","more":"Insert Read More tag"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/quicktags.min.js?ver=4.5.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/blog.komar.be\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+var CrayonTagEditorSettings = {"home_url":"http:\/\/blog.komar.be","css":"crayon-te","css_selected":"crayon-selected","code_css":"#crayon-code","url_css":"#crayon-url","url_info_css":"#crayon-te-url-info","lang_css":"#crayon-lang","title_css":"#crayon-title","mark_css":"#crayon-mark","range_css":"#crayon-range","inline_css":"crayon-inline","inline_hide_css":"crayon-hide-inline","inline_hide_only_css":"crayon-hide-inline-only","hl_css":"#crayon-highlight","switch_html":"#content-html","switch_tmce":"#content-tmce","tinymce_button_generic":".mce-btn","tinymce_button":"a.mce_crayon_tinymce,.mce-i-crayon_tinymce","tinymce_button_unique":"mce_crayon_tinymce","tinymce_highlight":"mce-active","submit_css":"#crayon-te-ok","cancel_css":"#crayon-te-cancel","content_css":"#crayon-te-content","dialog_title_css":"#crayon-te-title","submit_wrapper_css":"#crayon-te-submit-wrapper","data_value":"data-value","attr_sep":":","css_sep":"_","fallback_lang":"default","add_text":"Add Code","edit_text":"Edit Code","quicktag_text":"crayon","submit_add":"Add","submit_edit":"Save","bar":"#crayon-te-bar","bar_content":"#crayon-te-bar-content","extensions":{"scpt":"applescript","applescript":"applescript","swf":"as","fla":"as","cs":"c#","h":"c++","hh":"c++","hpp":"c++","hxx":"c++","h++":"c++","cc":"c++","cpp":"c++","cxx":"c++","c++":"c++","pas":"delphi","java":"java","class":"java","jar":"java","mel":"mel","ma":"mel","mv":"miva","mvc":"miva","mvt":"miva","m":"objc","mm":"objc","psc":"papyrus","pl":"perl","py":"python","pyw":"python","pyc":"python","pyo":"python","pyd":"python","rb":"ruby","rbx":"ruby","rhtml":"ruby","vbs":"vb"}};
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/blog.komar.be\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.komar.be/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.te.min.js?ver=_2.7.2_beta'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.9'></script>
+<link rel='https://api.w.org/' href='http://blog.komar.be/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.komar.be/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.komar.be/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='GH60 evolution' href='http://blog.komar.be/gh60-evolution/' />
+<link rel='next' title='Burning ship' href='http://blog.komar.be/burning-ship/' />
+<meta name="generator" content="WordPress 4.5.1" />
+<link rel="canonical" href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/" />
+<link rel='shortlink' href='http://blog.komar.be/?p=764' />
+<link rel="alternate" type="application/json+oembed" href="http://blog.komar.be/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.komar.be%2Fhow-to-make-a-keyboard-the-matrix%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://blog.komar.be/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.komar.be%2Fhow-to-make-a-keyboard-the-matrix%2F&#038;format=xml" />
+<!-- Google Analytics Tracking by Google Analyticator 6.4.9: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-34578365-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+
+<body class="single single-post postid-764 single-format-standard masthead-fixed full-width singular">
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner">
+		<div class="header-main">
+			<h1 class="site-title"><a href="http://blog.komar.be/" rel="home">komar&#039;s techblog</a></h1>
+
+			<div class="search-toggle">
+				<a href="#search-container" class="screen-reader-text">Search</a>
+			</div>
+
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<button class="menu-toggle">Primary Menu</button>
+				<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+				<div class="nav-menu"><ul><li class="page_item page-item-105"><a href="http://blog.komar.be/about/">About</a></li><li class="page_item page-item-423 page_item_has_children"><a href="http://blog.komar.be/projects/">Projects</a><ul class='children'><li class="page_item page-item-428"><a href="http://blog.komar.be/projects/project-atmel-dfu-bootloader-abi-wrapper/">Atmel DFU Bootloader ABI wrapper</a></li><li class="page_item page-item-478"><a href="http://blog.komar.be/projects/gh60-programmable-keyboard/">GH60 programmable keyboard</a></li><li class="page_item page-item-1041"><a href="http://blog.komar.be/projects/how-to-make-a-keyboard/">How to make a keyboard</a></li></ul></li><li class="page_item page-item-978 page_item_has_children"><a href="http://blog.komar.be/portfolio/">Portfolio</a><ul class='children'><li class="page_item page-item-981"><a href="http://blog.komar.be/portfolio/techkeys-us-business-card/">techkeys.us business card</a></li><li class="page_item page-item-1123"><a href="http://blog.komar.be/portfolio/techkeys-us-programmable-business-card/">techkeys.us programmable business card</a></li></ul></li></ul></div>
+			</nav>
+		</div>
+
+		<div id="search-container" class="search-box-wrapper hide">
+			<div class="search-box">
+				<form role="search" method="get" class="search-form" action="http://blog.komar.be/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+			
+<article id="post-764" class="post-764 post type-post status-publish format-standard has-post-thumbnail hentry category-electronics category-keyboards">
+	
+	<div class="post-thumbnail">
+	<img width="1038" height="174" src="http://blog.komar.be/wp-content/uploads/2013/09/hdrmatrixs-1038x174.png" class="attachment-twentyfourteen-full-width size-twentyfourteen-full-width wp-post-image" alt="hdrmatrixs" srcset="http://blog.komar.be/wp-content/uploads/2013/09/hdrmatrixs-1038x174.png 1038w, http://blog.komar.be/wp-content/uploads/2013/09/hdrmatrixs-640x107.png 640w, http://blog.komar.be/wp-content/uploads/2013/09/hdrmatrixs-940x157.png 940w, http://blog.komar.be/wp-content/uploads/2013/09/hdrmatrixs.png 1040w" sizes="(max-width: 1038px) 100vw, 1038px" />	</div>
+
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="http://blog.komar.be/category/electronics/" rel="category tag">electronics</a>, <a href="http://blog.komar.be/category/keyboards/" rel="category tag">keyboards</a></span>
+		</div>
+		<h1 class="entry-title">How to make a keyboard - the matrix</h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/" rel="bookmark"><time class="entry-date" datetime="2013-09-02T00:04:41+00:00">September 2, 2013</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="http://blog.komar.be/author/komar/" rel="author">komar</a></span></span>			<span class="comments-link"><a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comments">58 Comments</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p style="text-align: justify;">Tutorial parts: <strong>1 matrix</strong> | 2 controller (coming soon) | ...</p>
+<p>Update (May 2016): check out the Russian translation: <a href="https://geektimes.ru/post/276358/">Как сделать клавиатуру — Матрица</a>!</p>
+<hr />
+<p style="text-align: justify;">This will be the first and hopefully not the last post in the keyboard series. I'm hoping to make this a keyboard building tutorial from the ground up. Today I'll cover digital I/O and keyboard matrices. Equip yourself with some basic knowledge of electronics from school and let's get started.</p>
+<p style="text-align: justify;"><span id="more-764"></span></p>
+<h3 style="text-align: justify;">Why matrix?</h3>
+<p style="text-align: justify;">So how and first of all why do we make a matrix? Well, the most important reason is physical limitations of microcontrollers we use to make a keyboard. Microcontrollers and programmable logic chips grow with the number of pins, and growth means more power, capabilities and most of all higher price. So in the end you can either get a cheap chip with little capabilities (and that's what you need) but with few input/output pins, or a more powerful chip, which is much more than you need. And only with such a large chip do you get enough pins to drive a keyboard.</p>
+<p style="text-align: justify;">It has been regular practice in electronics for decades to extend the number of available communication options of processors and controllers in various ways. One of such ways which works well for mechanical contacts (switches) is making a matrix. In order to explain how a matrix works, some basic background will be necessary. Please revise the <a title="Ohm's law" href="http://en.wikipedia.org/wiki/Ohm's_law">Ohm's law</a> before continuing.</p>
+<h3 style="text-align: justify;">Some theory</h3>
+<p style="text-align: justify;">In order to understand how digital electronics works, you'll need to understand 2 basic principles:</p>
+<p style="text-align: justify;"><strong>Principle one</strong> is that there is no concept of sending or receiving anything in communication. What you do to make 2 devices communicate is merely connect their pins with a conducting material. Then you can assume that the state of this material (voltage and current) will be the same on both sides. This is obviously not true in real life, but with slow communication and short conductors it works well that way. So in fact, sending and receiving information becomes sharing information.</p>
+<p style="text-align: justify;">On the transmitter side you just change the electrical state of the conductor (by coercing a constant current or voltage), and count on the fact that the receiver will be able to detect that change and understand it in a proper way.</p>
+<p style="text-align: justify;"><em>This principle also implies that there is no connection between the direction of communication and the direction of current flow</em>, which is a mistake a lot of people make which prevents them from understanding how electronics works.</p>
+<p style="text-align: justify;">When you want to "send" a "0" logic state, you'll usually do it by causing the voltage to be 0V, this means that the current has to flow into your transmitter for the receiver to be able to tell it's a "0" (since the opposite direction of current flow would be possible only if there was a negative voltage anywhere in the circuit, and that is generally not true for digital electronics). On the other hand, when you "send" a logic "1", you usually represent it by the same voltage as supply voltage, and because this is usually the highest voltage in the circuit, the current has to flow out of your transmitter.</p>
+<p style="text-align: justify;"><strong>Principle number two</strong> says that there is no way to read a state of a conductor without modifying this state. No matter whether you want to read voltage or current, you need electrons to flow through the device you're measuring with. Electron flow means current flow, and current flow means that the currents and voltage change in the node you're measuring (refer to the <a title="Kirchhoff's circuit laws" href="http://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws">Kirchhoff's circuit laws</a>). This implies that if you want to "send" information by changing the state of a pin connected electrically with another pin, you have to be able to maintain this state, that means meet all the conditions imposed by the receiver.</p>
+<h3 style="text-align: justify;">The switch</h3>
+<figure id="attachment_801" style="width: 150px" class="wp-caption alignright"><a href="http://deskthority.net/wiki/Cherry_MX"><img class="size-thumbnail wp-image-801 " src="http://blog.komar.be/wp-content/uploads/2013/09/799px-Cherry_MX_front-150x150.jpg" alt="A Cherry MX switch. Photo courtesy of Deskthority wiki" width="150" height="150" srcset="http://blog.komar.be/wp-content/uploads/2013/09/799px-Cherry_MX_front-150x150.jpg 150w, http://blog.komar.be/wp-content/uploads/2013/09/799px-Cherry_MX_front-120x120.jpg 120w" sizes="(max-width: 150px) 100vw, 150px" /></a><figcaption class="wp-caption-text">A Cherry MX switch. Photo courtesy of Deskthority wiki</figcaption></figure>
+<p style="text-align: justify;">A mechanical switch (the word <em>mechanical</em> has nothing to do with mechanical keyboards in this context) is simply a metal contact which can either connect two pins electrically or not. There are other types of switches which are more complicated and have more pins, but we won't deal with them, since they're not used in keyboards.</p>
+<p style="text-align: justify;">So how do we connect a switch to an input of a microcontroller? A basic input device detects 2 possible logic states: "0" and "1". A typical practice is to treat voltages close to 0V as "0" and voltages close to the supply voltage (usually 5V or 3.3V) as "1". The problem with a mechanical switch is that it cannot control voltage on its own. It can only control current in such a way that if we connect two nodes of different potentials with a switch, a current will flow if and only if the switch is pressed.</p>
+<figure id="attachment_777" style="width: 120px" class="wp-caption alignleft"><a href="http://blog.komar.be/wp-content/uploads/2013/09/a1.png" rel="lightbox[764]"><img class="wp-image-777 " src="http://blog.komar.be/wp-content/uploads/2013/09/a1.png" alt="A switch with a pull-up resistor" width="120" height="302" /></a><figcaption class="wp-caption-text">A switch with a pull-up resistor</figcaption></figure>
+<p style="text-align: justify;">But if we use a resistor, we can convert current into voltage in a very simple way.</p>
+<p style="text-align: justify;">Look at the schematic on the left. When the switch is not pressed (not conducting) no current flows through the switch, so the voltage in node 
+			<span id="crayon-5db110c2e2cb0314617590" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;">A</span></span>  is close to VCC (less than VCC by the voltage drop on the resistor which is R * I). When the switch is pressed (conducting), the current flows through the resistor and down to ground. Because the resistance of a switch is very low (in the range of hundreds of miliohms), the voltage in node 
+			<span id="crayon-5db110c2e2cbf426899702" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">A</span></span></span> will be close to 0.</p>
+<p style="text-align: justify;">In this configuration the resistor is called a pull-up resistor, because it "pulls the voltage up" to VCC level where there wouldn't be any voltage otherwise (this state would be then called "floating" or high impedance state).</p>
+<p style="text-align: justify;">Most modern microcontrollers, however, already have pull-up resistors inside and in most cases you can program the microcontroller to switch it on or off during run-time. So the basic rule when connecting a switch to an input is to connect one pin of the switch to the microcontroller pin and the other pin of the switch to ground. This way the microcontroller will always read a "1" when the switch is not pressed, and a "0" when it's pressed. This may be a bit counterintuitive at the first sight, but that's the most popular solution.</p>
+<p style="text-align: justify;">Note that if we leave one of the switch pins unconnected, the switch will not do anything at all, since whether it's pressed or not, it will not affect the electrical state of the microcontroller's pin. We are going to use this property when building the matrix.</p>
+<h3 style="text-align: justify;">The matrix principle</h3>
+<p>The basic principle of a keyboard matrix is that we connect more than one switch to a single input of a microcontroller.</p>
+<figure id="attachment_783" style="width: 320px" class="wp-caption alignright"><a href="http://blog.komar.be/wp-content/uploads/2013/09/b.png" rel="lightbox[764]"><img class="wp-image-783 " src="http://blog.komar.be/wp-content/uploads/2013/09/b.png" alt="Multiple switches, one input (node A)" width="320" height="192" /></a><figcaption class="wp-caption-text">Multiple switches, one input (node A)</figcaption></figure>
+<p style="text-align: justify;">We can use transistors or properly configured microcontroller outputs to connect only one switch to ground at a time, while the others are floating. The other pins of every switch are connected all to one input of the microcontroller. I omitted the pull-up resistor in this circuit, assuming that there already is one inside the input circuitry of the microcontroller. We "turn on" one switch at a time by connecting it's pin number 1 to ground, and we can use the input to read it's state from pin number 2. The other switches connected to this input don't change it's state, because their pins number 1 are not connected anywhere at that time. The circuit on the right illustrates this idea.
+			<span id="crayon-5db110c2e2cc6924932241" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">A</span></span></span>  is the only input and 
+			<span id="crayon-5db110c2e2cca832499373" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">C1</span></span></span> ...
+			<span id="crayon-5db110c2e2cce494548831" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">Cn</span></span></span> are outputs. One of the outputs set to logic "0" means the pin is actually connected somehow to ground inside the chip, and that also implies that the current will always flow into this pin (as shown in basic principle one). Now when the switch connected to this output pin is pressed, the input 
+			<span id="crayon-5db110c2e2cd2397785596" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">A</span></span></span>  is pulled to ground through the switch, and its state becomes "0". Pressing other switches doesn't change anything, since their other pins are not connected. When we want to read another switch, we change the output pin which is set to "0", so that always just one of them is set like that.</p>
+<p style="text-align: justify;">This configuration (where an output is either connected to ground or not connected at all) is called open-drain (OD) (or, historically, open-collector (OC)). I used a simplification here, in fact the pin can't be not connected at all unless it's mechanically disconnected, but for basic digital I/O this assumption is good enough. Most microcontrollers allow the programmer to configure the output pins to work in OD mode. But what happens if we don't have that option? The other possible configuration is push-pull mode and it's more common these days. This means that in the "0" state the pin is still pulled low (to ground), but when the output is set to "1", the pin is pulled to VCC, so it's actually able to supply current, instead of being floating.</p>
+<p style="text-align: justify;">What does that change in the matrix design? Well, if we're not going to press multiple switches at the same time, then nothing. If we do, just imagine this situation in the above picture. By pressing any two switches, you electrically connect two of the bottom outputs with a simple loop. If one of them is "0" and one is "1", then current starts flowing from the output which is set to "1" to the one set to "0". Because there is no limitation of this current (no resistors), not only can the circuit become unstable, but it can actually cause the chip to blow. Needless to mention it would be hard to reliably read the state.</p>
+<h3 style="text-align: justify;">Adding more rows</h3>
+<p style="text-align: justify;">You can think of this example as a one-row matrix. Now what we need to do is extend it with more rows. If we can share one input pin between a whole row of switches, we can also share each of the outputs between a whole column under the condition that each of the switches in a column is connected to a different input.</p>
+<figure id="attachment_814" style="width: 367px" class="wp-caption alignleft"><a href="http://blog.komar.be/wp-content/uploads/2013/09/c.jpg.png" rel="lightbox[764]"><img class=" wp-image-814 " src="http://blog.komar.be/wp-content/uploads/2013/09/c.jpg.png" alt="Basic keyboard matrix" width="367" height="605" /></a><figcaption class="wp-caption-text">Basic keyboard matrix</figcaption></figure>
+<p style="text-align: justify;">If we arrange the switches to form a regular matrix, this condition is automatically met. And the image on the left shows how it looks for a matrix of <em>n</em> columns and <em>m</em> rows (<strong>ignore the green overlay for now</strong>).</p>
+<p style="text-align: justify;">The way such a matrix is read is simple. We read it one column at a time. The column to be read is selected by connecting one of 
+			<span id="crayon-5db110c2e2cd8074229940" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">C1</span></span></span> ...
+			<span id="crayon-5db110c2e2cdc317051834" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">Cn</span></span></span> to ground (by setting the output in OD mode to "0"). Now each of the rows 
+			<span id="crayon-5db110c2e2cdf071622133" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">R1</span></span></span> ...
+			<span id="crayon-5db110c2e2ce3891838644" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">Rm</span></span></span> can be used to read the state of one switch in the selected column. The switches in other columns will not interfere even if they're pressed, because their other pins are floating (or in Hi-Z state, as it's called in electronics).</p>
+<p style="text-align: justify;">After a whole column is read, we can go on to the next one by changing the pin being pulled down. A matrix scan is completed after all columns have been read. If this is done fast enough, the intervals between probing columns become unnoticeable even for very fast typists. Even when having just a 16MHz microcontroller, we can easily scan the whole matrix thousands of times per second, whereas the fastest typist on <a title="HI-GAMES" href="http://hi-games.net">hi-games.net</a> typing test achieves 203 wpm which equals slightly less than 17 keystrokes per second.</p>
+<p style="text-align: justify;">Designing a keyboard to use a matrix decreases the number of pins required to read all the switches. Of course in order to decrease this number to the lowest value, we need to design the matrix in such a way that the number of columns is as close to the number of rows as possible. In the perfect situation, where the number of switches is <em>n²</em>, the best we can achieve with a matrix is <em>2n</em> pins. However, in most situations the matrices are not designed to use so few pins, since usually the microcontrollers have more of them to spare. Trying to optimize a matrix like that can be hard, because it may lead to a mess when routing the final board. It's usually much more convenient to try to follow the physical placement of the switches, which means that for standard computer keyboards the easiest matrix to design will have only 6 rows, and some number of columns depending on the layout. This solution is very  sub-optimal with respect to the pin count, but at least easy to route.</p>
+<h3 style="text-align: justify;">What if we don't have OD outputs?</h3>
+<p style="text-align: justify;">You could ask what if the outputs of the microcontroller of choice don't have OD mode. Well, we already know what may potentially happen and that it's not a good idea to strong pull-up any of the outputs (that means "connect" to VCC). There are various ways to solve this problem including special OD output buffers and even shift registers with OD outputs to even further decrease the pin count. But there's one very popular solution among computer keyboards (maybe more in the old times, actually).</p>
+<figure id="attachment_809" style="width: 263px" class="wp-caption alignright"><a href="http://blog.komar.be/wp-content/uploads/2013/09/d.jpg.png" rel="lightbox[764]"><img class=" wp-image-809 " src="http://blog.komar.be/wp-content/uploads/2013/09/d.jpg.png" alt="Push-pull outputs problem" width="263" height="351" /></a><figcaption class="wp-caption-text">Push-pull outputs problem</figcaption></figure>
+<p style="text-align: justify;">The problem with push-pull outputs controlling columns appears when two switches are pressed simultaneously in the same row and while the column in which one of them is is being scanned. The current flows from the output set to "1", instead of Hi-Z, through the other switch, then through the one in the scanned column and down to the output set to "0". This can result in anything from not being able to reliably read the state of the keyboard to the chip being destroyed.</p>
+<p style="text-align: justify;">But there is an easy cheat we can use to convert push-pull outputs to OD-like ones if we really have to and I have seen this solution in many keyboards of the old-era. Because the output (column) pins only need to sink current and never source it, we can use diodes to limit the direction of currents. A diode is a simple device which allows the current to flow in only one direction. The arrow in the electrical symbol signifies the direction of current. By inserting a diode between every column pin and the column wire (which later goes to every switch in the column) we can only allow currents to flow into the pins. This way the pin set to "1" will never source current, and this nearly makes it an OD pin. Of course this isn't real OD, but it solves the current loop problem in a keyboard matrix. Go back to the first matrix circuit, <strong>but take into account the green overlay</strong> this time to see how this solution looks.</p>
+<p style="text-align: justify;">Of course to limit the number of diodes used you can try to decrease the number of columns at the expense of the number of rows, and if that doesn't fit the physical layout of the keyboard, then "rotate" the matrix 90 degrees (swap rows with columns). The possibilities are unlimited. But because of a great variety of easy to use hobbyist-friendly microcontrollers, this approach will almost never be used in hobby keyboards. And fortunately so.</p>
+<h3 style="text-align: justify;">Ghosting</h3>
+<p style="text-align: justify;">If you're into keyboards, you must have heard that word before, and it seems it's a frequently misunderstood term in the keyboard world.</p>
+<figure id="attachment_818" style="width: 283px" class="wp-caption alignright"><a href="http://blog.komar.be/wp-content/uploads/2013/09/e.png" rel="lightbox[764]"><img class=" wp-image-818 " src="http://blog.komar.be/wp-content/uploads/2013/09/e.png" alt="Ghosting example" width="283" height="522" /></a><figcaption class="wp-caption-text">Ghosting example</figcaption></figure>
+<p style="text-align: justify;">We've already seen how pressing multiple keys in the same row may disturb the readings, but that problem can already be considered solved. Now let's see what happens if multiple keys are pressed both in the same row and in the same column.</p>
+<p style="text-align: justify;">In the picture on the right three switches were pressed simultaneously. Two of them share column <em>2</em> and two row <em>m</em>. That means one of those three pressed switches shares both its row and its column with some other pressed switch. This situation is commonly referred to as <em>ghosting</em>. Suppose we're currently reading column 1 (so it's output pin at the bottom is pulled down to ground - "0" state). Because of this characteristic setting of pressed switches, even though the remaining switch (top-left in the picture) is not pressed, the state of the 
+			<span id="crayon-5db110c2e2ced831383022" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">R2</span></span></span>  line is "0", because it is pulled down by 
+			<span id="crayon-5db110c2e2cf1455998972" class="crayon-syntax crayon-syntax-inline  crayon-theme-arduino-ide crayon-theme-arduino-ide-inline crayon-font-liberation-mono" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important;"><span class="crayon-pre crayon-code" style="font-size: 12px !important; line-height: 15px !important;font-size: 12px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">C1</span></span></span>  (currently at "0") through all the 3 pressed switches. This causes the keyboard controller to read the state of that key as "pressed" no matter if it's actually pressed or not. The word <em>ghosting</em> comes from the fact that some key combinations pressed together cause such "ghost" keypresses to appear, even though the keys are not physically pressed.</p>
+<p style="text-align: justify;">There are ways to prevent ghosting from disturbing the work of a typist or gamer and they're widely used in all PC keyboards. It is actually possible to detect a situation where a ghost may appear and prevent it from happening. Because a regular person is not able to press or release 2 keys at exactly the same time, with fast enough scanning we can assume that between two scans of the entire matrix no more than one key will change its state. This way the keyboard controller can process one keypress at a time and look for situations where 2 or more keys have become pressed at the same time between two scans. Assuming the keyboard is scanning fast enough not to allow such situations to occur willingly, their occurrence means that one of the newly pressed keys is a ghost. In such a case the keyboard should ignore both these presses and it's the safest to wait until they're both released before sending any state changes to the PC.</p>
+<p style="text-align: justify;">A different approach is to detect situations where that "third" key is pressed and suppress it and any further keys until it's released and situation is back to normal. To use this approach, the firmware must remember which keys are pressed (which it normally does anyway) and disallow keys whose both column and row already have a pressed key in them. With some smart coding it shouldn't be necessary to block all further keypresses except for the ones that cause the issue unless they break the rule again. If the keyboard controller blocks every key whose both column and row already have a pressed key, some keys will not be registered depending on the state of other keys. This situation is commonly known as <em>jamming</em>. The term makes sense if you think that it's the other pressed keys that cause some keys to stop working, somehow "jamming" a part of the keyboard.</p>
+<p style="text-align: justify;">From the user's point of view, they can always press all keys in a column at the same time (if they are not pressing keys in other columns), but they can press keys from the same row together only if there's at most one key pressed in every key's column. The same goes for pressing keys in the same column. Other pressed keys are only allowed if they're in rows other than the ones already "taken".</p>
+<p style="text-align: justify;">The terms <em>ghosting</em> and <em>jamming</em> are often confused for reasons beyond my imagination, since they seem rather intuitive to me.</p>
+<p style="text-align: justify;">It's not possible to have neither ghosting nor jamming in a keyboard which uses a matrix like the ones shown above. Since ghosting is rather unacceptable for a regular user, virtually all rubber dome vendors use some anti-ghosting approach which introduces jamming. How to design a matrix in such a way that jamming disturbs the least, and common key combinations do not cause jamming is a good topic for a book and it's the reason the matrices in mass-produced keyboard are so messy and jammed (pun intended).</p>
+<h3 style="text-align: justify;">Diodes on all switches - the ultimate solution</h3>
+<p style="text-align: justify;">If you look back to the ghosting example circuit, you can see that the culprit is the lower-right switch.</p>
+<figure id="attachment_825" style="width: 361px" class="wp-caption alignright"><a href="http://blog.komar.be/wp-content/uploads/2013/09/f.png" rel="lightbox[764]"><img class=" wp-image-825 " src="http://blog.komar.be/wp-content/uploads/2013/09/f.png" alt="The final matrix" width="361" height="638" /></a><figcaption class="wp-caption-text">The final matrix</figcaption></figure>
+<p style="text-align: justify;">But this switch is the only one where the current flows "up" in this situation, and because we don't need any currents going up to properly read the matrix, we can use diodes to allow the current to flow only to the column outputs at the bottom of the circuit. Unfortunately, this requires one diode for every switch. As for the direction, you should already be able to tell that in this particular example, they have to conduct the current "down", so their cathodes (pointy sides) should face the outputs (columns), whereas the anodes should point at the inputs (rows). Which side of the switch the diode is on does not matter as long as it's properly biased. Just remember that in the approach presented the current always flows from inputs to outputs. This is by the way what always happens with pulled-up inputs and OD outputs.</p>
+<p style="text-align: justify;">The presented approach limits the current to flow only "right" and "down", so it keeps loops from appearing when multiple keys are pressed. This is also the only design which allows for full NKRO keyboards. Though it may seem obvious, it might also be worth noting that using a diode with every switch eliminates the need to use OD outputs, since the diodes in series with switches cope with the circuit shorting problem just like the solution with one diode per column.</p>
+<h3 style="text-align: justify;">Rollover</h3>
+<p style="text-align: justify;">I know this article is already very long, but I think I just need to add this last chapter to make it complete. Rollover is the ability of a keyboard to support multiple keypresses at the same time.</p>
+<h4 style="text-align: justify;">xKRO</h4>
+<p style="text-align: justify;">KRO stands for <em>key roll over</em> and it normally goes after a number. So it can be for example 2KRO, which means 2 key rollover. A keyboard has x key rollover if and only if it can support 2 keys pressed at the same time no matter when it happens and which keys they are. Most rubber dome keyboards sold these days have 2KRO. This does not, however, limit the number of pressed keys at the same time in all cases. It only says that the keyboard is guaranteed to always be able to support x keys at the same time.</p>
+<p style="text-align: justify;">Depending on the matrix layout and controller used, 2 keyboards with 2KRO may behave very differently. Some may always register only up to 2 simultaneous keypresses, and some will easily register more. In this case 2KRO might be declared just because there are some key combinations (preferably uncommon) which will prevent some other keys from being pressed at the same time. Since this means there are combinations of 3 or more keys that can't be pressed together, the company declares just 2KRO.</p>
+<h4 style="text-align: justify;">NKRO</h4>
+<p style="text-align: justify;">The term NKRO means <em>n key rollover</em> and it's used to describe a keyboard that can support any combination of keys pressed together no matter what. Remember though that there's a difference between NKRO of the keyboard matrix and NKRO of the very keyboard. Whereas just the matrix implementation I showed in this article always supports NKRO with correctly written firmware, this is not necessarily the case for the keyboard which uses such a matrix. This is because of various limitations of the communication ports used by keyboards and because of the vendors cutting costs here and there. I will try to describe the problem of NKRO in PS/2 and USB in the further parts.</p>
+<h3 style="text-align: justify;">Summary</h3>
+<p style="text-align: justify;">This might have been a long read, but the concept is not so easy at all, especially for a non-electrical engineer. I hope I've explained it clearly, anyway I was trying to be as clear as possible. Because of that the article might be boring for some of you, but if you are into electronics, then most probably you needn't have read that at all;)</p>
+<p style="text-align: justify;">Anyway, please let me know if this was of any value to you and if it makes sense to write future parts and I'll start working on the next "episode".</p>
+	</div><!-- .entry-content -->
+	
+	</article><!-- #post-## -->
+	<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<a href="http://blog.komar.be/gh60-evolution/" rel="prev"><span class="meta-nav">Previous Post</span>GH60 evolution</a><a href="http://blog.komar.be/burning-ship/" rel="next"><span class="meta-nav">Next Post</span>Burning ship</a>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+<div id="comments" class="comments-area">
+
+	
+	<h2 class="comments-title">
+		58 thoughts on &ldquo;How to make a keyboard - the matrix&rdquo;	</h2>
+
+	
+	<ol class="comment-list">
+				<li id="comment-2572" class="comment even thread-even depth-1">
+			<article id="div-comment-2572" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/70e994f2fdf830560f1aa2eecd8f76c5?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/70e994f2fdf830560f1aa2eecd8f76c5?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Vanilla</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-2572">
+							<time datetime="2013-10-03T12:56:03+00:00">
+								October 3, 2013 at 12:56 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Very nice overview! Looking forward to the next articles in this series 🙂 Will you touch components such as the Phantom PCB and the Teensy controller? In any case - very cool explanations.</p>
+<p>&nbsp;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=2572#respond' onclick='return addComment.moveForm( "div-comment-2572", "2572", "respond", "764" )' aria-label='Reply to Vanilla'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2573" class="comment byuser comment-author-komar bypostauthor odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-2573" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-2573">
+							<time datetime="2013-10-03T14:07:08+00:00">
+								October 3, 2013 at 2:07 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thank you.</p>
+<p>I hope more will come after this one. I don't know what I'll cover yet, but most probably the Teensy will appear somewhere.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=2573#respond' onclick='return addComment.moveForm( "div-comment-2573", "2573", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2580" class="comment even thread-even depth-1">
+			<article id="div-comment-2580" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/70e994f2fdf830560f1aa2eecd8f76c5?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/70e994f2fdf830560f1aa2eecd8f76c5?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Vanilla</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-2580">
+							<time datetime="2013-10-04T09:23:58+00:00">
+								October 4, 2013 at 9:23 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Now i saw the other posts, about the GH60 PCB 🙂</p>
+<p>I suppose you are doing the tutorials in the same pace you will be actually building your own ("dream") keyboard. It will be really really something to see all the steps involved (from the PCB drawing software, design ideas perhaps, some personal decisions, to the end product); it can be a very nice source of inspiration/information for different projects. I'm sure many people (like me) would want to design their own style keyboards, but they are lacking some of the information, at one point or another in the making process. Your howto could change that 🙂 E.g. i live in Europe, i don't want to order a ready-made PCB, but if i have (or even better, if i learn how to make) the schematics of one, i could send it locally to a specialized low-cost company to build it for me.</p>
+<p>&nbsp;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=2580#respond' onclick='return addComment.moveForm( "div-comment-2580", "2580", "respond", "764" )' aria-label='Reply to Vanilla'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-5902" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-5902" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/7e2f11be6fb26435d2ff772c168847e3?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/7e2f11be6fb26435d2ff772c168847e3?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">euf0ria</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-5902">
+							<time datetime="2014-02-18T17:34:32+00:00">
+								February 18, 2014 at 5:34 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This was very helpful and gave me a deeper understanding of matrixes. I would love to read a Teensy article from you and specially if the main topic would be 2.0. There could be many subject to write about such as: "best matrix for nkey layout", "adding LED control", "NKRO implementation" and as well the main parts with defining the matrix and adding layers and macros to your mapping. Basic understanding of code and different files would also be interresting.</p>
+<p>&nbsp;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=5902#respond' onclick='return addComment.moveForm( "div-comment-5902", "5902", "respond", "764" )' aria-label='Reply to euf0ria'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-37339" class="comment even thread-even depth-1">
+			<article id="div-comment-37339" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/4214a7741a4fc8d4886b7420d7ccece1?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/4214a7741a4fc8d4886b7420d7ccece1?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='http://www.siteslikesearch.com' rel='external nofollow' class='url'>Jody</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-37339">
+							<time datetime="2014-09-17T15:33:03+00:00">
+								September 17, 2014 at 3:33 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hurrah, that's what I was exploring for, what a material!<br />
+present here at this blog, thanks admin of this website.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=37339#respond' onclick='return addComment.moveForm( "div-comment-37339", "37339", "respond", "764" )' aria-label='Reply to Jody'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-40343" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-40343" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/dfd8623c313ad2698d6b0db854b8d9e2?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/dfd8623c313ad2698d6b0db854b8d9e2?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Neil</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-40343">
+							<time datetime="2014-09-27T17:28:31+00:00">
+								September 27, 2014 at 5:28 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>So I am a little confused on the diode wiring. In this example, <a href="http://geekhack.org/index.php?topic=20898.0" >http://geekhack.org/index.php?topic=20898.0</a> and this example <a href="http://deskthority.net/workshop-f7/brownfox-step-by-step-t6050.html" >http://deskthority.net/workshop-f7/brownfox-step-by-step-t6050.html</a> they both connect the black side which seems to be the cathode to the rows and the other side connects to the switch which in turn connects to the columns. That is the opposite of what you say is the right way to do it, so I am just looking at this wrong or does either way work?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=40343#respond' onclick='return addComment.moveForm( "div-comment-40343", "40343", "respond", "764" )' aria-label='Reply to Neil'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-41739" class="comment byuser comment-author-komar bypostauthor even thread-even depth-1">
+			<article id="div-comment-41739" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-41739">
+							<time datetime="2014-10-01T14:50:53+00:00">
+								October 1, 2014 at 2:50 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Yes, the black side is cathode.</p>
+<p>You can connect it any way you want if you have configurable pins in your microcontroller.</p>
+<p>In general, it's better to configure it in such a way that you can read as much as possible from a single line - so you want to select rows and read from columns, not the opposite, because the opposite is slower as there are more columns than rows.</p>
+<p>I think I showed the opposite example, but it doesn't really matter. As long as you can configure the pins, you can put the diodes in any direction (but all the same) and you'll figure out a way to read it.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=41739#respond' onclick='return addComment.moveForm( "div-comment-41739", "41739", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-131889" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-131889" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/db57bc42e6fbc602fc94df4a783200a0?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/db57bc42e6fbc602fc94df4a783200a0?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">gabe</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-131889">
+							<time datetime="2015-01-31T00:41:27+00:00">
+								January 31, 2015 at 12:41 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>i can't understand the diode explanation.</p>
+<p>let's say i have a controller with 4 pins, and i'm using it for a 2x2 matrix.</p>
+<p>1---sw1---sw2<br />
+2---sw3---sw4<br />
+`3          `4</p>
+<p>if input 1 and 3 are pulled down, controller assumes sw1 is pressed.</p>
+<p>but if i press sw2, sw3 and sw4... how, with diodes or not, can it know sw1 is not pressed? since all matrix input pins in the controller will be pulled down.</p>
+<p>&nbsp;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=131889#respond' onclick='return addComment.moveForm( "div-comment-131889", "131889", "respond", "764" )' aria-label='Reply to gabe'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-131890" class="comment even depth-2">
+			<article id="div-comment-131890" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/db57bc42e6fbc602fc94df4a783200a0?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/db57bc42e6fbc602fc94df4a783200a0?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">gabe</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-131890">
+							<time datetime="2015-01-31T00:42:16+00:00">
+								January 31, 2015 at 12:42 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>it messed up my glorious ascii art... just imagine the numers around "swx" forms a matrix</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=131890#respond' onclick='return addComment.moveForm( "div-comment-131890", "131890", "respond", "764" )' aria-label='Reply to gabe'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-133862" class="comment byuser comment-author-komar bypostauthor odd alt depth-2">
+			<article id="div-comment-133862" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-133862">
+							<time datetime="2015-02-09T22:43:24+00:00">
+								February 9, 2015 at 10:43 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi,</p>
+<p>when you are reading the first column, you are pulling '3 to GND while '4 is Hi-Z. This way you read your inputs 1 and 2, and you get 1 and 0 respectively, which means sw1 is not pressed and sw2 is pressed.<br />
+Then you get to read the second column - you pull '4 to GND and leave '3 Hi-Z. Now when you read 1 and 2, you get 0 on both, so sw2 and sw4 are both pressed.<br />
+The above scenario works if there are diodes in series with every switch.<br />
+If there are diodes just on the lines '3 and '4 or none at all, the fact that sw2,3,4 are pressed together causes both inputs to be connected to GND when when you pull either '3 or '4 to ground - compare with "Ghosting example" drawing in the article.</p>
+<p>The diodes fix the problem because pulling works just one way. 0 is read when the current flows from the input to the pin pulled down and that only happens if the diodes are properly oriented on the way.</p>
+<p>I hope that explains it.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=133862#respond' onclick='return addComment.moveForm( "div-comment-133862", "133862", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-141438" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-141438" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/92b17a57bebfb1719def2be59ce5229e?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/92b17a57bebfb1719def2be59ce5229e?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Roberto</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-141438">
+							<time datetime="2015-03-19T11:50:06+00:00">
+								March 19, 2015 at 11:50 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi!</p>
+<p>I really appreciated this tutorial and, thanks to it, now I have a better understanding on how the keyboards work.</p>
+<p>Now I'm looking forward for the second part, so I'd like to know when it will come out.</p>
+<p>Thanks for your attention.</p>
+<p>&nbsp;</p>
+<p>P.S.: sorry for my bad english.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=141438#respond' onclick='return addComment.moveForm( "div-comment-141438", "141438", "respond", "764" )' aria-label='Reply to Roberto'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-143283" class="comment byuser comment-author-komar bypostauthor odd alt depth-2 parent">
+			<article id="div-comment-143283" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-143283">
+							<time datetime="2015-03-24T19:34:02+00:00">
+								March 24, 2015 at 7:34 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi,</p>
+<p>thanks for your feedback, Roberto,<br />
+I hope it will come out eventually, but I still haven't got down to doing it yet.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=143283#respond' onclick='return addComment.moveForm( "div-comment-143283", "143283", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-146282" class="comment even depth-3">
+			<article id="div-comment-146282" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/92b17a57bebfb1719def2be59ce5229e?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/92b17a57bebfb1719def2be59ce5229e?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Roberto</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-146282">
+							<time datetime="2015-04-07T08:58:46+00:00">
+								April 7, 2015 at 8:58 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>It's a pity you haven't done it yet, but when it will come out you already have a reader 😉</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=146282#respond' onclick='return addComment.moveForm( "div-comment-146282", "146282", "respond", "764" )' aria-label='Reply to Roberto'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-142509" class="pingback odd alt thread-odd thread-alt depth-1">
+			<div class="comment-body">
+				Pingback: <a href='http://3dprint.com/52748/3d-printed-mechanical-keyboard/' rel='external nofollow' class='url'>This 3D Printed Mechanical Keyboard Works Like a Charm - 3DPrint.com</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-164464" class="comment even thread-even depth-1">
+			<article id="div-comment-164464" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/e3242ad430163a02703720241fdf1931?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/e3242ad430163a02703720241fdf1931?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Nik</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-164464">
+							<time datetime="2015-07-19T08:35:09+00:00">
+								July 19, 2015 at 8:35 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>hah, thank you very much for this post. I just got a plate of bare switches, and I wanted to make a tiny "keyboard" for specialized functionality. this taught me how to do it 🙂</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=164464#respond' onclick='return addComment.moveForm( "div-comment-164464", "164464", "respond", "764" )' aria-label='Reply to Nik'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-165633" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-165633" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/ddb1fff0ba80d3c968b7030b3cb3f559?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/ddb1fff0ba80d3c968b7030b3cb3f559?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Matt</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-165633">
+							<time datetime="2015-07-29T16:32:51+00:00">
+								July 29, 2015 at 4:32 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This is absolutely fantastic!</p>
+<p>It's explained really well and the diagrams helped a lot.</p>
+<p>It helped me with my current project to build an Arduino-controlled programmable keypad. I didn't really understand how to use diodes to eliminate ghosting.</p>
+<p>May I please reference you and this blog when I share my code?</p>
+<p>Thanks,<br />
+Matt</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=165633#respond' onclick='return addComment.moveForm( "div-comment-165633", "165633", "respond", "764" )' aria-label='Reply to Matt'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-165635" class="comment byuser comment-author-komar bypostauthor even depth-2">
+			<article id="div-comment-165635" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-165635">
+							<time datetime="2015-07-29T16:58:30+00:00">
+								July 29, 2015 at 4:58 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Sure, go ahead!<br />
+I'm glad the post helped.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=165635#respond' onclick='return addComment.moveForm( "div-comment-165635", "165635", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-166914" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-166914" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/0ad5a671ab51a039db320d0749ecf8d4?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/0ad5a671ab51a039db320d0749ecf8d4?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='http://Don&#039;t_have_one.com' rel='external nofollow' class='url'>Mo</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-166914">
+							<time datetime="2015-08-08T18:16:29+00:00">
+								August 8, 2015 at 6:16 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello,</p>
+<p>&nbsp;</p>
+<p>I was wondering, if I want to use a ready made keyboard controller (taken out of a generic ps/2 or USB keyboard) in order to create a small (11-key) keypad for all the keyboard shortcuts in my favourite desktop application, the controller would already have been designed to deal with all these issues, so I need not worry about any of this, right? Or do I?</p>
+<p>Thanks,</p>
+<p>&nbsp;</p>
+<p>Mo</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=166914#respond' onclick='return addComment.moveForm( "div-comment-166914", "166914", "respond", "764" )' aria-label='Reply to Mo'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-174135" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-174135" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/4f59514292b1bf59874fe918c70888b8?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/4f59514292b1bf59874fe918c70888b8?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Milav</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-174135">
+							<time datetime="2015-09-26T11:05:31+00:00">
+								September 26, 2015 at 11:05 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello,</p>
+<p>It Was a nice and wonderful explanation.</p>
+<p>I am pause with one minor problem.</p>
+<p>My keypad is 4X4 matrix. but i have 4 column and 3 row.</p>
+<p>I connect Didoe across 3rd row and 4th row  to increase the row.</p>
+<p>but it was no working.</p>
+<p>please help me...</p>
+<p>Thanks..</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=174135#respond' onclick='return addComment.moveForm( "div-comment-174135", "174135", "respond", "764" )' aria-label='Reply to Milav'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-182705" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-182705" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/c63953a3349ed40b3ecc6120b21c8506?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/c63953a3349ed40b3ecc6120b21c8506?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='http://www.musicliteacysolutions.com' rel='external nofollow' class='url'>alan le chong</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-182705">
+							<time datetime="2015-12-15T03:00:45+00:00">
+								December 15, 2015 at 3:00 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi There, I am very impressed by your way helping others to know ..etc</p>
+<p>But my problem is finding who is able to make a simple 4 octaves circuit board that can</p>
+<p>allow me to present a new age keyboard for education.</p>
+<p>Regards,</p>
+<p>alan</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=182705#respond' onclick='return addComment.moveForm( "div-comment-182705", "182705", "respond", "764" )' aria-label='Reply to alan le chong'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-184999" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-184999" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/e86f5ceca626e59d0a5be1a9b9b438ab?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/e86f5ceca626e59d0a5be1a9b9b438ab?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">andy</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-184999">
+							<time datetime="2016-02-06T21:59:28+00:00">
+								February 6, 2016 at 9:59 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello Komar</p>
+<p>This description of yours is just great! Can't wait for part two and three.</p>
+<p>Best regards</p>
+<p>andy</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=184999#respond' onclick='return addComment.moveForm( "div-comment-184999", "184999", "respond", "764" )' aria-label='Reply to andy'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-185492" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-185492" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/113799e9240b65060a02cdbe267d3948?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/113799e9240b65060a02cdbe267d3948?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Eric</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-185492">
+							<time datetime="2016-02-21T10:41:05+00:00">
+								February 21, 2016 at 10:41 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Any news whatsoever about "part 2: controller"? (Although I'm having doubts this will ever happen since this is two years old already...)</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=185492#respond' onclick='return addComment.moveForm( "div-comment-185492", "185492", "respond", "764" )' aria-label='Reply to Eric'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-187002" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-187002" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/b4fce8bcfb5a81b13e61420e80d778f7?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/b4fce8bcfb5a81b13e61420e80d778f7?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">John</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-187002">
+							<time datetime="2016-04-27T13:19:52+00:00">
+								April 27, 2016 at 1:19 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>How to make anything as a computer keyword? What is the basic concept behind it?</p>
+<p>like the one below</p>
+<p><a href="http://www.toys400.co.uk/raj/8/" >http://www.toys400.co.uk/raj/8/</a></p>
+<p>&nbsp;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=187002#respond' onclick='return addComment.moveForm( "div-comment-187002", "187002", "respond", "764" )' aria-label='Reply to John'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-188235" class="pingback odd alt thread-even depth-1">
+			<div class="comment-body">
+				Pingback: <a href='https://malanris.ru/?p=81536' rel='external nofollow' class='url'>[Из песочницы] Как сделать клавиатуру — Матрица | Malanris&#039;s site</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-188242" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-188242" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/06422c7909bf7eab30ab77b7e44e522c?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/06422c7909bf7eab30ab77b7e44e522c?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">firerock</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-188242">
+							<time datetime="2016-05-25T13:30:07+00:00">
+								May 25, 2016 at 1:30 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thank you, Michał<span>, for the interesting and comprehensive guide to keyboard matrices!</span></p>
+<p>And, as someone said, the best way to understand something clearly is to translate it to the different language. So, let me introduce <a href="https://geektimes.ru/post/276358/" >the Russian version</a> of your article!</p>
+<p>And yes, patiently waiting for the next part 🙂</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=188242#respond' onclick='return addComment.moveForm( "div-comment-188242", "188242", "respond", "764" )' aria-label='Reply to firerock'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-188310" class="comment byuser comment-author-komar bypostauthor odd alt thread-even depth-1 parent">
+			<article id="div-comment-188310" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-188310">
+							<time datetime="2016-05-26T08:54:51+00:00">
+								May 26, 2016 at 8:54 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>firerock,</p>
+<p>that is awesome! Thanks for spending so much time and effort.<br />
+Now I should finally do the second part!:D</p>
+<p>Could you provide a link label in Russian so that I can put it at the top of the page and link to your translation?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=188310#respond' onclick='return addComment.moveForm( "div-comment-188310", "188310", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-188313" class="comment even depth-2">
+			<article id="div-comment-188313" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/06422c7909bf7eab30ab77b7e44e522c?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/06422c7909bf7eab30ab77b7e44e522c?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">firerock</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-188313">
+							<time datetime="2016-05-26T09:56:35+00:00">
+								May 26, 2016 at 9:56 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Here it is:</p>
+<p>Как сделать клавиатуру — Матрица</p>
+<p>I've posted it to the Russian IT-blog called Geektimes.ru: <a href="https://geektimes.ru/post/276358/" >https://geektimes.ru/post/276358/</a></p>
+<p>Thank YOU for the great job; comparing to it, my deed is almost nothing 😉</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=188313#respond' onclick='return addComment.moveForm( "div-comment-188313", "188313", "respond", "764" )' aria-label='Reply to firerock'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-188842" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-188842" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/e04015b10a685e79da89f9a5c65c142d?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/e04015b10a685e79da89f9a5c65c142d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Stephen</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-188842">
+							<time datetime="2016-06-03T15:55:08+00:00">
+								June 3, 2016 at 3:55 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>thanks for a brilliant explanation. it would be very interesting to see a further section that gives example of optimal matrix design in the sense of minimising necessary pins. I get the principle (8 pins can support 4x4 = 16 switches, or 5x3 = 15 switches, or 6x2 = 12 switches - if that's correct 🙂 ) and can sort of visualise an optimal wiring of 8x2 switches in 4x4 mode, but since you've done such a beautiful ob explaining the basics.... 🙂</p>
+<p>Another interesting extension would be to review the various micro controller options available.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=188842#respond' onclick='return addComment.moveForm( "div-comment-188842", "188842", "respond", "764" )' aria-label='Reply to Stephen'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-192518" class="comment byuser comment-author-komar bypostauthor even depth-2">
+			<article id="div-comment-192518" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-192518">
+							<time datetime="2016-08-17T18:20:19+00:00">
+								August 17, 2016 at 6:20 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Stephen,</p>
+<p>thanks for the warm words and your ideas for the future parts of "How to make a keyboard".<br />
+I hope I'll use them when making next parts in the future.</p>
+<p>Best regards,<br />
+Michał</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=192518#respond' onclick='return addComment.moveForm( "div-comment-192518", "192518", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-190202" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-190202" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/2cd38a188242e36784d837f2b33a35e7?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/2cd38a188242e36784d837f2b33a35e7?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='http://htde.org' rel='external nofollow' class='url'>James</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-190202">
+							<time datetime="2016-06-28T17:17:36+00:00">
+								June 28, 2016 at 5:17 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This electronics description of a keyboard is beautiful! You really know and enjoy your stuff! Thank you.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=190202#respond' onclick='return addComment.moveForm( "div-comment-190202", "190202", "respond", "764" )' aria-label='Reply to James'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-192548" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-192548" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/3dd5c367abfb767da7aea7799cd52cbf?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/3dd5c367abfb767da7aea7799cd52cbf?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">x1a0</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-192548">
+							<time datetime="2016-08-18T19:05:32+00:00">
+								August 18, 2016 at 7:05 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thank you - this article is very very helpful. Now when I look down at my keyboard I feel I can understand it a bit better 😀</p>
+<p>I am using a HHKB pro2 keyboard. It has 5 rows in its layout. If it's a matrix design I guess there are 5 columns with 14-ish rows?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=192548#respond' onclick='return addComment.moveForm( "div-comment-192548", "192548", "respond", "764" )' aria-label='Reply to x1a0'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-192580" class="comment byuser comment-author-komar bypostauthor odd alt depth-2">
+			<article id="div-comment-192580" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-192580">
+							<time datetime="2016-08-19T19:37:05+00:00">
+								August 19, 2016 at 7:37 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>x1a0,</p>
+<p>I't hard to say how the matrix on HHKB is organized, but it is not uncommon for matrices to have nothing to do with the physical arrangement of the keys. As long as there's enough space on the PCB or membrane to route the connections, the electrical matrix can be arranged to be as close to square as possible to minimize the number of control pins necessary.</p>
+<p>Thanks for your feedback and best regards,<br />
+Michał</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=192580#respond' onclick='return addComment.moveForm( "div-comment-192580", "192580", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-194184" class="comment even thread-even depth-1">
+			<article id="div-comment-194184" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/babc705e3c1ab02e3c1b36714aca5ac4?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/babc705e3c1ab02e3c1b36714aca5ac4?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Juss</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-194184">
+							<time datetime="2016-09-27T13:06:39+00:00">
+								September 27, 2016 at 1:06 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Fancy reading. Certainly indepth and detailed post.</p>
+<p>I would love to read more in the future.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=194184#respond' onclick='return addComment.moveForm( "div-comment-194184", "194184", "respond", "764" )' aria-label='Reply to Juss'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-194739" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-194739" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/d32f95b1e611bc1cd8662348f3f62f29?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/d32f95b1e611bc1cd8662348f3f62f29?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Trevor Shiloh</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-194739">
+							<time datetime="2016-10-08T16:10:38+00:00">
+								October 8, 2016 at 4:10 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>"How to design a matrix in such a way that jamming disturbs the least, and common key combinations do not cause jamming is a good topic for a book" can someone direct me to one or two matrix designs that work the best? Please do not reply with "just have diodes under every key" because that is NOT what I am looking for. I am looking for matrix solutions that major companies use to save money but that still will recognize keys most of the time in regular typing.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=194739#respond' onclick='return addComment.moveForm( "div-comment-194739", "194739", "respond", "764" )' aria-label='Reply to Trevor Shiloh'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-266591" class="comment even depth-2">
+			<article id="div-comment-266591" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/ef5f3ed14459049bcb10283b150caa41?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/ef5f3ed14459049bcb10283b150caa41?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Heng Teng Yi</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-266591">
+							<time datetime="2019-08-24T16:51:44+00:00">
+								August 24, 2019 at 4:51 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>100 diodes are like 63 cents on mouser. Most companies would gladly add that cost and be able to advertise NKRO, most mechanical keyboards are around $80 anyway.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=266591#respond' onclick='return addComment.moveForm( "div-comment-266591", "266591", "respond", "764" )' aria-label='Reply to Heng Teng Yi'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-195466" class="comment odd alt thread-even depth-1 parent">
+			<article id="div-comment-195466" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/66ee95c1054cb869ca7a83ec6a398a8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/66ee95c1054cb869ca7a83ec6a398a8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='http://randomprojectlab.blogspot.com.au/' rel='external nofollow' class='url'>mit-mit</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-195466">
+							<time datetime="2016-10-17T23:53:57+00:00">
+								October 17, 2016 at 11:53 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hey Komar, this article is great! I recently tried to rebuild an old broken electric piano keyboard (<a href="http://randomprojectlab.blogspot.com.au/2016/10/electric-piano-part-1-turning-old-piano.html" >http://randomprojectlab.blogspot.com.au/2016/10/electric-piano-part-1-turning-old-piano.html</a>) and I used this as a reference to understand what was going on.</p>
+<p>Looking forward to any updates on this article.</p>
+<p>&nbsp;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=195466#respond' onclick='return addComment.moveForm( "div-comment-195466", "195466", "respond", "764" )' aria-label='Reply to mit-mit'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-200854" class="comment byuser comment-author-komar bypostauthor even depth-2">
+			<article id="div-comment-200854" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">komar</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-200854">
+							<time datetime="2016-11-23T21:37:31+00:00">
+								November 23, 2016 at 9:37 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi mit-mit,</p>
+<p>I'm glad to know it was useful to you.<br />
+Great keyboard project BTW!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=200854#respond' onclick='return addComment.moveForm( "div-comment-200854", "200854", "respond", "764" )' aria-label='Reply to komar'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-208003" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-208003" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/7af15838f6d1eb4d701efc7834abfaec?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/7af15838f6d1eb4d701efc7834abfaec?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">nada</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-208003">
+							<time datetime="2017-01-29T13:19:18+00:00">
+								January 29, 2017 at 1:19 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I had to stop at paragraph 2 of Why Matrix.</p>
+<p>I cannot and will not REVISE OHM'S LAW.</p>
+<p>&nbsp;</p>
+<p>lol</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=208003#respond' onclick='return addComment.moveForm( "div-comment-208003", "208003", "respond", "764" )' aria-label='Reply to nada'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-225154" class="comment even depth-2">
+			<article id="div-comment-225154" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/b624000eb6e5abef1e72f12401163adc?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/b624000eb6e5abef1e72f12401163adc?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Friend</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-225154">
+							<time datetime="2017-10-14T00:42:56+00:00">
+								October 14, 2017 at 12:42 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>In British English, revise means to reread work done previously to improve one's knowledge of a subject. No one is telling you to alter ohm's law.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=225154#respond' onclick='return addComment.moveForm( "div-comment-225154", "225154", "respond", "764" )' aria-label='Reply to Friend'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-213745" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-213745" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/311e0caf39a9216d3eeac462245d57d4?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/311e0caf39a9216d3eeac462245d57d4?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='http://topmall.info/' rel='external nofollow' class='url'>VideoPortal</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-213745">
+							<time datetime="2017-03-25T00:58:30+00:00">
+								March 25, 2017 at 12:58 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>@Andy I wouldn t think you would need to turn a keyboard like that into a matrix, unless you mean you are customizing the keyboard to be a custom input device for something other than a computer.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=213745#respond' onclick='return addComment.moveForm( "div-comment-213745", "213745", "respond", "764" )' aria-label='Reply to VideoPortal'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-218623" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-218623" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/98b93cb1f7c2dce783f73dbe76827961?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/98b93cb1f7c2dce783f73dbe76827961?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Sz</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-218623">
+							<time datetime="2017-05-10T10:39:07+00:00">
+								May 10, 2017 at 10:39 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi all,</p>
+<p>Using matrix with higher dimensions can reduce even more the number of pins necessary. For example using a <strong>4D matrix</strong> of <strong>3x3x3x4</strong> allows for <strong>108</strong> <strong>keys</strong> using only <strong>13 pins</strong>. I'm still working out the details, but in principle to allow <strong>NKRO</strong> three of the four dimensions have to be put on the rows, thus resulting in 27 rows and 4 columns where every keypress is read using three pins in parallel. Puting in in the perspective of Teensy 3.2 there are exactly 13 digital holes on one side, and with the 27 colums there's a full read cycle in about every 0.1 ms (<strong>10k read cycles/s</strong>).</p>
+<p>Sz</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=218623#respond' onclick='return addComment.moveForm( "div-comment-218623", "218623", "respond", "764" )' aria-label='Reply to Sz'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-223610" class="comment odd alt depth-2 parent">
+			<article id="div-comment-223610" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/0c544812b426c3110349d8fa81d630ba?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/0c544812b426c3110349d8fa81d630ba?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='http://Null' rel='external nofollow' class='url'>Proflyn</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-223610">
+							<time datetime="2017-08-27T10:12:20+00:00">
+								August 27, 2017 at 10:12 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Sz, please I'm really interested in this your 4d matrix keyboard idea, and I will like to know about your achievements concerning this subject.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=223610#respond' onclick='return addComment.moveForm( "div-comment-223610", "223610", "respond", "764" )' aria-label='Reply to Proflyn'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-227716" class="comment even depth-3">
+			<article id="div-comment-227716" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/98b93cb1f7c2dce783f73dbe76827961?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/98b93cb1f7c2dce783f73dbe76827961?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Sz</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-227716">
+							<time datetime="2018-01-22T09:14:47+00:00">
+								January 22, 2018 at 9:14 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Proflyn,<br />
+after crunching some numbers (combinatorics is difficult :D) I settled for a 3D matrix of 3x6x7 that uses the same 13 pins, but allows up to 140 keys.<br />
+I only needed 84, but you can see the idea here: //frozenpuppet.eu/keyboard/matrix.jpg .<br />
+For the and gates I use SN74HC11N chips, which have 3 and gates each. I abandoned 4D matrixes as they need way more and gates and programming.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=227716#respond' onclick='return addComment.moveForm( "div-comment-227716", "227716", "respond", "764" )' aria-label='Reply to Sz'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-221463" class="pingback odd alt thread-even depth-1">
+			<div class="comment-body">
+				Pingback: <a href='https://joeldiy.wordpress.com/2017/07/01/building-a-mechanical-keyboard-xd60/' rel='external nofollow' class='url'>Building a mechanical keyboard &#8211; XD60 &#8211; Joel&#039;s bloggerinos</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-222749" class="pingback even thread-odd thread-alt depth-1">
+			<div class="comment-body">
+				Pingback: <a href='https://cavemansmancave.wordpress.com/2017/07/29/first-blog-post/' rel='external nofollow' class='url'>Building a custom keyboard &#8211; The caveman&#039;s man cave</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-223232" class="pingback odd alt thread-even depth-1">
+			<div class="comment-body">
+				Pingback: <a href='https://cavemansmancave.wordpress.com/2017/08/12/custom-keyboard-experiments-basic-electronics/' rel='external nofollow' class='url'>Custom keyboard experiments &#8211; basic electronics &#8211; The caveman&#039;s man cave</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-225907" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-225907" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/9bf1f73263e19cca31531cbfacaff62a?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/9bf1f73263e19cca31531cbfacaff62a?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Dang Khoa Vo</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-225907">
+							<time datetime="2017-11-11T11:28:24+00:00">
+								November 11, 2017 at 11:28 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This is so useful and I like your style of developing techniques one at a time. The text is so easy to understand and I learned some terminology in between. Thank you very much.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=225907#respond' onclick='return addComment.moveForm( "div-comment-225907", "225907", "respond", "764" )' aria-label='Reply to Dang Khoa Vo'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-226865" class="pingback odd alt thread-even depth-1">
+			<div class="comment-body">
+				Pingback: <a href='http://jbl.svadba-novosib.ru/%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4-%d1%81%d1%80%d0%b0%d0%b2%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5-%d0%be%d1%82%d0%ba%d0%bb%d0%b8%d0%ba%d0%b0-%d0%ba%d0%bb%d0%b0%d0%b2%d0%b8' rel='external nofollow' class='url'>[Перевод] Сравнение отклика клавиатур &#8212; мировые новости</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-230274" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-230274" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/5da0e47213865bdc4af75dc5ba371b7c?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/5da0e47213865bdc4af75dc5ba371b7c?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='https://ErmelindaWee.blogspot.com' rel='external nofollow' class='url'>VivianChief</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-230274">
+							<time datetime="2018-04-08T21:05:43+00:00">
+								April 8, 2018 at 9:05 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I have checked your blog and i have found some duplicate content, that's why you don't<br />
+rank high in google, but there is a tool that<br />
+can help you to create 100% unique content, search for;<br />
+boorfe's tips unlimited content</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=230274#respond' onclick='return addComment.moveForm( "div-comment-230274", "230274", "respond", "764" )' aria-label='Reply to VivianChief'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-231297" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-231297" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/e8be749348a415fe973bf450c68d2f9b?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/e8be749348a415fe973bf450c68d2f9b?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='https://MightyTerrell.blogspot.co.uk' rel='external nofollow' class='url'>BestYoung</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-231297">
+							<time datetime="2018-05-08T20:46:13+00:00">
+								May 8, 2018 at 8:46 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I have noticed you don't monetize your website, don't waste your traffic, you can earn additional cash every month<br />
+because you've got high quality content. If you want to know<br />
+how to make extra $$$, search for: Ercannou's essential adsense alternative</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=231297#respond' onclick='return addComment.moveForm( "div-comment-231297", "231297", "respond", "764" )' aria-label='Reply to BestYoung'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-233715" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-233715" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/b4e88916a9a51e1b0a1e13507e8fb94e?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/b4e88916a9a51e1b0a1e13507e8fb94e?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">mattrt</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-233715">
+							<time datetime="2018-07-24T08:55:07+00:00">
+								July 24, 2018 at 8:55 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>look this klawiatura.wordpress.com/</p>
+<p>2 potenciometer, no switches for typing in any chars language (diacratic some time uses)</p>
+<p>&nbsp;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=233715#respond' onclick='return addComment.moveForm( "div-comment-233715", "233715", "respond", "764" )' aria-label='Reply to mattrt'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-238788" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-238788" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/f68c2f0893f27ca9a14b4583da6bc168?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/f68c2f0893f27ca9a14b4583da6bc168?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='https://twitter.com/Sylvia' rel='external nofollow' class='url'>youngLucie</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-238788">
+							<time datetime="2018-11-17T12:13:33+00:00">
+								November 17, 2018 at 12:13 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi do you know that you can increase your conversion ratio couple of times and earn additional bucks every day.<br />
+There is awesome landing pages tool. It is very easy even for noobs, if you are interested simply<br />
+search in gooogle: pandatsor's tools</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=238788#respond' onclick='return addComment.moveForm( "div-comment-238788", "238788", "respond", "764" )' aria-label='Reply to youngLucie'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-252096" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-252096" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/916bd4952147da66f7cce4703b5d18f1?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/916bd4952147da66f7cce4703b5d18f1?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='https://yousextoys.com' rel='external nofollow' class='url'>Everettbrexy</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-252096">
+							<time datetime="2019-03-14T10:48:45+00:00">
+								March 14, 2019 at 10:48 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Nice. One-page article says it all. =) I have now the usb keyboard circuit. How to distinguish the input and outputs here? I mean the two sections: the columns and the rows?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=252096#respond' onclick='return addComment.moveForm( "div-comment-252096", "252096", "respond", "764" )' aria-label='Reply to Everettbrexy'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-253880" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-253880" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/00598acce030b87d550ed8b40cb79aff?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/00598acce030b87d550ed8b40cb79aff?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='https://www.edenfantasys.com/' rel='external nofollow' class='url'>Eden</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-253880">
+							<time datetime="2019-03-22T16:08:22+00:00">
+								March 22, 2019 at 4:08 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>The middle LED is forward biased and therefore it lights. All other LEDs are either reverse biased, or they have the same voltage (positive or negative) to their both leads, and therefore they do not light. This way, someone can control for example 64 LEDs each one separately, with an 8 matrix, using only 16 outputs from a microcontroller.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=253880#respond' onclick='return addComment.moveForm( "div-comment-253880", "253880", "respond", "764" )' aria-label='Reply to Eden'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-263085" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-263085" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/f42518062c3409008802c0f5f89ebeb3?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/f42518062c3409008802c0f5f89ebeb3?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='https://rnd.is.telkomuniversity.ac.id/' rel='external nofollow' class='url'>RIDWAN FAUZI</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-263085">
+							<time datetime="2019-07-22T13:53:06+00:00">
+								July 22, 2019 at 1:53 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>thanks for the post, very helpful for me 🙂</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=263085#respond' onclick='return addComment.moveForm( "div-comment-263085", "263085", "respond", "764" )' aria-label='Reply to RIDWAN FAUZI'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-263160" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-263160" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/82fd0fc51fb13e2444066cebde6540e0?s=34&#038;r=g' srcset='http://2.gravatar.com/avatar/82fd0fc51fb13e2444066cebde6540e0?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='https://tinyFaye.blogspot.com' rel='external nofollow' class='url'>BestKristin</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-263160">
+							<time datetime="2019-07-25T00:20:13+00:00">
+								July 25, 2019 at 12:20 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I see you don't monetize komar.be, don't waste your traffic, you can earn additional bucks every month with new monetization method.<br />
+This is the best adsense alternative for any type of<br />
+website (they approve all websites), for more info simply search in gooogle:<br />
+murgrabia's tools</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=263160#respond' onclick='return addComment.moveForm( "div-comment-263160", "263160", "respond", "764" )' aria-label='Reply to BestKristin'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-266810" class="comment even thread-odd thread-alt depth-1">
+			<article id="div-comment-266810" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/7e8b868d6eaafc8da11844ba981f76cb?s=34&#038;r=g' srcset='http://1.gravatar.com/avatar/7e8b868d6eaafc8da11844ba981f76cb?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn">Sushi</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-266810">
+							<time datetime="2019-08-26T06:08:04+00:00">
+								August 26, 2019 at 6:08 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi,</p>
+<p>I'm building a laptop keyboard tester (based on Arduino) and would like to thank you for all the information you have offered here.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=266810#respond' onclick='return addComment.moveForm( "div-comment-266810", "266810", "respond", "764" )' aria-label='Reply to Sushi'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-270865" class="comment odd alt thread-even depth-1">
+			<article id="div-comment-270865" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/f42518062c3409008802c0f5f89ebeb3?s=34&#038;r=g' srcset='http://0.gravatar.com/avatar/f42518062c3409008802c0f5f89ebeb3?s=68&amp;r=g 2x' class='avatar avatar-34 photo' height='34' width='34' />						<b class="fn"><a href='https://rnd.is.telkomuniversity.ac.id/' rel='external nofollow' class='url'>Annissa Solihat</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/#comment-270865">
+							<time datetime="2019-09-23T07:15:03+00:00">
+								September 23, 2019 at 7:15 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>thank you writer. keep the passion in writing I like this article well to add knowledge that I did not know before. How else do you complete this process especially for beginners? is there anything difficult?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://blog.komar.be/how-to-make-a-keyboard-the-matrix/?replytocom=270865#respond' onclick='return addComment.moveForm( "div-comment-270865", "270865", "respond", "764" )' aria-label='Reply to Annissa Solihat'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+	</ol><!-- .comment-list -->
+
+	
+	
+	
+					<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/how-to-make-a-keyboard-the-matrix/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://blog.komar.be/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><div id="wp-comment-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='dashicons-css'  href='http://blog.komar.be/wp-includes/css/dashicons.min.css?ver=4.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='editor-buttons-css'  href='http://blog.komar.be/wp-includes/css/editor.min.css?ver=4.5.1' type='text/css' media='all' />
+<div id="wp-comment-editor-tools" class="wp-editor-tools hide-if-no-js"><div class="wp-editor-tabs"><button type="button" id="comment-tmce" class="wp-switch-editor switch-tmce" data-wp-editor-id="comment">Visual</button>
+<button type="button" id="comment-html" class="wp-switch-editor switch-html" data-wp-editor-id="comment">Text</button>
+</div>
+</div>
+<div id="wp-comment-editor-container" class="wp-editor-container"><div id="qt_comment_toolbar" class="quicktags-toolbar"></div><textarea class="wp-editor-area" rows="20" autocomplete="off" cols="40" name="comment" id="comment"></textarea></div>
+</div>
+
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='764' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="56f600d4b4" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="241"/></p>				</form>
+					</div><!-- #respond -->
+		
+</div><!-- #comments -->
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+<div id="secondary">
+		<h2 class="site-description">a blog about electronics and programming</h2>
+	
+	
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<aside id="text-2" class="widget widget_text"><h1 class="widget-title">About author and blog</h1>			<div class="textwidget"><img id="photo" alt="photo" src="http://www.gravatar.com/avatar/937ca9e6cd63e5ecdc180b8bc81b8b8d.png" />
+<h4>Michał Trybus</h4>
+<p align="justify">This is my blog about programming, electrical engineering and mechanical keyboards. Reviews, tutorials and project descriptions. Update every month or two, but this will gradually change for the better</p>
+<h4 style="clear: both;">Profiles</h4>
+<ul>
+<li><a href="http://stackoverflow.com/users/308392/michal-trybus">stackoverflow</a></li>
+<li><a href="https://github.com/komar007">GitHub</a></li>
+</ul></div>
+		</aside><aside id="nav_menu-2" class="widget widget_nav_menu"><h1 class="widget-title">Projects</h1><div class="menu-projects-container"><ul id="menu-projects" class="menu"><li id="menu-item-985" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985"><a href="http://blog.komar.be/projects/gh60-programmable-keyboard/">GH60 programmable keyboard</a></li>
+<li id="menu-item-986" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-986"><a href="http://blog.komar.be/projects/project-atmel-dfu-bootloader-abi-wrapper/">Atmel DFU Bootloader ABI wrapper</a></li>
+<li id="menu-item-1056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056"><a href="http://blog.komar.be/projects/how-to-make-a-keyboard/">How to make a keyboard</a></li>
+</ul></div></aside><aside id="listdrafts-widget-2" class="widget example"><h1 class="widget-title">Coming Soon</h1><ul><li>How to make a keyboard - the controller</li><li>How to make a keyboard - protocols</li><li>An untitled post</li></ul></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="http://blog.komar.be/gh60-rev-c-plain-edition-is-out/">GH60 rev. C "plain edition" is out</a>
+						</li>
+					<li>
+				<a href="http://blog.komar.be/60-cherry-mx-8100-mod/">60% Cherry MX 8100 mod</a>
+						</li>
+					<li>
+				<a href="http://blog.komar.be/led-strip-dimmer-and-potting-attempt/">LED strip dimmer and potting attempt</a>
+						</li>
+					<li>
+				<a href="http://blog.komar.be/burning-ship/">Burning ship</a>
+						</li>
+					<li>
+				<a href="http://blog.komar.be/how-to-make-a-keyboard-the-matrix/">How to make a keyboard - the matrix</a>
+						</li>
+				</ul>
+		</aside>		<aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+			<li><a href='http://blog.komar.be/2016/05/'>May 2016</a></li>
+	<li><a href='http://blog.komar.be/2015/09/'>September 2015</a></li>
+	<li><a href='http://blog.komar.be/2014/05/'>May 2014</a></li>
+	<li><a href='http://blog.komar.be/2013/12/'>December 2013</a></li>
+	<li><a href='http://blog.komar.be/2013/09/'>September 2013</a></li>
+	<li><a href='http://blog.komar.be/2013/08/'>August 2013</a></li>
+	<li><a href='http://blog.komar.be/2013/06/'>June 2013</a></li>
+	<li><a href='http://blog.komar.be/2013/05/'>May 2013</a></li>
+	<li><a href='http://blog.komar.be/2013/03/'>March 2013</a></li>
+	<li><a href='http://blog.komar.be/2013/01/'>January 2013</a></li>
+	<li><a href='http://blog.komar.be/2012/11/'>November 2012</a></li>
+	<li><a href='http://blog.komar.be/2012/09/'>September 2012</a></li>
+		</ul>
+		</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+	<li class="cat-item cat-item-16"><a href="http://blog.komar.be/category/art/" >art</a> (3)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blog.komar.be/category/electronics/" >electronics</a> (11)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://blog.komar.be/category/keyboards/" >keyboards</a> (6)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://blog.komar.be/category/kicad/" >kicad</a> (1)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://blog.komar.be/category/electronics/kicad-electronics/" >kicad</a> (1)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blog.komar.be/category/programming/" >programming</a> (2)
+</li>
+	<li class="cat-item cat-item-13"><a href="http://blog.komar.be/category/shell-scripting/" >shell scripting</a> (1)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://blog.komar.be/category/xmonad/" >xmonad</a> (1)
+</li>
+		</ul>
+</aside><aside id="linkcat-17" class="widget widget_links"><h1 class="widget-title">Links</h1>
+	<ul class='xoxo blogroll'>
+<li><a href="http://geekhack.org/" title="My favourite keyboard forum">Geekhack</a>
+My favourite keyboard forum</li>
+<li><a href="http://www.schematics.com" rel="contact" title="Schematics is the language of electronics. It provides a concise and comprehensive diagrammatic description of a circuit. Schematics.com allows users to connect and share designs and ideas in a like-minded community">Circuit Diagram</a>
+Schematics is the language of electronics. It provides a concise and comprehensive diagrammatic description of a circuit. Schematics.com allows users to connect and share designs and ideas in a like-minded community</li>
+
+	</ul>
+</aside>
+<aside id="meta-2" class="widget widget_meta"><h1 class="widget-title">Meta</h1>			<ul>
+						<li><a href="http://blog.komar.be/wp-login.php">Log in</a></li>
+			<li><a href="http://blog.komar.be/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://blog.komar.be/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside>	</div><!-- #primary-sidebar -->
+	</div><!-- #secondary -->
+
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			
+			<div class="site-info">
+								<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type='text/javascript' src='http://blog.komar.be/wp-content/plugins/akismet/_inc/form.js?ver=3.1.10'></script>
+<link rel='stylesheet' id='buttons-css'  href='http://blog.komar.be/wp-includes/css/buttons.min.css?ver=4.5.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/comment-reply.min.js?ver=4.5.1'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-content/themes/twentyfourteen/js/functions.js?ver=20140616'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-content/plugins/wp-jquery-lightbox/jquery.touchwipe.min.js?ver=1.4.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JQLBSettings = {"showTitle":"1","showCaption":"1","showNumbers":"1","fitToScreen":"1","resizeSpeed":"400","showDownload":"0","navbarOnTop":"0","marginSize":"0","slideshowSpeed":"4000","prevLinkTitle":"previous image","nextLinkTitle":"next image","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","pause":"(pause slideshow)","play":"(play slideshow)"};
+var JQLBSettings = {"showTitle":"1","showCaption":"1","showNumbers":"1","fitToScreen":"1","resizeSpeed":"400","showDownload":"0","navbarOnTop":"0","marginSize":"0","slideshowSpeed":"4000","prevLinkTitle":"previous image","nextLinkTitle":"next image","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","pause":"(pause slideshow)","play":"(play slideshow)"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.komar.be/wp-content/plugins/wp-jquery-lightbox/jquery.lightbox.min.js?ver=1.4.6'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/wp-embed.min.js?ver=4.5.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1571885250","secure":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/utils.min.js?ver=4.5.1'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-admin/js/editor.min.js?ver=4.5.1'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/wp-a11y.min.js?ver=4.5.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No results found.","linkSelected":"Link selected.","linkInserted":"Link inserted."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/wplink.min.js?ver=4.5.1'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No search results.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
+
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "http://blog.komar.be/wp-includes/js/tinymce",
+			suffix: ".min",
+						mceInit: {'comment':{theme:"modern",skin:"lightgray",language:"en",formats:{alignleft: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"left"}},{selector: "img,table,dl.wp-caption", classes: "alignleft"}],aligncenter: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"center"}},{selector: "img,table,dl.wp-caption", classes: "aligncenter"}],alignright: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"right"}},{selector: "img,table,dl.wp-caption", classes: "alignright"}],strikethrough: {inline: "del"}},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-4310-20160418",preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",end_container_on_empty_block:true,wpeditimage_disable_captions:false,wpeditimage_html5_captions:true,plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wpdialogs,wptextpattern,wpview,wpembed,image",wp_lang_attr:"en-US",external_plugins:{"crayon_tinymce":"http:\/\/blog.komar.be\/wp-content\/plugins\/crayon-syntax-highlighter\/util\/tag-editor\/crayon_tinymce.js"},content_css:"http://blog.komar.be/wp-includes/css/dashicons.min.css?ver=4.5.1,http://blog.komar.be/wp-includes/js/tinymce/skins/wordpress/wp-content.css?ver=4.5.1",selector:"#comment",resize:"vertical",menubar:false,wpautop:true,indent:false,toolbar1:"bold,italic,strikethrough,bullist,numlist,blockquote,hr,alignleft,aligncenter,alignright,link,unlink,wp_more,spellchecker,fullscreen,wp_adv,separator,crayon_tinymce",toolbar2:"formatselect,underline,alignjustify,forecolor,pastetext,removeformat,charmap,outdent,indent,undo,redo,wp_help",toolbar3:"",toolbar4:"",tabfocus_elements:":prev,:next",body_class:"comment post-type-post post-status-publish post-format-standard locale-en-us",extended_valid_elements:",pre[*],code[*],iframe[*]"}},
+			qtInit: {'comment':{id:"comment",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,more,close"}},
+			ref: {plugins:"charmap,colorpicker,hr,lists,media,paste,tabfocus,textcolor,fullscreen,wordpress,wpautoresize,wpeditimage,wpemoji,wpgallery,wplink,wpdialogs,wptextpattern,wpview,wpembed,image",theme:"modern",language:"en"},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+		<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/tinymce/tinymce.min.js?ver=4310-20160418'></script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/tinymce/plugins/compat3x/plugin.min.js?ver=4310-20160418'></script>
+<script type='text/javascript'>
+tinymce.addI18n( 'en', {"Ok":"OK","Bullet list":"Bulleted list","Spellcheck":"Check Spelling","Row properties":"Table row properties","Cell properties":"Table cell properties","Paste row before":"Paste table row before","Paste row after":"Paste table row after","Cut row":"Cut table row","Copy row":"Copy table row","Merge cells":"Merge table cells","Split cell":"Split table cell","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.\n\nIf you\u2019re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"Rich Text Area. Press Alt-Shift-H for help","You have unsaved changes are you sure you want to navigate away?":"The changes you made will be lost if you navigate away from this page.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser\u2019s edit menu instead.","Edit ":"Edit"});
+tinymce.ScriptLoader.markDone( 'http://blog.komar.be/wp-includes/js/tinymce/langs/en.js' );
+</script>
+<script type='text/javascript' src='http://blog.komar.be/wp-includes/js/tinymce/langs/wp-langs-en.js?ver=4310-20160418'></script>
+		<script type="text/javascript">
+		tinyMCEPreInit.load_ext("http://blog.komar.be/wp-content/plugins/crayon-syntax-highlighter/util/tag-editor", "en");
+tinymce.PluginManager.load("crayon_tinymce", "http://blog.komar.be/wp-content/plugins/crayon-syntax-highlighter/util/tag-editor/crayon_tinymce.js");
+
+var ajaxurl = "/wp-admin/admin-ajax.php";
+		( function() {
+			var init, id, $wrap;
+
+			if ( typeof tinymce !== 'undefined' ) {
+				for ( id in tinyMCEPreInit.mceInit ) {
+					init = tinyMCEPreInit.mceInit[id];
+					$wrap = tinymce.$( '#wp-' + id + '-wrap' );
+
+					if ( ( $wrap.hasClass( 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( id ) ) && ! init.wp_skip_init ) {
+						tinymce.init( init );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = id;
+						}
+					}
+				}
+			}
+
+			if ( typeof quicktags !== 'undefined' ) {
+				for ( id in tinyMCEPreInit.qtInit ) {
+					quicktags( tinyMCEPreInit.qtInit[id] );
+
+					if ( ! window.wpActiveEditor ) {
+						window.wpActiveEditor = id;
+					}
+				}
+			}
+		}());
+		</script>
+				<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-labelledby="link-modal-title">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="b0cf5abb6f" />		<h1 id="link-modal-title">Insert/edit link</h1>
+		<button type="button" id="wp-link-close"><span class="screen-reader-text">Close</span></button>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto" id="wplink-enter-url">Enter the destination URL</p>
+				<div>
+					<label><span>URL</span>
+					<input id="wp-link-url" type="text" aria-describedby="wplink-enter-url" /></label>
+				</div>
+				<div class="wp-link-text-field">
+					<label><span>Link Text</span>
+					<input id="wp-link-text" type="text" /></label>
+				</div>
+				<div class="link-target">
+					<label><span></span>
+					<input type="checkbox" id="wp-link-target" /> Open link in a new tab</label>
+				</div>
+			</div>
+			<p class="howto" id="wplink-link-existing-content">Or link to existing content</p>
+			<div id="search-panel">
+				<div class="link-search-wrapper">
+					<label>
+						<span class="search-label">Search</span>
+						<input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content" />
+						<span class="spinner"></span>
+					</label>
+				</div>
+				<div id="search-results" class="query-results" tabindex="0">
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+				<div id="most-recent-results" class="query-results" tabindex="0">
+					<div class="query-notice" id="query-notice-message">
+						<em class="query-notice-default">No search term specified. Showing recent items.</em>
+						<em class="query-notice-hint screen-reader-text">Search or use up and down arrow keys to select an item.</em>
+					</div>
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+ 				</div>
+ 			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-cancel">
+				<button type="button" class="button">Cancel</button>
+			</div>
+			<div id="wp-link-update">
+				<input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+		</div>
+		</form>
+		</div>
+		</body>
+</html>
