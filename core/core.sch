@@ -2641,4 +2641,17 @@ Wire Wire Line
 Connection ~ 9350 3050
 Wire Wire Line
 	9350 3050 10200 3050
+$Comp
+L Driver_LED:TLC5971PWP U2
+U 1 1 5DB64F07
+P 3150 4950
+F 0 "U2" H 3150 4061 50  0000 C CNN
+F 1 "TLC5971PWP" H 3150 3970 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3.4x6.5mm_Mask2.75x3.43mm_ThermalVias" H 3200 4100 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc5971.pdf" H 3150 4650 50  0001 C CNN
+	1    3150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4850 2050 4850
 $EndSCHEMATC
