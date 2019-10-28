@@ -3128,4 +3128,16 @@ Wire Wire Line
 	6600 6900 6600 3500
 Wire Wire Line
 	6600 3500 7000 3500
+Text Label 2350 4750 0    50   ~ 0
+LED0
+Wire Wire Line
+	2350 4750 2050 4750
+Text Label 3500 3500 0    50   ~ 0
+LED0
+Wire Wire Line
+	3500 3500 4000 3500
+Text Label 500  6050 0    50   ~ 0
+GND_LED
+Wire Wire Line
+	500  6050 850  6050
 $EndSCHEMATC
