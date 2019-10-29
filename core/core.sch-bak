@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L core-rescue:TEENSY2.0-keyboard_parts U1
-U 1 1 5DB314D5
-P -1150 8200
-F 0 "U1" H -1150 9747 60  0000 C CNN
-F 1 "TEENSY2.0" H -1150 9641 60  0000 C CNN
-F 2 "keebs:Teensy_20" H -1150 8200 60  0001 C CNN
-F 3 "" H -1150 8200 60  0000 C CNN
-	1    -1150 8200
-	1    0    0    -1  
-$EndComp
 Text Label 600  3600 0    50   ~ 0
 Row0
 Text Label 600  3700 0    50   ~ 0
