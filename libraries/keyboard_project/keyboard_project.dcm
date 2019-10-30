@@ -6,4 +6,10 @@ K CMOS Nor8
 F https://www.ti.com/lit/ds/symlink/cd4078b.pdf
 $ENDCMP
 #
+$CMP CD4532B
+D Priority Encoder 3 to 8 cascadable
+K CMOS ENCOD
+F https://www.ti.com/lit/ds/symlink/cd4532b.pdf
+$ENDCMP
+#
 #End Doc Library
