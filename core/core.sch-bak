@@ -2598,58 +2598,10 @@ Text Label 3700 4300 0    50   ~ 0
 GND_LED
 Wire Wire Line
 	6800 3050 7650 3050
-$Comp
-L Driver_LED:WS2811 W0
-U 1 1 5E5508FA
-P 5800 4250
-F 0 "W0" H 5600 4500 50  0000 C CNN
-F 1 "WS2811" H 5950 4500 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5500 4400 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5600 4500 50  0001 C CNN
-	1    5800 4250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:LED_RCBG LED0
-U 1 1 5E744F0B
-P 5150 4250
-F 0 "LED0" H 5050 4000 50  0000 R CNN
-F 1 "LED_RCBG" V 5000 4650 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5150 4200 50  0001 C CNN
-F 3 "~" H 5150 4200 50  0001 C CNN
-	1    5150 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 4250 5400 4250
-Wire Wire Line
-	5400 4150 5350 4150
-Wire Wire Line
-	5350 4150 5350 4050
-Wire Wire Line
-	5400 4350 5350 4350
-Wire Wire Line
-	5350 4350 5350 4450
-Text Label 6400 3750 0    50   ~ 0
+Text Label 6150 3300 0    50   ~ 0
 VCC_LED
-Text Label 6250 7900 2    50   ~ 0
-GND_LED
-Text Label 6200 3600 0    50   ~ 0
+Text Label 6050 3200 0    50   ~ 0
 LED0
-NoConn ~ 6200 4350
-Wire Wire Line
-	5800 4600 5800 4550
-Wire Wire Line
-	5800 3750 5800 3950
-Wire Wire Line
-	4950 4250 4850 4250
-Wire Wire Line
-	4850 4250 4850 4600
-Connection ~ 4850 4600
-Wire Wire Line
-	4850 4600 5800 4600
-Wire Wire Line
-	6400 3750 5800 3750
 $Comp
 L Driver_LED:WS2811 W?
 U 1 1 5FE7508D
@@ -2664,315 +2616,15 @@ $EndComp
 $Comp
 L Device:LED_RCBG LED?
 U 1 1 5FE75093
-P 1250 7600
-F 0 "LED?" H 1150 7350 50  0000 R CNN
-F 1 "LED_RCBG" V 1100 8000 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 1250 7550 50  0001 C CNN
-F 3 "~" H 1250 7550 50  0001 C CNN
-	1    1250 7600
+P 1200 7600
+F 0 "LED?" H 1100 7350 50  0000 R CNN
+F 1 "LED_RCBG" V 1050 8000 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 1200 7550 50  0001 C CNN
+F 3 "~" H 1200 7550 50  0001 C CNN
+	1    1200 7600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 7600 1500 7600
-Wire Wire Line
-	1500 7700 1450 7700
-Wire Wire Line
-	1450 7700 1450 7800
 NoConn ~ 2300 7700
-Wire Wire Line
-	1500 7500 1450 7500
-Wire Wire Line
-	1450 7500 1450 7400
-$Comp
-L Driver_LED:WS2811 W1
-U 1 1 5FFA3924
-P 5800 5000
-F 0 "W1" H 5600 5250 50  0000 C CNN
-F 1 "WS2811" H 5950 5250 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5500 5150 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5600 5250 50  0001 C CNN
-	1    5800 5000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:LED_RCBG LED1
-U 1 1 5FFA392A
-P 5150 5000
-F 0 "LED1" H 5050 4750 50  0000 R CNN
-F 1 "LED_RCBG" V 5000 5400 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5150 4950 50  0001 C CNN
-F 3 "~" H 5150 4950 50  0001 C CNN
-	1    5150 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 5000 5400 5000
-Wire Wire Line
-	5400 5100 5350 5100
-Wire Wire Line
-	5350 5100 5350 5200
-NoConn ~ 6200 5100
-Wire Wire Line
-	5400 4900 5350 4900
-Wire Wire Line
-	5350 4900 5350 4800
-Wire Wire Line
-	4850 4600 4850 5000
-Wire Wire Line
-	4850 5000 4950 5000
-Wire Wire Line
-	6400 3750 6400 4700
-Wire Wire Line
-	6400 4700 5800 4700
-Wire Wire Line
-	6300 4250 6300 4900
-Wire Wire Line
-	6300 4900 6200 4900
-Wire Wire Line
-	6200 4250 6300 4250
-Wire Wire Line
-	4850 5000 4850 5350
-Wire Wire Line
-	4850 5350 5800 5350
-Wire Wire Line
-	5800 5350 5800 5300
-Connection ~ 4850 5000
-$Comp
-L Driver_LED:WS2811 W2
-U 1 1 600B65A8
-P 5800 5750
-F 0 "W2" H 5600 6000 50  0000 C CNN
-F 1 "WS2811" H 5950 6000 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5500 5900 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5600 6000 50  0001 C CNN
-	1    5800 5750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:LED_RCBG LED2
-U 1 1 600B65AE
-P 5150 5750
-F 0 "LED2" H 5050 5500 50  0000 R CNN
-F 1 "LED_RCBG" V 5000 6150 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5150 5700 50  0001 C CNN
-F 3 "~" H 5150 5700 50  0001 C CNN
-	1    5150 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 5750 5400 5750
-Wire Wire Line
-	5400 5850 5350 5850
-Wire Wire Line
-	5350 5850 5350 5950
-NoConn ~ 6200 5850
-Wire Wire Line
-	5400 5650 5350 5650
-Wire Wire Line
-	5350 5650 5350 5550
-Wire Wire Line
-	4850 5350 4850 5750
-Wire Wire Line
-	4850 5750 4950 5750
-Connection ~ 4850 5350
-Wire Wire Line
-	4850 5750 4850 6100
-Wire Wire Line
-	4850 6100 5800 6100
-Wire Wire Line
-	5800 6100 5800 6050
-Connection ~ 4850 5750
-Wire Wire Line
-	6200 5000 6250 5000
-Wire Wire Line
-	6250 5000 6250 5650
-Wire Wire Line
-	6250 5650 6200 5650
-Wire Wire Line
-	6400 4700 6400 5450
-Wire Wire Line
-	6400 5450 5800 5450
-Connection ~ 6400 4700
-$Comp
-L Driver_LED:WS2811 W3
-U 1 1 601DFB56
-P 5800 6500
-F 0 "W3" H 5600 6750 50  0000 C CNN
-F 1 "WS2811" H 5950 6750 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5500 6650 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5600 6750 50  0001 C CNN
-	1    5800 6500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:LED_RCBG LED3
-U 1 1 601DFB5C
-P 5150 6500
-F 0 "LED3" H 5050 6250 50  0000 R CNN
-F 1 "LED_RCBG" V 5000 6900 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5150 6450 50  0001 C CNN
-F 3 "~" H 5150 6450 50  0001 C CNN
-	1    5150 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 6500 5400 6500
-Wire Wire Line
-	5400 6600 5350 6600
-Wire Wire Line
-	5350 6600 5350 6700
-NoConn ~ 6200 6600
-Wire Wire Line
-	5400 6400 5350 6400
-Wire Wire Line
-	5350 6400 5350 6300
-Wire Wire Line
-	5800 6800 5800 6850
-Wire Wire Line
-	5800 6850 4850 6850
-Wire Wire Line
-	4850 6850 4850 6500
-Connection ~ 4850 6100
-Wire Wire Line
-	4850 6500 4950 6500
-Connection ~ 4850 6500
-Wire Wire Line
-	4850 6500 4850 6100
-Wire Wire Line
-	6400 5450 6400 6200
-Wire Wire Line
-	6400 6200 5800 6200
-Connection ~ 6400 5450
-Wire Wire Line
-	6200 5750 6250 5750
-Wire Wire Line
-	6250 5750 6250 6400
-Wire Wire Line
-	6250 6400 6200 6400
-$Comp
-L Driver_LED:WS2811 W4
-U 1 1 6031E6CB
-P 5800 7250
-F 0 "W4" H 5600 7500 50  0000 C CNN
-F 1 "WS2811" H 5950 7500 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5500 7400 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5600 7500 50  0001 C CNN
-	1    5800 7250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:LED_RCBG LED4
-U 1 1 6031E6D1
-P 5150 7250
-F 0 "LED4" H 5050 7000 50  0000 R CNN
-F 1 "LED_RCBG" V 5000 7650 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5150 7200 50  0001 C CNN
-F 3 "~" H 5150 7200 50  0001 C CNN
-	1    5150 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 7250 5400 7250
-Wire Wire Line
-	5400 7350 5350 7350
-Wire Wire Line
-	5350 7350 5350 7450
-NoConn ~ 6200 7350
-Wire Wire Line
-	5400 7150 5350 7150
-Wire Wire Line
-	5350 7150 5350 7050
-Wire Wire Line
-	4850 6850 4850 7250
-Wire Wire Line
-	4850 7250 4950 7250
-Connection ~ 4850 6850
-Wire Wire Line
-	6200 6500 6250 6500
-Wire Wire Line
-	6250 6500 6250 7150
-Wire Wire Line
-	6250 7150 6200 7150
-Wire Wire Line
-	6400 6200 6400 6950
-Wire Wire Line
-	6400 6950 5800 6950
-Connection ~ 6400 6200
-Wire Wire Line
-	5800 7550 5800 7600
-Wire Wire Line
-	5800 7600 4850 7600
-Wire Wire Line
-	4850 7600 4850 7250
-Connection ~ 4850 7250
-$Comp
-L Driver_LED:WS2811 W?
-U 1 1 60474680
-P 7450 4250
-F 0 "W?" H 7250 4500 50  0000 C CNN
-F 1 "WS2811" H 7600 4500 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 7150 4400 50  0001 C CNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 7250 4500 50  0001 C CNN
-	1    7450 4250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:LED_RCBG LED?
-U 1 1 60474686
-P 6800 4250
-F 0 "LED?" H 6700 4000 50  0000 R CNN
-F 1 "LED_RCBG" V 6650 4650 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 6800 4200 50  0001 C CNN
-F 3 "~" H 6800 4200 50  0001 C CNN
-	1    6800 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 4250 7050 4250
-Wire Wire Line
-	7050 4350 7000 4350
-Wire Wire Line
-	7000 4350 7000 4450
-NoConn ~ 7850 4350
-Wire Wire Line
-	7050 4150 7000 4150
-Wire Wire Line
-	7000 4150 7000 4050
-Wire Wire Line
-	4850 7900 4850 7600
-Connection ~ 4850 7600
-Wire Wire Line
-	6600 4250 6500 4250
-Wire Wire Line
-	6500 4250 6500 4600
-Wire Wire Line
-	4850 7900 6500 7900
-Wire Wire Line
-	6200 7250 6450 7250
-Wire Wire Line
-	6450 7250 6450 3850
-Wire Wire Line
-	6450 3850 7900 3850
-Wire Wire Line
-	7900 3850 7900 4150
-Wire Wire Line
-	7900 4150 7850 4150
-Wire Wire Line
-	7450 3950 8000 3950
-Wire Wire Line
-	8000 3950 8000 3750
-Wire Wire Line
-	8000 3750 6400 3750
-Connection ~ 6400 3750
-Wire Wire Line
-	6200 3600 6200 4150
-Wire Wire Line
-	7450 4550 7450 4600
-Wire Wire Line
-	7450 4600 6500 4600
-Connection ~ 6500 4600
-Wire Wire Line
-	6500 4600 6500 7900
 $Comp
 L teensy:Teensy-LC U1.
 U 1 1 606F99F6
@@ -3028,4 +2680,265 @@ Wire Wire Line
 	3700 5100 3350 5100
 Wire Wire Line
 	3350 5000 3700 5000
+Wire Wire Line
+	1400 7400 1400 7500
+Wire Wire Line
+	1400 7500 1500 7500
+Wire Wire Line
+	1400 7600 1500 7600
+Wire Wire Line
+	1500 7700 1400 7700
+Wire Wire Line
+	1400 7700 1400 7800
+Wire Wire Line
+	1000 7600 1000 7950
+Wire Wire Line
+	1000 7950 1900 7950
+Wire Wire Line
+	1900 7950 1900 7900
+$Comp
+L Driver_LED:WS2811 W?
+U 1 1 5DE8F005
+P 5650 3800
+F 0 "W?" H 5450 4050 50  0000 C CNN
+F 1 "WS2811" H 5800 4050 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5350 3950 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5450 4050 50  0001 C CNN
+	1    5650 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG LED?
+U 1 1 5DE8F00B
+P 4950 3800
+F 0 "LED?" H 4850 3550 50  0000 R CNN
+F 1 "LED_RCBG" V 4800 4200 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4950 3750 50  0001 C CNN
+F 3 "~" H 4950 3750 50  0001 C CNN
+	1    4950 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 3900
+Wire Wire Line
+	5150 3600 5150 3700
+Wire Wire Line
+	5150 3700 5250 3700
+Wire Wire Line
+	5150 3800 5250 3800
+Wire Wire Line
+	5250 3900 5150 3900
+Wire Wire Line
+	5150 3900 5150 4000
+Wire Wire Line
+	4750 3800 4750 4150
+Wire Wire Line
+	4750 4150 5650 4150
+Wire Wire Line
+	5650 4150 5650 4100
+Wire Wire Line
+	6150 3300 6150 3500
+Wire Wire Line
+	6150 3500 5650 3500
+Wire Wire Line
+	6050 3200 6050 3700
+$Comp
+L Driver_LED:WS2811 W?
+U 1 1 5DF4243B
+P 5650 4550
+F 0 "W?" H 5450 4800 50  0000 C CNN
+F 1 "WS2811" H 5800 4800 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5350 4700 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5450 4800 50  0001 C CNN
+	1    5650 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG LED?
+U 1 1 5DF42441
+P 4950 4550
+F 0 "LED?" H 4850 4300 50  0000 R CNN
+F 1 "LED_RCBG" V 4800 4950 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4950 4500 50  0001 C CNN
+F 3 "~" H 4950 4500 50  0001 C CNN
+	1    4950 4550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 4650
+Wire Wire Line
+	5150 4350 5150 4450
+Wire Wire Line
+	5150 4450 5250 4450
+Wire Wire Line
+	5150 4550 5250 4550
+Wire Wire Line
+	5250 4650 5150 4650
+Wire Wire Line
+	5150 4650 5150 4750
+Wire Wire Line
+	4750 4550 4750 4900
+Wire Wire Line
+	4750 4900 5650 4900
+Wire Wire Line
+	5650 4900 5650 4850
+Wire Wire Line
+	6150 3500 6150 4250
+Wire Wire Line
+	6150 4250 5650 4250
+Connection ~ 6150 3500
+Wire Wire Line
+	6050 3800 6100 3800
+Wire Wire Line
+	6100 3800 6100 4450
+Wire Wire Line
+	6100 4450 6050 4450
+$Comp
+L Driver_LED:WS2811 W?
+U 1 1 5DFECB48
+P 5650 5300
+F 0 "W?" H 5450 5550 50  0000 C CNN
+F 1 "WS2811" H 5800 5550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5350 5450 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5450 5550 50  0001 C CNN
+	1    5650 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG LED?
+U 1 1 5DFECB4E
+P 4950 5300
+F 0 "LED?" H 4850 5050 50  0000 R CNN
+F 1 "LED_RCBG" V 4800 5700 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4950 5250 50  0001 C CNN
+F 3 "~" H 4950 5250 50  0001 C CNN
+	1    4950 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 5400
+Wire Wire Line
+	5150 5100 5150 5200
+Wire Wire Line
+	5150 5200 5250 5200
+Wire Wire Line
+	5150 5300 5250 5300
+Wire Wire Line
+	5250 5400 5150 5400
+Wire Wire Line
+	5150 5400 5150 5500
+Wire Wire Line
+	4750 5300 4750 5650
+Wire Wire Line
+	4750 5650 5650 5650
+Wire Wire Line
+	5650 5650 5650 5600
+Wire Wire Line
+	6050 4550 6100 4550
+Wire Wire Line
+	6100 4550 6100 5200
+Wire Wire Line
+	6100 5200 6050 5200
+Wire Wire Line
+	5650 5000 6150 5000
+Wire Wire Line
+	6150 5000 6150 4250
+Connection ~ 6150 4250
+$Comp
+L Driver_LED:WS2811 W?
+U 1 1 5E0A1D21
+P 5650 6050
+F 0 "W?" H 5450 6300 50  0000 C CNN
+F 1 "WS2811" H 5800 6300 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5350 6200 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5450 6300 50  0001 C CNN
+	1    5650 6050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG LED?
+U 1 1 5E0A1D27
+P 4950 6050
+F 0 "LED?" H 4850 5800 50  0000 R CNN
+F 1 "LED_RCBG" V 4800 6450 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4950 6000 50  0001 C CNN
+F 3 "~" H 4950 6000 50  0001 C CNN
+	1    4950 6050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 6150
+Wire Wire Line
+	5150 5850 5150 5950
+Wire Wire Line
+	5150 5950 5250 5950
+Wire Wire Line
+	5150 6050 5250 6050
+Wire Wire Line
+	5250 6150 5150 6150
+Wire Wire Line
+	5150 6150 5150 6250
+Wire Wire Line
+	4750 6050 4750 6400
+Wire Wire Line
+	4750 6400 5650 6400
+Wire Wire Line
+	5650 6400 5650 6350
+Wire Wire Line
+	6050 5300 6100 5300
+Wire Wire Line
+	6100 5300 6100 5950
+Wire Wire Line
+	6100 5950 6050 5950
+Wire Wire Line
+	6150 5000 6150 5750
+Wire Wire Line
+	6150 5750 5650 5750
+Connection ~ 6150 5000
+$Comp
+L Driver_LED:WS2811 W?
+U 1 1 5E175178
+P 5650 6800
+F 0 "W?" H 5450 7050 50  0000 C CNN
+F 1 "WS2811" H 5800 7050 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5350 6950 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5450 7050 50  0001 C CNN
+	1    5650 6800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RCBG LED?
+U 1 1 5E17517E
+P 4950 6800
+F 0 "LED?" H 4850 6550 50  0000 R CNN
+F 1 "LED_RCBG" V 4800 7200 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4950 6750 50  0001 C CNN
+F 3 "~" H 4950 6750 50  0001 C CNN
+	1    4950 6800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 6900
+Wire Wire Line
+	5150 6600 5150 6700
+Wire Wire Line
+	5150 6700 5250 6700
+Wire Wire Line
+	5150 6800 5250 6800
+Wire Wire Line
+	5250 6900 5150 6900
+Wire Wire Line
+	5150 6900 5150 7000
+Wire Wire Line
+	4750 6800 4750 7150
+Wire Wire Line
+	4750 7150 5650 7150
+Wire Wire Line
+	5650 7150 5650 7100
+Wire Wire Line
+	6150 5750 6150 6500
+Wire Wire Line
+	6150 6500 5650 6500
+Connection ~ 6150 5750
+Wire Wire Line
+	6050 6050 6100 6050
+Wire Wire Line
+	6100 6050 6100 6700
+Wire Wire Line
+	6100 6700 6050 6700
 $EndSCHEMATC
