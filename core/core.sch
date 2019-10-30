@@ -122,10 +122,10 @@ Row pins are arbitrary
 Wire Wire Line
 	5550 3550 5550 3500
 $Comp
-L Driver_LED:WS2811 U?
+L Driver_LED:WS2811 U3
 U 1 1 5E56A14D
 P 5550 3850
-F 0 "U?" H 5350 4100 50  0000 C CNN
+F 0 "U3" H 5350 4100 50  0000 C CNN
 F 1 "WS2811" H 5350 3600 50  0000 C CNN
 F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5250 4000 50  0001 C CNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 5350 4100 50  0001 C CNN
@@ -169,10 +169,10 @@ F 3 "" H 5550 4200 50  0001 C CNN
 $EndComp
 NoConn ~ 5950 3950
 $Comp
-L Device:LED_RCBG D?
+L Device:LED_RCBG D99
 U 1 1 5E56A167
 P 4900 3850
-F 0 "D?" H 4900 4347 50  0000 C CNN
+F 0 "D99" H 4900 4347 50  0000 C CNN
 F 1 "LED_RCBG" H 4900 4256 50  0000 C CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4900 3800 50  0001 C CNN
 F 3 "~" H 4900 3800 50  0001 C CNN
@@ -213,10 +213,8 @@ F1 "ledchain2.sch" 50
 $EndSheet
 Text HLabel 5000 1600 2    50   Input ~ 0
 LED0
-Text Label 4700 1550 0    50   ~ 0
+Text Label 4700 1600 0    50   ~ 0
 LED0
-Wire Wire Line
-	4700 1550 4700 1600
 Wire Wire Line
 	4700 1600 5000 1600
 Text HLabel 5600 1600 0    50   Input ~ 0
