@@ -1,0 +1,2731 @@
+EESchema Schematic File Version 4
+LIBS:core-cache
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1300 6200 1300 6300
+Wire Wire Line
+	1350 6200 1300 6200
+Wire Wire Line
+	1300 6000 1300 5900
+Wire Wire Line
+	1350 6000 1300 6000
+Wire Wire Line
+	1300 6100 1350 6100
+Wire Wire Line
+	800  6100 900  6100
+Wire Wire Line
+	800  6200 800  6100
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B4D5
+P 1100 6100
+AR Path="/5E22B4D5" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B4D5" Ref="D?"  Part="1" 
+F 0 "D?" H 1100 6597 50  0000 C CNN
+F 1 "LED_RCBG" H 1100 6506 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 1100 6050 50  0001 C CNN
+F 3 "~" H 1100 6050 50  0001 C CNN
+	1    1100 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2150 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B4DC
+P 1750 6450
+AR Path="/5E22B4DC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B4DC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 6200 50  0001 C CNN
+F 1 "GND" H 1755 6277 50  0000 C CNN
+F 2 "" H 1750 6450 50  0001 C CNN
+F 3 "" H 1750 6450 50  0001 C CNN
+	1    1750 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 6450 1750 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B4E3
+P 800 6200
+AR Path="/5E22B4E3" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B4E3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 800 5950 50  0001 C CNN
+F 1 "GND" H 805 6027 50  0000 C CNN
+F 2 "" H 800 6200 50  0001 C CNN
+F 3 "" H 800 6200 50  0001 C CNN
+	1    800  6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B4E9
+P 1750 5750
+AR Path="/5E22B4E9" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B4E9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 5600 50  0001 C CNN
+F 1 "+5V" H 1765 5923 50  0000 C CNN
+F 2 "" H 1750 5750 50  0001 C CNN
+F 3 "" H 1750 5750 50  0001 C CNN
+	1    1750 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B4EF
+P 1750 6100
+AR Path="/5E22B4EF" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B4EF" Ref="U?"  Part="1" 
+F 0 "U?" H 1550 6350 50  0000 C CNN
+F 1 "WS2811" H 1550 5850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 1450 6250 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 1550 6350 50  0001 C CNN
+	1    1750 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5800 1750 5750
+Wire Wire Line
+	1300 5050 1300 5150
+Wire Wire Line
+	1350 5050 1300 5050
+Wire Wire Line
+	1300 4850 1300 4750
+Wire Wire Line
+	1350 4850 1300 4850
+Wire Wire Line
+	1300 4950 1350 4950
+Wire Wire Line
+	800  4950 900  4950
+Wire Wire Line
+	800  5050 800  4950
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B4FD
+P 1100 4950
+AR Path="/5E22B4FD" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B4FD" Ref="D?"  Part="1" 
+F 0 "D?" H 1100 5447 50  0000 C CNN
+F 1 "LED_RCBG" H 1100 5356 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 1100 4900 50  0001 C CNN
+F 3 "~" H 1100 4900 50  0001 C CNN
+	1    1100 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2150 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B504
+P 1750 5300
+AR Path="/5E22B504" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B504" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 5050 50  0001 C CNN
+F 1 "GND" H 1755 5127 50  0000 C CNN
+F 2 "" H 1750 5300 50  0001 C CNN
+F 3 "" H 1750 5300 50  0001 C CNN
+	1    1750 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5300 1750 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B50B
+P 800 5050
+AR Path="/5E22B50B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B50B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 800 4800 50  0001 C CNN
+F 1 "GND" H 805 4877 50  0000 C CNN
+F 2 "" H 800 5050 50  0001 C CNN
+F 3 "" H 800 5050 50  0001 C CNN
+	1    800  5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B511
+P 1750 4600
+AR Path="/5E22B511" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B511" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 4450 50  0001 C CNN
+F 1 "+5V" H 1765 4773 50  0000 C CNN
+F 2 "" H 1750 4600 50  0001 C CNN
+F 3 "" H 1750 4600 50  0001 C CNN
+	1    1750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B517
+P 1750 4950
+AR Path="/5E22B517" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B517" Ref="U?"  Part="1" 
+F 0 "U?" H 1550 5200 50  0000 C CNN
+F 1 "WS2811" H 1550 4700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 1450 5100 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 1550 5200 50  0001 C CNN
+	1    1750 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4650 1750 4600
+Wire Wire Line
+	1300 3900 1300 4000
+Wire Wire Line
+	1350 3900 1300 3900
+Wire Wire Line
+	1300 3700 1300 3600
+Wire Wire Line
+	1350 3700 1300 3700
+Wire Wire Line
+	1300 3800 1350 3800
+Wire Wire Line
+	800  3800 900  3800
+Wire Wire Line
+	800  3900 800  3800
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B525
+P 1100 3800
+AR Path="/5E22B525" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B525" Ref="D?"  Part="1" 
+F 0 "D?" H 1100 4297 50  0000 C CNN
+F 1 "LED_RCBG" H 1100 4206 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 1100 3750 50  0001 C CNN
+F 3 "~" H 1100 3750 50  0001 C CNN
+	1    1100 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2150 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B52C
+P 1750 4150
+AR Path="/5E22B52C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B52C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 3900 50  0001 C CNN
+F 1 "GND" H 1755 3977 50  0000 C CNN
+F 2 "" H 1750 4150 50  0001 C CNN
+F 3 "" H 1750 4150 50  0001 C CNN
+	1    1750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4150 1750 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B533
+P 800 3900
+AR Path="/5E22B533" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B533" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 800 3650 50  0001 C CNN
+F 1 "GND" H 805 3727 50  0000 C CNN
+F 2 "" H 800 3900 50  0001 C CNN
+F 3 "" H 800 3900 50  0001 C CNN
+	1    800  3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B539
+P 1750 3450
+AR Path="/5E22B539" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B539" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 3300 50  0001 C CNN
+F 1 "+5V" H 1765 3623 50  0000 C CNN
+F 2 "" H 1750 3450 50  0001 C CNN
+F 3 "" H 1750 3450 50  0001 C CNN
+	1    1750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B53F
+P 1750 3800
+AR Path="/5E22B53F" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B53F" Ref="U?"  Part="1" 
+F 0 "U?" H 1550 4050 50  0000 C CNN
+F 1 "WS2811" H 1550 3550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 1450 3950 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 1550 4050 50  0001 C CNN
+	1    1750 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3500 1750 3450
+Wire Wire Line
+	1300 2750 1300 2850
+Wire Wire Line
+	1350 2750 1300 2750
+Wire Wire Line
+	1300 2550 1300 2450
+Wire Wire Line
+	1350 2550 1300 2550
+Wire Wire Line
+	1300 2650 1350 2650
+Wire Wire Line
+	800  2650 900  2650
+Wire Wire Line
+	800  2750 800  2650
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B54D
+P 1100 2650
+AR Path="/5E22B54D" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B54D" Ref="D?"  Part="1" 
+F 0 "D?" H 1100 3147 50  0000 C CNN
+F 1 "LED_RCBG" H 1100 3056 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 1100 2600 50  0001 C CNN
+F 3 "~" H 1100 2600 50  0001 C CNN
+	1    1100 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2150 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B554
+P 1750 3000
+AR Path="/5E22B554" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B554" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 2750 50  0001 C CNN
+F 1 "GND" H 1755 2827 50  0000 C CNN
+F 2 "" H 1750 3000 50  0001 C CNN
+F 3 "" H 1750 3000 50  0001 C CNN
+	1    1750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3000 1750 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B55B
+P 800 2750
+AR Path="/5E22B55B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B55B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 800 2500 50  0001 C CNN
+F 1 "GND" H 805 2577 50  0000 C CNN
+F 2 "" H 800 2750 50  0001 C CNN
+F 3 "" H 800 2750 50  0001 C CNN
+	1    800  2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B561
+P 1750 2300
+AR Path="/5E22B561" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B561" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 2150 50  0001 C CNN
+F 1 "+5V" H 1765 2473 50  0000 C CNN
+F 2 "" H 1750 2300 50  0001 C CNN
+F 3 "" H 1750 2300 50  0001 C CNN
+	1    1750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B567
+P 1750 2650
+AR Path="/5E22B567" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B567" Ref="U?"  Part="1" 
+F 0 "U?" H 1550 2900 50  0000 C CNN
+F 1 "WS2811" H 1550 2400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 1450 2800 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 1550 2900 50  0001 C CNN
+	1    1750 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2350 1750 2300
+Wire Wire Line
+	1300 1600 1300 1700
+Wire Wire Line
+	1350 1600 1300 1600
+Wire Wire Line
+	1350 1400 1300 1400
+Wire Wire Line
+	1300 1500 1350 1500
+Wire Wire Line
+	800  1500 900  1500
+Wire Wire Line
+	800  1600 800  1500
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B574
+P 1100 1500
+AR Path="/5E22B574" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B574" Ref="D?"  Part="1" 
+F 0 "D?" H 1100 1997 50  0000 C CNN
+F 1 "LED_RCBG" H 1100 1906 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 1100 1450 50  0001 C CNN
+F 3 "~" H 1100 1450 50  0001 C CNN
+	1    1100 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2150 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B57B
+P 1750 1850
+AR Path="/5E22B57B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B57B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 1600 50  0001 C CNN
+F 1 "GND" H 1755 1677 50  0000 C CNN
+F 2 "" H 1750 1850 50  0001 C CNN
+F 3 "" H 1750 1850 50  0001 C CNN
+	1    1750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1850 1750 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B582
+P 800 1600
+AR Path="/5E22B582" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B582" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 800 1350 50  0001 C CNN
+F 1 "GND" H 805 1427 50  0000 C CNN
+F 2 "" H 800 1600 50  0001 C CNN
+F 3 "" H 800 1600 50  0001 C CNN
+	1    800  1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B588
+P 1750 1150
+AR Path="/5E22B588" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B588" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 1000 50  0001 C CNN
+F 1 "+5V" H 1765 1323 50  0000 C CNN
+F 2 "" H 1750 1150 50  0001 C CNN
+F 3 "" H 1750 1150 50  0001 C CNN
+	1    1750 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1200 1750 1150
+Wire Wire Line
+	1300 1400 1300 1300
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B590
+P 1750 1500
+AR Path="/5E22B590" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B590" Ref="U?"  Part="1" 
+F 0 "U?" H 1550 1750 50  0000 C CNN
+F 1 "WS2811" H 1550 1250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 1450 1650 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 1550 1750 50  0001 C CNN
+	1    1750 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 800  1750 800 
+Wire Wire Line
+	2150 1500 2200 1500
+Wire Wire Line
+	2200 1500 2200 2550
+Wire Wire Line
+	2200 2550 2150 2550
+Wire Wire Line
+	2150 2650 2200 2650
+Wire Wire Line
+	2200 2650 2200 3700
+Wire Wire Line
+	2200 3700 2150 3700
+Wire Wire Line
+	2150 3800 2200 3800
+Wire Wire Line
+	2200 3800 2200 4850
+Wire Wire Line
+	2200 4850 2150 4850
+Wire Wire Line
+	2150 4950 2200 4950
+Wire Wire Line
+	2200 4950 2200 6000
+Wire Wire Line
+	2200 6000 2150 6000
+Wire Wire Line
+	2850 6200 2850 6300
+Wire Wire Line
+	2900 6200 2850 6200
+Wire Wire Line
+	2850 6000 2850 5900
+Wire Wire Line
+	2900 6000 2850 6000
+Wire Wire Line
+	2850 6100 2900 6100
+Wire Wire Line
+	2350 6100 2450 6100
+Wire Wire Line
+	2350 6200 2350 6100
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B5AB
+P 2650 6100
+AR Path="/5E22B5AB" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B5AB" Ref="D?"  Part="1" 
+F 0 "D?" H 2650 6597 50  0000 C CNN
+F 1 "LED_RCBG" H 2650 6506 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2650 6050 50  0001 C CNN
+F 3 "~" H 2650 6050 50  0001 C CNN
+	1    2650 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B5B2
+P 3300 6450
+AR Path="/5E22B5B2" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B5B2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 6200 50  0001 C CNN
+F 1 "GND" H 3305 6277 50  0000 C CNN
+F 2 "" H 3300 6450 50  0001 C CNN
+F 3 "" H 3300 6450 50  0001 C CNN
+	1    3300 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6450 3300 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B5B9
+P 2350 6200
+AR Path="/5E22B5B9" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B5B9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 5950 50  0001 C CNN
+F 1 "GND" H 2355 6027 50  0000 C CNN
+F 2 "" H 2350 6200 50  0001 C CNN
+F 3 "" H 2350 6200 50  0001 C CNN
+	1    2350 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B5BF
+P 3300 5750
+AR Path="/5E22B5BF" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B5BF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 5600 50  0001 C CNN
+F 1 "+5V" H 3315 5923 50  0000 C CNN
+F 2 "" H 3300 5750 50  0001 C CNN
+F 3 "" H 3300 5750 50  0001 C CNN
+	1    3300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B5C5
+P 3300 6100
+AR Path="/5E22B5C5" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B5C5" Ref="U?"  Part="1" 
+F 0 "U?" H 3100 6350 50  0000 C CNN
+F 1 "WS2811" H 3100 5850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 3000 6250 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3100 6350 50  0001 C CNN
+	1    3300 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5800 3300 5750
+Wire Wire Line
+	2850 5050 2850 5150
+Wire Wire Line
+	2900 5050 2850 5050
+Wire Wire Line
+	2850 4850 2850 4750
+Wire Wire Line
+	2900 4850 2850 4850
+Wire Wire Line
+	2850 4950 2900 4950
+Wire Wire Line
+	2350 4950 2450 4950
+Wire Wire Line
+	2350 5050 2350 4950
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B5D3
+P 2650 4950
+AR Path="/5E22B5D3" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B5D3" Ref="D?"  Part="1" 
+F 0 "D?" H 2650 5447 50  0000 C CNN
+F 1 "LED_RCBG" H 2650 5356 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2650 4900 50  0001 C CNN
+F 3 "~" H 2650 4900 50  0001 C CNN
+	1    2650 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B5DA
+P 3300 5300
+AR Path="/5E22B5DA" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B5DA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 5050 50  0001 C CNN
+F 1 "GND" H 3305 5127 50  0000 C CNN
+F 2 "" H 3300 5300 50  0001 C CNN
+F 3 "" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 5300 3300 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B5E1
+P 2350 5050
+AR Path="/5E22B5E1" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B5E1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 4800 50  0001 C CNN
+F 1 "GND" H 2355 4877 50  0000 C CNN
+F 2 "" H 2350 5050 50  0001 C CNN
+F 3 "" H 2350 5050 50  0001 C CNN
+	1    2350 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B5E7
+P 3300 4600
+AR Path="/5E22B5E7" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B5E7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 4450 50  0001 C CNN
+F 1 "+5V" H 3315 4773 50  0000 C CNN
+F 2 "" H 3300 4600 50  0001 C CNN
+F 3 "" H 3300 4600 50  0001 C CNN
+	1    3300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B5ED
+P 3300 4950
+AR Path="/5E22B5ED" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B5ED" Ref="U?"  Part="1" 
+F 0 "U?" H 3100 5200 50  0000 C CNN
+F 1 "WS2811" H 3100 4700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 3000 5100 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3100 5200 50  0001 C CNN
+	1    3300 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4650 3300 4600
+Wire Wire Line
+	2850 3900 2850 4000
+Wire Wire Line
+	2900 3900 2850 3900
+Wire Wire Line
+	2850 3700 2850 3600
+Wire Wire Line
+	2900 3700 2850 3700
+Wire Wire Line
+	2850 3800 2900 3800
+Wire Wire Line
+	2350 3800 2450 3800
+Wire Wire Line
+	2350 3900 2350 3800
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B5FB
+P 2650 3800
+AR Path="/5E22B5FB" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B5FB" Ref="D?"  Part="1" 
+F 0 "D?" H 2650 4297 50  0000 C CNN
+F 1 "LED_RCBG" H 2650 4206 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2650 3750 50  0001 C CNN
+F 3 "~" H 2650 3750 50  0001 C CNN
+	1    2650 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B602
+P 3300 4150
+AR Path="/5E22B602" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B602" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 3900 50  0001 C CNN
+F 1 "GND" H 3305 3977 50  0000 C CNN
+F 2 "" H 3300 4150 50  0001 C CNN
+F 3 "" H 3300 4150 50  0001 C CNN
+	1    3300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4150 3300 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B609
+P 2350 3900
+AR Path="/5E22B609" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B609" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 3650 50  0001 C CNN
+F 1 "GND" H 2355 3727 50  0000 C CNN
+F 2 "" H 2350 3900 50  0001 C CNN
+F 3 "" H 2350 3900 50  0001 C CNN
+	1    2350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B60F
+P 3300 3450
+AR Path="/5E22B60F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B60F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 3300 50  0001 C CNN
+F 1 "+5V" H 3315 3623 50  0000 C CNN
+F 2 "" H 3300 3450 50  0001 C CNN
+F 3 "" H 3300 3450 50  0001 C CNN
+	1    3300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B615
+P 3300 3800
+AR Path="/5E22B615" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B615" Ref="U?"  Part="1" 
+F 0 "U?" H 3100 4050 50  0000 C CNN
+F 1 "WS2811" H 3100 3550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 3000 3950 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3100 4050 50  0001 C CNN
+	1    3300 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3500 3300 3450
+Wire Wire Line
+	2850 2750 2850 2850
+Wire Wire Line
+	2900 2750 2850 2750
+Wire Wire Line
+	2850 2550 2850 2450
+Wire Wire Line
+	2900 2550 2850 2550
+Wire Wire Line
+	2850 2650 2900 2650
+Wire Wire Line
+	2350 2650 2450 2650
+Wire Wire Line
+	2350 2750 2350 2650
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B623
+P 2650 2650
+AR Path="/5E22B623" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B623" Ref="D?"  Part="1" 
+F 0 "D?" H 2650 3147 50  0000 C CNN
+F 1 "LED_RCBG" H 2650 3056 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2650 2600 50  0001 C CNN
+F 3 "~" H 2650 2600 50  0001 C CNN
+	1    2650 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B62A
+P 3300 3000
+AR Path="/5E22B62A" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B62A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 2750 50  0001 C CNN
+F 1 "GND" H 3305 2827 50  0000 C CNN
+F 2 "" H 3300 3000 50  0001 C CNN
+F 3 "" H 3300 3000 50  0001 C CNN
+	1    3300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3000 3300 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B631
+P 2350 2750
+AR Path="/5E22B631" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B631" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 2500 50  0001 C CNN
+F 1 "GND" H 2355 2577 50  0000 C CNN
+F 2 "" H 2350 2750 50  0001 C CNN
+F 3 "" H 2350 2750 50  0001 C CNN
+	1    2350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B637
+P 3300 2300
+AR Path="/5E22B637" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B637" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 2150 50  0001 C CNN
+F 1 "+5V" H 3315 2473 50  0000 C CNN
+F 2 "" H 3300 2300 50  0001 C CNN
+F 3 "" H 3300 2300 50  0001 C CNN
+	1    3300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B63D
+P 3300 2650
+AR Path="/5E22B63D" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B63D" Ref="U?"  Part="1" 
+F 0 "U?" H 3100 2900 50  0000 C CNN
+F 1 "WS2811" H 3100 2400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 3000 2800 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3100 2900 50  0001 C CNN
+	1    3300 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2350 3300 2300
+Wire Wire Line
+	2850 1600 2850 1700
+Wire Wire Line
+	2900 1600 2850 1600
+Wire Wire Line
+	2900 1400 2850 1400
+Wire Wire Line
+	2850 1500 2900 1500
+Wire Wire Line
+	2350 1500 2450 1500
+Wire Wire Line
+	2350 1600 2350 1500
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B64A
+P 2650 1500
+AR Path="/5E22B64A" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B64A" Ref="D?"  Part="1" 
+F 0 "D?" H 2650 1997 50  0000 C CNN
+F 1 "LED_RCBG" H 2650 1906 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2650 1450 50  0001 C CNN
+F 3 "~" H 2650 1450 50  0001 C CNN
+	1    2650 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B651
+P 3300 1850
+AR Path="/5E22B651" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B651" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 1600 50  0001 C CNN
+F 1 "GND" H 3305 1677 50  0000 C CNN
+F 2 "" H 3300 1850 50  0001 C CNN
+F 3 "" H 3300 1850 50  0001 C CNN
+	1    3300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1850 3300 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B658
+P 2350 1600
+AR Path="/5E22B658" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B658" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 1350 50  0001 C CNN
+F 1 "GND" H 2355 1427 50  0000 C CNN
+F 2 "" H 2350 1600 50  0001 C CNN
+F 3 "" H 2350 1600 50  0001 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B65E
+P 3300 1150
+AR Path="/5E22B65E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B65E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 1000 50  0001 C CNN
+F 1 "+5V" H 3315 1323 50  0000 C CNN
+F 2 "" H 3300 1150 50  0001 C CNN
+F 3 "" H 3300 1150 50  0001 C CNN
+	1    3300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1200 3300 1150
+Wire Wire Line
+	2850 1400 2850 1300
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B666
+P 3300 1500
+AR Path="/5E22B666" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B666" Ref="U?"  Part="1" 
+F 0 "U?" H 3100 1750 50  0000 C CNN
+F 1 "WS2811" H 3100 1250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 3000 1650 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 3100 1750 50  0001 C CNN
+	1    3300 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1500 3750 1500
+Wire Wire Line
+	3750 1500 3750 2550
+Wire Wire Line
+	3750 2550 3700 2550
+Wire Wire Line
+	3700 2650 3750 2650
+Wire Wire Line
+	3750 2650 3750 3700
+Wire Wire Line
+	3750 3700 3700 3700
+Wire Wire Line
+	3700 3800 3750 3800
+Wire Wire Line
+	3750 3800 3750 4850
+Wire Wire Line
+	3750 4850 3700 4850
+Wire Wire Line
+	3700 4950 3750 4950
+Wire Wire Line
+	3750 4950 3750 6000
+Wire Wire Line
+	3750 6000 3700 6000
+Wire Wire Line
+	2150 6100 2250 6100
+Wire Wire Line
+	2250 6100 2250 850 
+Wire Wire Line
+	2250 850  3700 850 
+Wire Wire Line
+	4400 6200 4400 6300
+Wire Wire Line
+	4450 6200 4400 6200
+Wire Wire Line
+	4400 6000 4400 5900
+Wire Wire Line
+	4450 6000 4400 6000
+Wire Wire Line
+	4400 6100 4450 6100
+Wire Wire Line
+	3900 6100 4000 6100
+Wire Wire Line
+	3900 6200 3900 6100
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B683
+P 4200 6100
+AR Path="/5E22B683" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B683" Ref="D?"  Part="1" 
+F 0 "D?" H 4200 6597 50  0000 C CNN
+F 1 "LED_RCBG" H 4200 6506 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4200 6050 50  0001 C CNN
+F 3 "~" H 4200 6050 50  0001 C CNN
+	1    4200 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B68A
+P 4850 6450
+AR Path="/5E22B68A" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B68A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 6200 50  0001 C CNN
+F 1 "GND" H 4855 6277 50  0000 C CNN
+F 2 "" H 4850 6450 50  0001 C CNN
+F 3 "" H 4850 6450 50  0001 C CNN
+	1    4850 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6450 4850 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B691
+P 3900 6200
+AR Path="/5E22B691" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B691" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 5950 50  0001 C CNN
+F 1 "GND" H 3905 6027 50  0000 C CNN
+F 2 "" H 3900 6200 50  0001 C CNN
+F 3 "" H 3900 6200 50  0001 C CNN
+	1    3900 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B697
+P 4850 5750
+AR Path="/5E22B697" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B697" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 5600 50  0001 C CNN
+F 1 "+5V" H 4865 5923 50  0000 C CNN
+F 2 "" H 4850 5750 50  0001 C CNN
+F 3 "" H 4850 5750 50  0001 C CNN
+	1    4850 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B69D
+P 4850 6100
+AR Path="/5E22B69D" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B69D" Ref="U?"  Part="1" 
+F 0 "U?" H 4650 6350 50  0000 C CNN
+F 1 "WS2811" H 4650 5850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4550 6250 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 4650 6350 50  0001 C CNN
+	1    4850 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5800 4850 5750
+Wire Wire Line
+	4400 5050 4400 5150
+Wire Wire Line
+	4450 5050 4400 5050
+Wire Wire Line
+	4400 4850 4400 4750
+Wire Wire Line
+	4450 4850 4400 4850
+Wire Wire Line
+	4400 4950 4450 4950
+Wire Wire Line
+	3900 4950 4000 4950
+Wire Wire Line
+	3900 5050 3900 4950
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B6AB
+P 4200 4950
+AR Path="/5E22B6AB" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B6AB" Ref="D?"  Part="1" 
+F 0 "D?" H 4200 5447 50  0000 C CNN
+F 1 "LED_RCBG" H 4200 5356 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4200 4900 50  0001 C CNN
+F 3 "~" H 4200 4900 50  0001 C CNN
+	1    4200 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B6B2
+P 4850 5300
+AR Path="/5E22B6B2" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B6B2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 5050 50  0001 C CNN
+F 1 "GND" H 4855 5127 50  0000 C CNN
+F 2 "" H 4850 5300 50  0001 C CNN
+F 3 "" H 4850 5300 50  0001 C CNN
+	1    4850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5300 4850 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B6B9
+P 3900 5050
+AR Path="/5E22B6B9" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B6B9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 4800 50  0001 C CNN
+F 1 "GND" H 3905 4877 50  0000 C CNN
+F 2 "" H 3900 5050 50  0001 C CNN
+F 3 "" H 3900 5050 50  0001 C CNN
+	1    3900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B6BF
+P 4850 4600
+AR Path="/5E22B6BF" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B6BF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 4450 50  0001 C CNN
+F 1 "+5V" H 4865 4773 50  0000 C CNN
+F 2 "" H 4850 4600 50  0001 C CNN
+F 3 "" H 4850 4600 50  0001 C CNN
+	1    4850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B6C5
+P 4850 4950
+AR Path="/5E22B6C5" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B6C5" Ref="U?"  Part="1" 
+F 0 "U?" H 4650 5200 50  0000 C CNN
+F 1 "WS2811" H 4650 4700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4550 5100 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 4650 5200 50  0001 C CNN
+	1    4850 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4650 4850 4600
+Wire Wire Line
+	4400 3900 4400 4000
+Wire Wire Line
+	4450 3900 4400 3900
+Wire Wire Line
+	4400 3700 4400 3600
+Wire Wire Line
+	4450 3700 4400 3700
+Wire Wire Line
+	4400 3800 4450 3800
+Wire Wire Line
+	3900 3800 4000 3800
+Wire Wire Line
+	3900 3900 3900 3800
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B6D3
+P 4200 3800
+AR Path="/5E22B6D3" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B6D3" Ref="D?"  Part="1" 
+F 0 "D?" H 4200 4297 50  0000 C CNN
+F 1 "LED_RCBG" H 4200 4206 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4200 3750 50  0001 C CNN
+F 3 "~" H 4200 3750 50  0001 C CNN
+	1    4200 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B6DA
+P 4850 4150
+AR Path="/5E22B6DA" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B6DA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 3900 50  0001 C CNN
+F 1 "GND" H 4855 3977 50  0000 C CNN
+F 2 "" H 4850 4150 50  0001 C CNN
+F 3 "" H 4850 4150 50  0001 C CNN
+	1    4850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4150 4850 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B6E1
+P 3900 3900
+AR Path="/5E22B6E1" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B6E1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 3650 50  0001 C CNN
+F 1 "GND" H 3905 3727 50  0000 C CNN
+F 2 "" H 3900 3900 50  0001 C CNN
+F 3 "" H 3900 3900 50  0001 C CNN
+	1    3900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B6E7
+P 4850 3450
+AR Path="/5E22B6E7" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B6E7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 3300 50  0001 C CNN
+F 1 "+5V" H 4865 3623 50  0000 C CNN
+F 2 "" H 4850 3450 50  0001 C CNN
+F 3 "" H 4850 3450 50  0001 C CNN
+	1    4850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B6ED
+P 4850 3800
+AR Path="/5E22B6ED" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B6ED" Ref="U?"  Part="1" 
+F 0 "U?" H 4650 4050 50  0000 C CNN
+F 1 "WS2811" H 4650 3550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4550 3950 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 4650 4050 50  0001 C CNN
+	1    4850 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3500 4850 3450
+Wire Wire Line
+	4400 2750 4400 2850
+Wire Wire Line
+	4450 2750 4400 2750
+Wire Wire Line
+	4400 2550 4400 2450
+Wire Wire Line
+	4450 2550 4400 2550
+Wire Wire Line
+	4400 2650 4450 2650
+Wire Wire Line
+	3900 2650 4000 2650
+Wire Wire Line
+	3900 2750 3900 2650
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B6FB
+P 4200 2650
+AR Path="/5E22B6FB" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B6FB" Ref="D?"  Part="1" 
+F 0 "D?" H 4200 3147 50  0000 C CNN
+F 1 "LED_RCBG" H 4200 3056 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4200 2600 50  0001 C CNN
+F 3 "~" H 4200 2600 50  0001 C CNN
+	1    4200 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B702
+P 4850 3000
+AR Path="/5E22B702" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B702" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 2750 50  0001 C CNN
+F 1 "GND" H 4855 2827 50  0000 C CNN
+F 2 "" H 4850 3000 50  0001 C CNN
+F 3 "" H 4850 3000 50  0001 C CNN
+	1    4850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3000 4850 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B709
+P 3900 2750
+AR Path="/5E22B709" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B709" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 2500 50  0001 C CNN
+F 1 "GND" H 3905 2577 50  0000 C CNN
+F 2 "" H 3900 2750 50  0001 C CNN
+F 3 "" H 3900 2750 50  0001 C CNN
+	1    3900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B70F
+P 4850 2300
+AR Path="/5E22B70F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B70F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 2150 50  0001 C CNN
+F 1 "+5V" H 4865 2473 50  0000 C CNN
+F 2 "" H 4850 2300 50  0001 C CNN
+F 3 "" H 4850 2300 50  0001 C CNN
+	1    4850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B715
+P 4850 2650
+AR Path="/5E22B715" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B715" Ref="U?"  Part="1" 
+F 0 "U?" H 4650 2900 50  0000 C CNN
+F 1 "WS2811" H 4650 2400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4550 2800 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 4650 2900 50  0001 C CNN
+	1    4850 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2350 4850 2300
+Wire Wire Line
+	4400 1600 4400 1700
+Wire Wire Line
+	4450 1600 4400 1600
+Wire Wire Line
+	4450 1400 4400 1400
+Wire Wire Line
+	4400 1500 4450 1500
+Wire Wire Line
+	3900 1500 4000 1500
+Wire Wire Line
+	3900 1600 3900 1500
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B722
+P 4200 1500
+AR Path="/5E22B722" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B722" Ref="D?"  Part="1" 
+F 0 "D?" H 4200 1997 50  0000 C CNN
+F 1 "LED_RCBG" H 4200 1906 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4200 1450 50  0001 C CNN
+F 3 "~" H 4200 1450 50  0001 C CNN
+	1    4200 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B729
+P 4850 1850
+AR Path="/5E22B729" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B729" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 1600 50  0001 C CNN
+F 1 "GND" H 4855 1677 50  0000 C CNN
+F 2 "" H 4850 1850 50  0001 C CNN
+F 3 "" H 4850 1850 50  0001 C CNN
+	1    4850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1850 4850 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B730
+P 3900 1600
+AR Path="/5E22B730" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B730" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 1350 50  0001 C CNN
+F 1 "GND" H 3905 1427 50  0000 C CNN
+F 2 "" H 3900 1600 50  0001 C CNN
+F 3 "" H 3900 1600 50  0001 C CNN
+	1    3900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B736
+P 4850 1150
+AR Path="/5E22B736" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B736" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 1000 50  0001 C CNN
+F 1 "+5V" H 4865 1323 50  0000 C CNN
+F 2 "" H 4850 1150 50  0001 C CNN
+F 3 "" H 4850 1150 50  0001 C CNN
+	1    4850 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1200 4850 1150
+Wire Wire Line
+	4400 1400 4400 1300
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B73E
+P 4850 1500
+AR Path="/5E22B73E" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B73E" Ref="U?"  Part="1" 
+F 0 "U?" H 4650 1750 50  0000 C CNN
+F 1 "WS2811" H 4650 1250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4550 1650 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 4650 1750 50  0001 C CNN
+	1    4850 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1500 5300 1500
+Wire Wire Line
+	5300 1500 5300 2550
+Wire Wire Line
+	5300 2550 5250 2550
+Wire Wire Line
+	5250 2650 5300 2650
+Wire Wire Line
+	5300 2650 5300 3700
+Wire Wire Line
+	5300 3700 5250 3700
+Wire Wire Line
+	5250 3800 5300 3800
+Wire Wire Line
+	5300 3800 5300 4850
+Wire Wire Line
+	5300 4850 5250 4850
+Wire Wire Line
+	5250 4950 5300 4950
+Wire Wire Line
+	5300 4950 5300 6000
+Wire Wire Line
+	5300 6000 5250 6000
+Wire Wire Line
+	5950 6200 5950 6300
+Wire Wire Line
+	6000 6200 5950 6200
+Wire Wire Line
+	5950 6000 5950 5900
+Wire Wire Line
+	6000 6000 5950 6000
+Wire Wire Line
+	5950 6100 6000 6100
+Wire Wire Line
+	5450 6100 5550 6100
+Wire Wire Line
+	5450 6200 5450 6100
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B757
+P 5750 6100
+AR Path="/5E22B757" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B757" Ref="D?"  Part="1" 
+F 0 "D?" H 5750 6597 50  0000 C CNN
+F 1 "LED_RCBG" H 5750 6506 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5750 6050 50  0001 C CNN
+F 3 "~" H 5750 6050 50  0001 C CNN
+	1    5750 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6800 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B75E
+P 6400 6450
+AR Path="/5E22B75E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B75E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 6200 50  0001 C CNN
+F 1 "GND" H 6405 6277 50  0000 C CNN
+F 2 "" H 6400 6450 50  0001 C CNN
+F 3 "" H 6400 6450 50  0001 C CNN
+	1    6400 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 6450 6400 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B765
+P 5450 6200
+AR Path="/5E22B765" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B765" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 5950 50  0001 C CNN
+F 1 "GND" H 5455 6027 50  0000 C CNN
+F 2 "" H 5450 6200 50  0001 C CNN
+F 3 "" H 5450 6200 50  0001 C CNN
+	1    5450 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B76B
+P 6400 5750
+AR Path="/5E22B76B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B76B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 5600 50  0001 C CNN
+F 1 "+5V" H 6415 5923 50  0000 C CNN
+F 2 "" H 6400 5750 50  0001 C CNN
+F 3 "" H 6400 5750 50  0001 C CNN
+	1    6400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B771
+P 6400 6100
+AR Path="/5E22B771" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B771" Ref="U?"  Part="1" 
+F 0 "U?" H 6200 6350 50  0000 C CNN
+F 1 "WS2811" H 6200 5850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6100 6250 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 6200 6350 50  0001 C CNN
+	1    6400 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5800 6400 5750
+Wire Wire Line
+	5950 5050 5950 5150
+Wire Wire Line
+	6000 5050 5950 5050
+Wire Wire Line
+	5950 4850 5950 4750
+Wire Wire Line
+	6000 4850 5950 4850
+Wire Wire Line
+	5950 4950 6000 4950
+Wire Wire Line
+	5450 4950 5550 4950
+Wire Wire Line
+	5450 5050 5450 4950
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B77F
+P 5750 4950
+AR Path="/5E22B77F" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B77F" Ref="D?"  Part="1" 
+F 0 "D?" H 5750 5447 50  0000 C CNN
+F 1 "LED_RCBG" H 5750 5356 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5750 4900 50  0001 C CNN
+F 3 "~" H 5750 4900 50  0001 C CNN
+	1    5750 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6800 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B786
+P 6400 5300
+AR Path="/5E22B786" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B786" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 5050 50  0001 C CNN
+F 1 "GND" H 6405 5127 50  0000 C CNN
+F 2 "" H 6400 5300 50  0001 C CNN
+F 3 "" H 6400 5300 50  0001 C CNN
+	1    6400 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5300 6400 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B78D
+P 5450 5050
+AR Path="/5E22B78D" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B78D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 4800 50  0001 C CNN
+F 1 "GND" H 5455 4877 50  0000 C CNN
+F 2 "" H 5450 5050 50  0001 C CNN
+F 3 "" H 5450 5050 50  0001 C CNN
+	1    5450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B793
+P 6400 4600
+AR Path="/5E22B793" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B793" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 4450 50  0001 C CNN
+F 1 "+5V" H 6415 4773 50  0000 C CNN
+F 2 "" H 6400 4600 50  0001 C CNN
+F 3 "" H 6400 4600 50  0001 C CNN
+	1    6400 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B799
+P 6400 4950
+AR Path="/5E22B799" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B799" Ref="U?"  Part="1" 
+F 0 "U?" H 6200 5200 50  0000 C CNN
+F 1 "WS2811" H 6200 4700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6100 5100 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 6200 5200 50  0001 C CNN
+	1    6400 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4650 6400 4600
+Wire Wire Line
+	5950 3900 5950 4000
+Wire Wire Line
+	6000 3900 5950 3900
+Wire Wire Line
+	5950 3700 5950 3600
+Wire Wire Line
+	6000 3700 5950 3700
+Wire Wire Line
+	5950 3800 6000 3800
+Wire Wire Line
+	5450 3800 5550 3800
+Wire Wire Line
+	5450 3900 5450 3800
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B7A7
+P 5750 3800
+AR Path="/5E22B7A7" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B7A7" Ref="D?"  Part="1" 
+F 0 "D?" H 5750 4297 50  0000 C CNN
+F 1 "LED_RCBG" H 5750 4206 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5750 3750 50  0001 C CNN
+F 3 "~" H 5750 3750 50  0001 C CNN
+	1    5750 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6800 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B7AE
+P 6400 4150
+AR Path="/5E22B7AE" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B7AE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 3900 50  0001 C CNN
+F 1 "GND" H 6405 3977 50  0000 C CNN
+F 2 "" H 6400 4150 50  0001 C CNN
+F 3 "" H 6400 4150 50  0001 C CNN
+	1    6400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4150 6400 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B7B5
+P 5450 3900
+AR Path="/5E22B7B5" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B7B5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 3650 50  0001 C CNN
+F 1 "GND" H 5455 3727 50  0000 C CNN
+F 2 "" H 5450 3900 50  0001 C CNN
+F 3 "" H 5450 3900 50  0001 C CNN
+	1    5450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B7BB
+P 6400 3450
+AR Path="/5E22B7BB" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B7BB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 3300 50  0001 C CNN
+F 1 "+5V" H 6415 3623 50  0000 C CNN
+F 2 "" H 6400 3450 50  0001 C CNN
+F 3 "" H 6400 3450 50  0001 C CNN
+	1    6400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B7C1
+P 6400 3800
+AR Path="/5E22B7C1" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B7C1" Ref="U?"  Part="1" 
+F 0 "U?" H 6200 4050 50  0000 C CNN
+F 1 "WS2811" H 6200 3550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6100 3950 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 6200 4050 50  0001 C CNN
+	1    6400 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3500 6400 3450
+Wire Wire Line
+	5950 2750 5950 2850
+Wire Wire Line
+	6000 2750 5950 2750
+Wire Wire Line
+	5950 2550 5950 2450
+Wire Wire Line
+	6000 2550 5950 2550
+Wire Wire Line
+	5950 2650 6000 2650
+Wire Wire Line
+	5450 2650 5550 2650
+Wire Wire Line
+	5450 2750 5450 2650
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B7CF
+P 5750 2650
+AR Path="/5E22B7CF" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B7CF" Ref="D?"  Part="1" 
+F 0 "D?" H 5750 3147 50  0000 C CNN
+F 1 "LED_RCBG" H 5750 3056 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5750 2600 50  0001 C CNN
+F 3 "~" H 5750 2600 50  0001 C CNN
+	1    5750 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6800 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B7D6
+P 6400 3000
+AR Path="/5E22B7D6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B7D6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 2750 50  0001 C CNN
+F 1 "GND" H 6405 2827 50  0000 C CNN
+F 2 "" H 6400 3000 50  0001 C CNN
+F 3 "" H 6400 3000 50  0001 C CNN
+	1    6400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3000 6400 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B7DD
+P 5450 2750
+AR Path="/5E22B7DD" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B7DD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 2500 50  0001 C CNN
+F 1 "GND" H 5455 2577 50  0000 C CNN
+F 2 "" H 5450 2750 50  0001 C CNN
+F 3 "" H 5450 2750 50  0001 C CNN
+	1    5450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B7E3
+P 6400 2300
+AR Path="/5E22B7E3" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B7E3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 2150 50  0001 C CNN
+F 1 "+5V" H 6415 2473 50  0000 C CNN
+F 2 "" H 6400 2300 50  0001 C CNN
+F 3 "" H 6400 2300 50  0001 C CNN
+	1    6400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B7E9
+P 6400 2650
+AR Path="/5E22B7E9" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B7E9" Ref="U?"  Part="1" 
+F 0 "U?" H 6200 2900 50  0000 C CNN
+F 1 "WS2811" H 6200 2400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6100 2800 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 6200 2900 50  0001 C CNN
+	1    6400 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2350 6400 2300
+Wire Wire Line
+	5950 1600 5950 1700
+Wire Wire Line
+	6000 1600 5950 1600
+Wire Wire Line
+	6000 1400 5950 1400
+Wire Wire Line
+	5950 1500 6000 1500
+Wire Wire Line
+	5450 1500 5550 1500
+Wire Wire Line
+	5450 1600 5450 1500
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B7F6
+P 5750 1500
+AR Path="/5E22B7F6" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B7F6" Ref="D?"  Part="1" 
+F 0 "D?" H 5750 1997 50  0000 C CNN
+F 1 "LED_RCBG" H 5750 1906 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 5750 1450 50  0001 C CNN
+F 3 "~" H 5750 1450 50  0001 C CNN
+	1    5750 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6800 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B7FD
+P 6400 1850
+AR Path="/5E22B7FD" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B7FD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 1600 50  0001 C CNN
+F 1 "GND" H 6405 1677 50  0000 C CNN
+F 2 "" H 6400 1850 50  0001 C CNN
+F 3 "" H 6400 1850 50  0001 C CNN
+	1    6400 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1850 6400 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B804
+P 5450 1600
+AR Path="/5E22B804" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B804" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 1350 50  0001 C CNN
+F 1 "GND" H 5455 1427 50  0000 C CNN
+F 2 "" H 5450 1600 50  0001 C CNN
+F 3 "" H 5450 1600 50  0001 C CNN
+	1    5450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B80A
+P 6400 1150
+AR Path="/5E22B80A" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B80A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 1000 50  0001 C CNN
+F 1 "+5V" H 6415 1323 50  0000 C CNN
+F 2 "" H 6400 1150 50  0001 C CNN
+F 3 "" H 6400 1150 50  0001 C CNN
+	1    6400 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1200 6400 1150
+Wire Wire Line
+	5950 1400 5950 1300
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B812
+P 6400 1500
+AR Path="/5E22B812" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B812" Ref="U?"  Part="1" 
+F 0 "U?" H 6200 1750 50  0000 C CNN
+F 1 "WS2811" H 6200 1250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6100 1650 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 6200 1750 50  0001 C CNN
+	1    6400 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1500 6850 1500
+Wire Wire Line
+	6850 1500 6850 2550
+Wire Wire Line
+	6850 2550 6800 2550
+Wire Wire Line
+	6800 2650 6850 2650
+Wire Wire Line
+	6850 2650 6850 3700
+Wire Wire Line
+	6850 3700 6800 3700
+Wire Wire Line
+	6800 3800 6850 3800
+Wire Wire Line
+	6850 3800 6850 4850
+Wire Wire Line
+	6850 4850 6800 4850
+Wire Wire Line
+	6800 4950 6850 4950
+Wire Wire Line
+	6850 4950 6850 6000
+Wire Wire Line
+	6850 6000 6800 6000
+Wire Wire Line
+	5250 6100 5350 6100
+Wire Wire Line
+	5350 6100 5350 850 
+Wire Wire Line
+	5350 850  6800 850 
+Wire Wire Line
+	3700 6100 3800 6100
+Wire Wire Line
+	3800 6100 3800 850 
+Wire Wire Line
+	3800 850  5250 850 
+Wire Wire Line
+	7500 6200 7500 6300
+Wire Wire Line
+	7550 6200 7500 6200
+Wire Wire Line
+	7500 6000 7500 5900
+Wire Wire Line
+	7550 6000 7500 6000
+Wire Wire Line
+	7500 6100 7550 6100
+Wire Wire Line
+	7000 6100 7100 6100
+Wire Wire Line
+	7000 6200 7000 6100
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B833
+P 7300 6100
+AR Path="/5E22B833" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B833" Ref="D?"  Part="1" 
+F 0 "D?" H 7300 6597 50  0000 C CNN
+F 1 "LED_RCBG" H 7300 6506 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 7300 6050 50  0001 C CNN
+F 3 "~" H 7300 6050 50  0001 C CNN
+	1    7300 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8350 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B83A
+P 7950 6450
+AR Path="/5E22B83A" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B83A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 6200 50  0001 C CNN
+F 1 "GND" H 7955 6277 50  0000 C CNN
+F 2 "" H 7950 6450 50  0001 C CNN
+F 3 "" H 7950 6450 50  0001 C CNN
+	1    7950 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 6450 7950 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B841
+P 7000 6200
+AR Path="/5E22B841" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B841" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 5950 50  0001 C CNN
+F 1 "GND" H 7005 6027 50  0000 C CNN
+F 2 "" H 7000 6200 50  0001 C CNN
+F 3 "" H 7000 6200 50  0001 C CNN
+	1    7000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B847
+P 7950 5750
+AR Path="/5E22B847" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B847" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 5600 50  0001 C CNN
+F 1 "+5V" H 7965 5923 50  0000 C CNN
+F 2 "" H 7950 5750 50  0001 C CNN
+F 3 "" H 7950 5750 50  0001 C CNN
+	1    7950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B84D
+P 7950 6100
+AR Path="/5E22B84D" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B84D" Ref="U?"  Part="1" 
+F 0 "U?" H 7750 6350 50  0000 C CNN
+F 1 "WS2811" H 7750 5850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 7650 6250 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 7750 6350 50  0001 C CNN
+	1    7950 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5800 7950 5750
+Wire Wire Line
+	7500 5050 7500 5150
+Wire Wire Line
+	7550 5050 7500 5050
+Wire Wire Line
+	7500 4850 7500 4750
+Wire Wire Line
+	7550 4850 7500 4850
+Wire Wire Line
+	7500 4950 7550 4950
+Wire Wire Line
+	7000 4950 7100 4950
+Wire Wire Line
+	7000 5050 7000 4950
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B85B
+P 7300 4950
+AR Path="/5E22B85B" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B85B" Ref="D?"  Part="1" 
+F 0 "D?" H 7300 5447 50  0000 C CNN
+F 1 "LED_RCBG" H 7300 5356 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 7300 4900 50  0001 C CNN
+F 3 "~" H 7300 4900 50  0001 C CNN
+	1    7300 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8350 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B862
+P 7950 5300
+AR Path="/5E22B862" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B862" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 5050 50  0001 C CNN
+F 1 "GND" H 7955 5127 50  0000 C CNN
+F 2 "" H 7950 5300 50  0001 C CNN
+F 3 "" H 7950 5300 50  0001 C CNN
+	1    7950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5300 7950 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B869
+P 7000 5050
+AR Path="/5E22B869" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B869" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 4800 50  0001 C CNN
+F 1 "GND" H 7005 4877 50  0000 C CNN
+F 2 "" H 7000 5050 50  0001 C CNN
+F 3 "" H 7000 5050 50  0001 C CNN
+	1    7000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B86F
+P 7950 4600
+AR Path="/5E22B86F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B86F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 4450 50  0001 C CNN
+F 1 "+5V" H 7965 4773 50  0000 C CNN
+F 2 "" H 7950 4600 50  0001 C CNN
+F 3 "" H 7950 4600 50  0001 C CNN
+	1    7950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B875
+P 7950 4950
+AR Path="/5E22B875" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B875" Ref="U?"  Part="1" 
+F 0 "U?" H 7750 5200 50  0000 C CNN
+F 1 "WS2811" H 7750 4700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 7650 5100 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 7750 5200 50  0001 C CNN
+	1    7950 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4650 7950 4600
+Wire Wire Line
+	7500 3900 7500 4000
+Wire Wire Line
+	7550 3900 7500 3900
+Wire Wire Line
+	7500 3700 7500 3600
+Wire Wire Line
+	7550 3700 7500 3700
+Wire Wire Line
+	7500 3800 7550 3800
+Wire Wire Line
+	7000 3800 7100 3800
+Wire Wire Line
+	7000 3900 7000 3800
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B883
+P 7300 3800
+AR Path="/5E22B883" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B883" Ref="D?"  Part="1" 
+F 0 "D?" H 7300 4297 50  0000 C CNN
+F 1 "LED_RCBG" H 7300 4206 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 7300 3750 50  0001 C CNN
+F 3 "~" H 7300 3750 50  0001 C CNN
+	1    7300 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8350 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B88A
+P 7950 4150
+AR Path="/5E22B88A" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B88A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 3900 50  0001 C CNN
+F 1 "GND" H 7955 3977 50  0000 C CNN
+F 2 "" H 7950 4150 50  0001 C CNN
+F 3 "" H 7950 4150 50  0001 C CNN
+	1    7950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4150 7950 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B891
+P 7000 3900
+AR Path="/5E22B891" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B891" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 3650 50  0001 C CNN
+F 1 "GND" H 7005 3727 50  0000 C CNN
+F 2 "" H 7000 3900 50  0001 C CNN
+F 3 "" H 7000 3900 50  0001 C CNN
+	1    7000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B897
+P 7950 3450
+AR Path="/5E22B897" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B897" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 3300 50  0001 C CNN
+F 1 "+5V" H 7965 3623 50  0000 C CNN
+F 2 "" H 7950 3450 50  0001 C CNN
+F 3 "" H 7950 3450 50  0001 C CNN
+	1    7950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B89D
+P 7950 3800
+AR Path="/5E22B89D" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B89D" Ref="U?"  Part="1" 
+F 0 "U?" H 7750 4050 50  0000 C CNN
+F 1 "WS2811" H 7750 3550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 7650 3950 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 7750 4050 50  0001 C CNN
+	1    7950 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3500 7950 3450
+Wire Wire Line
+	7500 2750 7500 2850
+Wire Wire Line
+	7550 2750 7500 2750
+Wire Wire Line
+	7500 2550 7500 2450
+Wire Wire Line
+	7550 2550 7500 2550
+Wire Wire Line
+	7500 2650 7550 2650
+Wire Wire Line
+	7000 2650 7100 2650
+Wire Wire Line
+	7000 2750 7000 2650
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B8AB
+P 7300 2650
+AR Path="/5E22B8AB" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B8AB" Ref="D?"  Part="1" 
+F 0 "D?" H 7300 3147 50  0000 C CNN
+F 1 "LED_RCBG" H 7300 3056 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 7300 2600 50  0001 C CNN
+F 3 "~" H 7300 2600 50  0001 C CNN
+	1    7300 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8350 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B8B2
+P 7950 3000
+AR Path="/5E22B8B2" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B8B2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 2750 50  0001 C CNN
+F 1 "GND" H 7955 2827 50  0000 C CNN
+F 2 "" H 7950 3000 50  0001 C CNN
+F 3 "" H 7950 3000 50  0001 C CNN
+	1    7950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3000 7950 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B8B9
+P 7000 2750
+AR Path="/5E22B8B9" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B8B9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 2500 50  0001 C CNN
+F 1 "GND" H 7005 2577 50  0000 C CNN
+F 2 "" H 7000 2750 50  0001 C CNN
+F 3 "" H 7000 2750 50  0001 C CNN
+	1    7000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B8BF
+P 7950 2300
+AR Path="/5E22B8BF" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B8BF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 2150 50  0001 C CNN
+F 1 "+5V" H 7965 2473 50  0000 C CNN
+F 2 "" H 7950 2300 50  0001 C CNN
+F 3 "" H 7950 2300 50  0001 C CNN
+	1    7950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B8C5
+P 7950 2650
+AR Path="/5E22B8C5" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B8C5" Ref="U?"  Part="1" 
+F 0 "U?" H 7750 2900 50  0000 C CNN
+F 1 "WS2811" H 7750 2400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 7650 2800 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 7750 2900 50  0001 C CNN
+	1    7950 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2350 7950 2300
+Wire Wire Line
+	7500 1600 7500 1700
+Wire Wire Line
+	7550 1600 7500 1600
+Wire Wire Line
+	7550 1400 7500 1400
+Wire Wire Line
+	7500 1500 7550 1500
+Wire Wire Line
+	7000 1500 7100 1500
+Wire Wire Line
+	7000 1600 7000 1500
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B8D2
+P 7300 1500
+AR Path="/5E22B8D2" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B8D2" Ref="D?"  Part="1" 
+F 0 "D?" H 7300 1997 50  0000 C CNN
+F 1 "LED_RCBG" H 7300 1906 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 7300 1450 50  0001 C CNN
+F 3 "~" H 7300 1450 50  0001 C CNN
+	1    7300 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8350 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B8D9
+P 7950 1850
+AR Path="/5E22B8D9" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B8D9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 1600 50  0001 C CNN
+F 1 "GND" H 7955 1677 50  0000 C CNN
+F 2 "" H 7950 1850 50  0001 C CNN
+F 3 "" H 7950 1850 50  0001 C CNN
+	1    7950 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1850 7950 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B8E0
+P 7000 1600
+AR Path="/5E22B8E0" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B8E0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 1350 50  0001 C CNN
+F 1 "GND" H 7005 1427 50  0000 C CNN
+F 2 "" H 7000 1600 50  0001 C CNN
+F 3 "" H 7000 1600 50  0001 C CNN
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B8E6
+P 7950 1150
+AR Path="/5E22B8E6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B8E6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7950 1000 50  0001 C CNN
+F 1 "+5V" H 7965 1323 50  0000 C CNN
+F 2 "" H 7950 1150 50  0001 C CNN
+F 3 "" H 7950 1150 50  0001 C CNN
+	1    7950 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1200 7950 1150
+Wire Wire Line
+	7500 1400 7500 1300
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B8EE
+P 7950 1500
+AR Path="/5E22B8EE" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B8EE" Ref="U?"  Part="1" 
+F 0 "U?" H 7750 1750 50  0000 C CNN
+F 1 "WS2811" H 7750 1250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 7650 1650 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 7750 1750 50  0001 C CNN
+	1    7950 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 1500 8400 1500
+Wire Wire Line
+	8400 1500 8400 2550
+Wire Wire Line
+	8400 2550 8350 2550
+Wire Wire Line
+	8350 2650 8400 2650
+Wire Wire Line
+	8400 2650 8400 3700
+Wire Wire Line
+	8400 3700 8350 3700
+Wire Wire Line
+	8350 3800 8400 3800
+Wire Wire Line
+	8400 3800 8400 4850
+Wire Wire Line
+	8400 4850 8350 4850
+Wire Wire Line
+	8350 4950 8400 4950
+Wire Wire Line
+	8400 4950 8400 6000
+Wire Wire Line
+	8400 6000 8350 6000
+Wire Wire Line
+	9050 6200 9050 6300
+Wire Wire Line
+	9100 6200 9050 6200
+Wire Wire Line
+	9050 6000 9050 5900
+Wire Wire Line
+	9100 6000 9050 6000
+Wire Wire Line
+	9050 6100 9100 6100
+Wire Wire Line
+	8550 6100 8650 6100
+Wire Wire Line
+	8550 6200 8550 6100
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B907
+P 8850 6100
+AR Path="/5E22B907" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B907" Ref="D?"  Part="1" 
+F 0 "D?" H 8850 6597 50  0000 C CNN
+F 1 "LED_RCBG" H 8850 6506 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 8850 6050 50  0001 C CNN
+F 3 "~" H 8850 6050 50  0001 C CNN
+	1    8850 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9900 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B90E
+P 9500 6450
+AR Path="/5E22B90E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B90E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 6200 50  0001 C CNN
+F 1 "GND" H 9505 6277 50  0000 C CNN
+F 2 "" H 9500 6450 50  0001 C CNN
+F 3 "" H 9500 6450 50  0001 C CNN
+	1    9500 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 6450 9500 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B915
+P 8550 6200
+AR Path="/5E22B915" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B915" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8550 5950 50  0001 C CNN
+F 1 "GND" H 8555 6027 50  0000 C CNN
+F 2 "" H 8550 6200 50  0001 C CNN
+F 3 "" H 8550 6200 50  0001 C CNN
+	1    8550 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B91B
+P 9500 5750
+AR Path="/5E22B91B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B91B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 5600 50  0001 C CNN
+F 1 "+5V" H 9515 5923 50  0000 C CNN
+F 2 "" H 9500 5750 50  0001 C CNN
+F 3 "" H 9500 5750 50  0001 C CNN
+	1    9500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B921
+P 9500 6100
+AR Path="/5E22B921" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B921" Ref="U?"  Part="1" 
+F 0 "U?" H 9300 6350 50  0000 C CNN
+F 1 "WS2811" H 9300 5850 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 9200 6250 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 9300 6350 50  0001 C CNN
+	1    9500 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5800 9500 5750
+Wire Wire Line
+	9050 5050 9050 5150
+Wire Wire Line
+	9100 5050 9050 5050
+Wire Wire Line
+	9050 4850 9050 4750
+Wire Wire Line
+	9100 4850 9050 4850
+Wire Wire Line
+	9050 4950 9100 4950
+Wire Wire Line
+	8550 4950 8650 4950
+Wire Wire Line
+	8550 5050 8550 4950
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B92F
+P 8850 4950
+AR Path="/5E22B92F" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B92F" Ref="D?"  Part="1" 
+F 0 "D?" H 8850 5447 50  0000 C CNN
+F 1 "LED_RCBG" H 8850 5356 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 8850 4900 50  0001 C CNN
+F 3 "~" H 8850 4900 50  0001 C CNN
+	1    8850 4950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9900 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B936
+P 9500 5300
+AR Path="/5E22B936" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B936" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 5050 50  0001 C CNN
+F 1 "GND" H 9505 5127 50  0000 C CNN
+F 2 "" H 9500 5300 50  0001 C CNN
+F 3 "" H 9500 5300 50  0001 C CNN
+	1    9500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5300 9500 5250
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B93D
+P 8550 5050
+AR Path="/5E22B93D" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B93D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8550 4800 50  0001 C CNN
+F 1 "GND" H 8555 4877 50  0000 C CNN
+F 2 "" H 8550 5050 50  0001 C CNN
+F 3 "" H 8550 5050 50  0001 C CNN
+	1    8550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B943
+P 9500 4600
+AR Path="/5E22B943" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B943" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 4450 50  0001 C CNN
+F 1 "+5V" H 9515 4773 50  0000 C CNN
+F 2 "" H 9500 4600 50  0001 C CNN
+F 3 "" H 9500 4600 50  0001 C CNN
+	1    9500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B949
+P 9500 4950
+AR Path="/5E22B949" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B949" Ref="U?"  Part="1" 
+F 0 "U?" H 9300 5200 50  0000 C CNN
+F 1 "WS2811" H 9300 4700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 9200 5100 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 9300 5200 50  0001 C CNN
+	1    9500 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4650 9500 4600
+Wire Wire Line
+	9050 3900 9050 4000
+Wire Wire Line
+	9100 3900 9050 3900
+Wire Wire Line
+	9050 3700 9050 3600
+Wire Wire Line
+	9100 3700 9050 3700
+Wire Wire Line
+	9050 3800 9100 3800
+Wire Wire Line
+	8550 3800 8650 3800
+Wire Wire Line
+	8550 3900 8550 3800
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B957
+P 8850 3800
+AR Path="/5E22B957" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B957" Ref="D?"  Part="1" 
+F 0 "D?" H 8850 4297 50  0000 C CNN
+F 1 "LED_RCBG" H 8850 4206 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 8850 3750 50  0001 C CNN
+F 3 "~" H 8850 3750 50  0001 C CNN
+	1    8850 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9900 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B95E
+P 9500 4150
+AR Path="/5E22B95E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B95E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 3900 50  0001 C CNN
+F 1 "GND" H 9505 3977 50  0000 C CNN
+F 2 "" H 9500 4150 50  0001 C CNN
+F 3 "" H 9500 4150 50  0001 C CNN
+	1    9500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4150 9500 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B965
+P 8550 3900
+AR Path="/5E22B965" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B965" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8550 3650 50  0001 C CNN
+F 1 "GND" H 8555 3727 50  0000 C CNN
+F 2 "" H 8550 3900 50  0001 C CNN
+F 3 "" H 8550 3900 50  0001 C CNN
+	1    8550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B96B
+P 9500 3450
+AR Path="/5E22B96B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B96B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 3300 50  0001 C CNN
+F 1 "+5V" H 9515 3623 50  0000 C CNN
+F 2 "" H 9500 3450 50  0001 C CNN
+F 3 "" H 9500 3450 50  0001 C CNN
+	1    9500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B971
+P 9500 3800
+AR Path="/5E22B971" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B971" Ref="U?"  Part="1" 
+F 0 "U?" H 9300 4050 50  0000 C CNN
+F 1 "WS2811" H 9300 3550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 9200 3950 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 9300 4050 50  0001 C CNN
+	1    9500 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3500 9500 3450
+Wire Wire Line
+	9050 2750 9050 2850
+Wire Wire Line
+	9100 2750 9050 2750
+Wire Wire Line
+	9050 2550 9050 2450
+Wire Wire Line
+	9100 2550 9050 2550
+Wire Wire Line
+	9050 2650 9100 2650
+Wire Wire Line
+	8550 2650 8650 2650
+Wire Wire Line
+	8550 2750 8550 2650
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B97F
+P 8850 2650
+AR Path="/5E22B97F" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B97F" Ref="D?"  Part="1" 
+F 0 "D?" H 8850 3147 50  0000 C CNN
+F 1 "LED_RCBG" H 8850 3056 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 8850 2600 50  0001 C CNN
+F 3 "~" H 8850 2600 50  0001 C CNN
+	1    8850 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9900 2750
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B986
+P 9500 3000
+AR Path="/5E22B986" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B986" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 2750 50  0001 C CNN
+F 1 "GND" H 9505 2827 50  0000 C CNN
+F 2 "" H 9500 3000 50  0001 C CNN
+F 3 "" H 9500 3000 50  0001 C CNN
+	1    9500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3000 9500 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B98D
+P 8550 2750
+AR Path="/5E22B98D" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B98D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8550 2500 50  0001 C CNN
+F 1 "GND" H 8555 2577 50  0000 C CNN
+F 2 "" H 8550 2750 50  0001 C CNN
+F 3 "" H 8550 2750 50  0001 C CNN
+	1    8550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B993
+P 9500 2300
+AR Path="/5E22B993" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B993" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 2150 50  0001 C CNN
+F 1 "+5V" H 9515 2473 50  0000 C CNN
+F 2 "" H 9500 2300 50  0001 C CNN
+F 3 "" H 9500 2300 50  0001 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B999
+P 9500 2650
+AR Path="/5E22B999" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B999" Ref="U?"  Part="1" 
+F 0 "U?" H 9300 2900 50  0000 C CNN
+F 1 "WS2811" H 9300 2400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 9200 2800 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 9300 2900 50  0001 C CNN
+	1    9500 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2350 9500 2300
+Wire Wire Line
+	9050 1600 9050 1700
+Wire Wire Line
+	9100 1600 9050 1600
+Wire Wire Line
+	9100 1400 9050 1400
+Wire Wire Line
+	9050 1500 9100 1500
+Wire Wire Line
+	8550 1500 8650 1500
+Wire Wire Line
+	8550 1600 8550 1500
+$Comp
+L Device:LED_RCBG D?
+U 1 1 5E22B9A6
+P 8850 1500
+AR Path="/5E22B9A6" Ref="D?"  Part="1" 
+AR Path="/5DD36755/5E22B9A6" Ref="D?"  Part="1" 
+F 0 "D?" H 8850 1997 50  0000 C CNN
+F 1 "LED_RCBG" H 8850 1906 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 8850 1450 50  0001 C CNN
+F 3 "~" H 8850 1450 50  0001 C CNN
+	1    8850 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9900 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B9AD
+P 9500 1850
+AR Path="/5E22B9AD" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B9AD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 1600 50  0001 C CNN
+F 1 "GND" H 9505 1677 50  0000 C CNN
+F 2 "" H 9500 1850 50  0001 C CNN
+F 3 "" H 9500 1850 50  0001 C CNN
+	1    9500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1850 9500 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5E22B9B4
+P 8550 1600
+AR Path="/5E22B9B4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B9B4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8550 1350 50  0001 C CNN
+F 1 "GND" H 8555 1427 50  0000 C CNN
+F 2 "" H 8550 1600 50  0001 C CNN
+F 3 "" H 8550 1600 50  0001 C CNN
+	1    8550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E22B9BA
+P 9500 1150
+AR Path="/5E22B9BA" Ref="#PWR?"  Part="1" 
+AR Path="/5DD36755/5E22B9BA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9500 1000 50  0001 C CNN
+F 1 "+5V" H 9515 1323 50  0000 C CNN
+F 2 "" H 9500 1150 50  0001 C CNN
+F 3 "" H 9500 1150 50  0001 C CNN
+	1    9500 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1200 9500 1150
+Wire Wire Line
+	9050 1400 9050 1300
+$Comp
+L Driver_LED:WS2811 U?
+U 1 1 5E22B9C2
+P 9500 1500
+AR Path="/5E22B9C2" Ref="U?"  Part="1" 
+AR Path="/5DD36755/5E22B9C2" Ref="U?"  Part="1" 
+F 0 "U?" H 9300 1750 50  0000 C CNN
+F 1 "WS2811" H 9300 1250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 9200 1650 50  0001 C CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2811.pdf" H 9300 1750 50  0001 C CNN
+	1    9500 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1500 9950 1500
+Wire Wire Line
+	9950 1500 9950 2550
+Wire Wire Line
+	9950 2550 9900 2550
+Wire Wire Line
+	9900 2650 9950 2650
+Wire Wire Line
+	9950 2650 9950 3700
+Wire Wire Line
+	9950 3700 9900 3700
+Wire Wire Line
+	9900 3800 9950 3800
+Wire Wire Line
+	9950 3800 9950 4850
+Wire Wire Line
+	9950 4850 9900 4850
+Wire Wire Line
+	9900 4950 9950 4950
+Wire Wire Line
+	9950 4950 9950 6000
+Wire Wire Line
+	9950 6000 9900 6000
+Wire Wire Line
+	8350 6100 8450 6100
+Wire Wire Line
+	8450 6100 8450 850 
+Wire Wire Line
+	8450 850  9900 850 
+Wire Wire Line
+	8350 850  6900 850 
+Wire Wire Line
+	6900 850  6900 6100
+Wire Wire Line
+	6900 6100 6800 6100
+Text HLabel 1750 800  0    50   Input ~ 0
+LED1
+Wire Wire Line
+	10200 6100 9900 6100
+Wire Wire Line
+	2150 800  2150 1400
+Wire Wire Line
+	3700 850  3700 1400
+Wire Wire Line
+	5250 850  5250 1400
+Wire Wire Line
+	6800 850  6800 1400
+Wire Wire Line
+	8350 850  8350 1400
+Wire Wire Line
+	9900 850  9900 1400
+Text HLabel 10200 6100 2    50   Input ~ 0
+LED2
+$EndSCHEMATC
