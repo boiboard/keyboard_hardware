@@ -1,0 +1,18 @@
+[submodule "libraries/kicad_lib_tmk"]
+	path = libraries/kicad_lib_tmk
+	url = git@github.com:tmk/kicad_lib_tmk.git
+[submodule "libraries/keebs.pretty"]
+	path = libraries/keebs.pretty
+	url = git@github.com:egladman/keebs.pretty.git
+[submodule "libraries/keyboard_parts.pretty"]
+	path = libraries/keyboard_parts.pretty
+	url = git@github.com:tmk/keyboard_parts.pretty.git
+[submodule "libraries/keyswitches.pretty"]
+	path = libraries/keyswitches.pretty
+	url = git@github.com:daprice/keyswitches.pretty.git
+[submodule "libraries/teensy_library"]
+	path = libraries/teensy_library
+	url = git@github.com:XenGi/teensy_library.git
+[submodule "libraries/teensy.pretty"]
+	path = libraries/teensy.pretty
+	url = git@github.com:XenGi/teensy.pretty.git
