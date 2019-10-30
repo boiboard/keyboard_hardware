@@ -609,26 +609,112 @@ Wire Wire Line
 	3000 3400 2800 3400
 Wire Wire Line
 	3000 2900 2800 2900
-Wire Wire Line
-	3000 3100 2800 3100
-Wire Wire Line
-	2800 3100 2800 3200
-Wire Wire Line
-	2800 3200 3000 3200
-Wire Wire Line
-	2800 3100 2500 3100
-Connection ~ 2800 3100
 $Comp
-L power:+5V #PWR?
-U 1 1 5DC980CA
-P 2500 3000
-F 0 "#PWR?" H 2500 2850 50  0001 C CNN
-F 1 "+5V" H 2515 3173 50  0000 C CNN
-F 2 "" H 2500 3000 50  0001 C CNN
-F 3 "" H 2500 3000 50  0001 C CNN
-	1    2500 3000
+L keyboard_project:CD4078B U?
+U 1 1 5DCCD170
+P 3400 4950
+F 0 "U?" H 3400 5565 50  0000 C CNN
+F 1 "CD4078B" H 3400 5474 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3400 4350 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4078b.pdf" H 3100 5450 50  0001 C CNN
+	1    3400 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 3100 2500 3000
+	2900 5200 2700 5200
+Wire Wire Line
+	2900 5100 2700 5100
+Wire Wire Line
+	2900 5000 2700 5000
+Wire Wire Line
+	2900 4900 2700 4900
+Wire Wire Line
+	2900 4800 2700 4800
+Wire Wire Line
+	2900 4700 2700 4700
+Wire Wire Line
+	2900 4600 2700 4600
+Text Label 2700 4600 0    50   ~ 0
+Row0
+Text Label 2700 4700 0    50   ~ 0
+Row1
+Text Label 2700 4800 0    50   ~ 0
+Row2
+Text Label 2700 4900 0    50   ~ 0
+Row3
+Text Label 2700 5000 0    50   ~ 0
+Row4
+Text Label 2700 5100 0    50   ~ 0
+Row5
+Text Label 2700 5200 0    50   ~ 0
+Row6
+Wire Wire Line
+	4100 4600 4100 4500
+Wire Wire Line
+	4100 5300 4100 5400
+NoConn ~ 3900 5000
+Wire Wire Line
+	3900 4900 4100 4900
+Wire Wire Line
+	3900 4600 4100 4600
+Wire Wire Line
+	3900 5300 4100 5300
+$Comp
+L power:+5V #PWR?
+U 1 1 5DCED549
+P 4100 4500
+F 0 "#PWR?" H 4100 4350 50  0001 C CNN
+F 1 "+5V" H 4115 4673 50  0000 C CNN
+F 2 "" H 4100 4500 50  0001 C CNN
+F 3 "" H 4100 4500 50  0001 C CNN
+	1    4100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCF0662
+P 4100 5400
+F 0 "#PWR?" H 4100 5150 50  0001 C CNN
+F 1 "GND" H 4105 5227 50  0000 C CNN
+F 2 "" H 4100 5400 50  0001 C CNN
+F 3 "" H 4100 5400 50  0001 C CNN
+	1    4100 5400
+	1    0    0    -1  
+$EndComp
+Text Label 4100 4900 2    50   ~ 0
+SHIFT
+Wire Wire Line
+	2900 5300 2700 5300
+Wire Wire Line
+	2700 5300 2700 5400
+$Comp
+L power:GND #PWR?
+U 1 1 5DCF9F09
+P 2700 5400
+F 0 "#PWR?" H 2700 5150 50  0001 C CNN
+F 1 "GND" H 2705 5227 50  0000 C CNN
+F 2 "" H 2700 5400 50  0001 C CNN
+F 3 "" H 2700 5400 50  0001 C CNN
+	1    2700 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3100 2400 3100
+Wire Wire Line
+	2400 3100 2400 3000
+$Comp
+L power:+5V #PWR?
+U 1 1 5DD01300
+P 2400 3000
+F 0 "#PWR?" H 2400 2850 50  0001 C CNN
+F 1 "+5V" H 2415 3173 50  0000 C CNN
+F 2 "" H 2400 3000 50  0001 C CNN
+F 3 "" H 2400 3000 50  0001 C CNN
+	1    2400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3200 2800 3200
+Text Label 2800 3200 0    50   ~ 0
+SHIFT
 $EndSCHEMATC
