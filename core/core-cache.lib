@@ -173,7 +173,7 @@ ENDDEF
 DEF keyboard_project_CD4532B U 0 40 Y Y 1 F N
 F0 "U" -300 550 50 H V C CNN
 F1 "keyboard_project_CD4532B" -300 -550 50 H V C CNN
-F2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" 50 -800 50 H I C CNN
+F2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" 50 -800 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  DIP?16*
