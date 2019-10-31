@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.4)-1")
+(kicad_pcb (version 20171130) (host pcbnew 5.1.4)
 
   (general
     (thickness 1.6)
@@ -1040,7 +1040,7 @@
   )
 
   (module Package_SO:SOIC-14_3.9x8.7mm_P1.27mm (layer F.Cu) (tedit 5C97300E) (tstamp 5DBCE819)
-    (at 249.33 130.18)
+    (at 358.8675 -38.88875)
     (descr "SOIC, 14 Pin (JEDEC MS-012AB, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DBF88CE/5DCCD170)
@@ -1101,7 +1101,7 @@
   )
 
   (module Package_SO:SOIC-16_3.9x9.9mm_P1.27mm (layer F.Cu) (tedit 5C97300E) (tstamp 5DBCE7F9)
-    (at 240.88 130.8)
+    (at 350.4175 -38.26875)
     (descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DBF88CE/5DD166F6)
@@ -1168,7 +1168,7 @@
   )
 
   (module Package_SO:SOIC-14_3.9x8.7mm_P1.27mm (layer F.Cu) (tedit 5C97300E) (tstamp 5DBCE7D7)
-    (at 257.78 130.18)
+    (at 367.3175 -38.88875)
     (descr "SOIC, 14 Pin (JEDEC MS-012AB, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DBF88CE/5DC71EBB)
@@ -1231,7 +1231,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE7B7)
-    (at 100.01 139.73)
+    (at 50.00375 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6E7E)
@@ -1287,7 +1287,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE798)
-    (at 100.01 146.18)
+    (at 50.00375 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6DAA)
@@ -1343,7 +1343,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE779)
-    (at 108.46 139.73)
+    (at 58.45375 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6EA6)
@@ -1399,7 +1399,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE75A)
-    (at 100.01 152.63)
+    (at 50.00375 224.0675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6DD2)
@@ -1455,7 +1455,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE73B)
-    (at 108.46 146.18)
+    (at 58.45375 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6ECE)
@@ -1511,7 +1511,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE71C)
-    (at 116.91 139.73)
+    (at 66.90375 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6DFA)
@@ -1567,7 +1567,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE6FD)
-    (at 108.46 152.63)
+    (at 58.45375 224.0675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6EF6)
@@ -1623,7 +1623,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE6DE)
-    (at 116.91 146.18)
+    (at 66.90375 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6E22)
@@ -1679,7 +1679,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE6BF)
-    (at 125.36 139.73)
+    (at 75.35375 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6F1F)
@@ -1735,7 +1735,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE6A0)
-    (at 116.91 152.63)
+    (at 66.90375 224.0675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E39F395/5E3F6E4B)
@@ -1791,7 +1791,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE681)
-    (at 288.36 18.23)
+    (at 224.06625 218.255)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B921)
@@ -1847,7 +1847,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE662)
-    (at 279.91 24.68)
+    (at 215.61625 224.705)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B84D)
@@ -1903,7 +1903,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE643)
-    (at 271.46 31.13)
+    (at 207.16625 231.155)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B771)
@@ -1959,7 +1959,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE624)
-    (at 263.01 37.58)
+    (at 198.71625 237.605)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B69D)
@@ -2015,7 +2015,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE605)
-    (at 254.56 44.03)
+    (at 190.26625 244.055)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B5C5)
@@ -2071,7 +2071,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE5E6)
-    (at 288.36 11.78)
+    (at 224.06625 211.805)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B4EF)
@@ -2127,7 +2127,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE5C7)
-    (at 279.91 18.23)
+    (at 215.61625 218.255)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B949)
@@ -2183,7 +2183,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE5A8)
-    (at 271.46 24.68)
+    (at 207.16625 224.705)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B875)
@@ -2239,7 +2239,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE589)
-    (at 263.01 31.13)
+    (at 198.71625 231.155)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B799)
@@ -2295,7 +2295,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE56A)
-    (at 271.46 11.78)
+    (at 207.16625 211.805)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B6C5)
@@ -2351,7 +2351,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE54B)
-    (at 246.11 18.23)
+    (at 181.81625 218.255)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B5ED)
@@ -2407,7 +2407,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE52C)
-    (at 254.56 11.78)
+    (at 190.26625 211.805)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B517)
@@ -2463,7 +2463,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE50D)
-    (at 246.11 24.68)
+    (at 181.81625 224.705)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B971)
@@ -2519,7 +2519,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE4EE)
-    (at 254.56 18.23)
+    (at 190.26625 218.255)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B89D)
@@ -2575,7 +2575,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE4CF)
-    (at 296.81 11.78)
+    (at 232.51625 211.805)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B7C1)
@@ -2631,7 +2631,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE4B0)
-    (at 246.11 31.13)
+    (at 181.81625 231.155)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B6ED)
@@ -2687,7 +2687,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE491)
-    (at 254.56 24.68)
+    (at 190.26625 224.705)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B615)
@@ -2743,7 +2743,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE472)
-    (at 263.01 18.23)
+    (at 198.71625 218.255)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B53F)
@@ -2799,7 +2799,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE453)
-    (at 246.11 11.78)
+    (at 181.81625 211.805)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B999)
@@ -2855,7 +2855,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE434)
-    (at 246.11 37.58)
+    (at 181.81625 237.605)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B8C5)
@@ -2911,7 +2911,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE415)
-    (at 254.56 31.13)
+    (at 190.26625 231.155)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B7E9)
@@ -2967,7 +2967,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE3F6)
-    (at 263.01 24.68)
+    (at 198.71625 224.705)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B715)
@@ -3023,7 +3023,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE3D7)
-    (at 271.46 18.23)
+    (at 207.16625 218.255)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B63D)
@@ -3079,7 +3079,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE3B8)
-    (at 279.91 11.78)
+    (at 215.61625 211.805)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B567)
@@ -3135,7 +3135,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE399)
-    (at 246.11 44.03)
+    (at 181.81625 244.055)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B9C2)
@@ -3191,7 +3191,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE37A)
-    (at 254.56 37.58)
+    (at 190.26625 237.605)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B8EE)
@@ -3247,7 +3247,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE35B)
-    (at 263.01 44.03)
+    (at 198.71625 244.055)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B812)
@@ -3303,7 +3303,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE33C)
-    (at 271.46 37.58)
+    (at 207.16625 237.605)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B73E)
@@ -3359,7 +3359,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE31D)
-    (at 279.91 31.13)
+    (at 215.61625 231.155)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B666)
@@ -3415,7 +3415,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE2FE)
-    (at 263.01 11.78)
+    (at 198.71625 211.805)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5E1DFCF0/5E22B590)
@@ -3471,7 +3471,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE2DF)
-    (at 20.97 146.18)
+    (at 99.55125 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE604D1)
@@ -3527,7 +3527,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE2C0)
-    (at 29.42 139.73)
+    (at 108.00125 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE603FD)
@@ -3583,7 +3583,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE2A1)
-    (at 20.97 152.63)
+    (at 99.55125 224.0675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60321)
@@ -3639,7 +3639,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE282)
-    (at 29.42 146.18)
+    (at 108.00125 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE6024D)
@@ -3695,7 +3695,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE263)
-    (at 37.87 139.73)
+    (at 116.45125 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60175)
@@ -3751,7 +3751,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE244)
-    (at 20.97 159.08)
+    (at 99.55125 230.5175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE6009E)
@@ -3807,7 +3807,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE225)
-    (at 29.42 152.63)
+    (at 108.00125 224.0675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE604F9)
@@ -3863,7 +3863,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE206)
-    (at 37.87 146.18)
+    (at 116.45125 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60425)
@@ -3919,7 +3919,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE1E7)
-    (at 46.32 139.73)
+    (at 124.90125 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60349)
@@ -3975,7 +3975,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE1C8)
-    (at 20.97 165.53)
+    (at 99.55125 236.9675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60275)
@@ -4031,7 +4031,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE1A9)
-    (at 29.42 159.08)
+    (at 108.00125 230.5175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE6019D)
@@ -4087,7 +4087,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE18A)
-    (at 37.87 152.63)
+    (at 116.45125 224.0675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE600C6)
@@ -4143,7 +4143,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE16B)
-    (at 46.32 146.18)
+    (at 124.90125 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60521)
@@ -4199,7 +4199,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE14C)
-    (at 54.77 139.73)
+    (at 133.35125 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE6044D)
@@ -4255,7 +4255,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE12D)
-    (at 20.97 171.98)
+    (at 99.55125 243.4175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60371)
@@ -4311,7 +4311,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE10E)
-    (at 54.77 159.08)
+    (at 133.35125 230.5175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE6029D)
@@ -4367,7 +4367,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE0EF)
-    (at 20.97 139.73)
+    (at 99.55125 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE601C5)
@@ -4423,7 +4423,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE0D0)
-    (at 46.32 152.63)
+    (at 124.90125 224.0675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE600EE)
@@ -4479,7 +4479,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE0B1)
-    (at 54.77 146.18)
+    (at 133.35125 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60549)
@@ -4535,7 +4535,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE092)
-    (at 63.22 139.73)
+    (at 141.80125 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60475)
@@ -4591,7 +4591,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE073)
-    (at 29.42 171.98)
+    (at 108.00125 243.4175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60399)
@@ -4647,7 +4647,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE054)
-    (at 37.87 165.53)
+    (at 116.45125 236.9675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE602C5)
@@ -4703,7 +4703,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE035)
-    (at 46.32 159.08)
+    (at 124.90125 230.5175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE601ED)
@@ -4759,7 +4759,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCE016)
-    (at 37.87 159.08)
+    (at 116.45125 230.5175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60116)
@@ -4815,7 +4815,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCDFF7)
-    (at 54.77 152.63)
+    (at 133.35125 224.0675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60572)
@@ -4871,7 +4871,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCDFD8)
-    (at 63.22 146.18)
+    (at 141.80125 217.6175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE6049E)
@@ -4927,7 +4927,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCDFB9)
-    (at 71.67 139.73)
+    (at 150.25125 211.1675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE603C2)
@@ -4983,7 +4983,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCDF9A)
-    (at 37.87 171.98)
+    (at 116.45125 243.4175)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE602EE)
@@ -5039,7 +5039,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCDF7B)
-    (at 46.32 165.53)
+    (at 124.90125 236.9675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60216)
@@ -5095,7 +5095,7 @@
   )
 
   (module Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm (layer F.Cu) (tedit 5C56E16F) (tstamp 5DBCDF5C)
-    (at 29.42 165.53)
+    (at 108.00125 236.9675)
     (descr "SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /5DD36755/5DE60140)
@@ -5151,7 +5151,7 @@
   )
 
   (module teensy:Teensy30_31_32_LC (layer F.Cu) (tedit 5D5216D8) (tstamp 5DBCDF3D)
-    (at 261.51 63.79)
+    (at 304.8 -54.76875)
     (path /606F99F6)
     (fp_text reference U101 (at 0 -10.16) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5287,7 +5287,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDEEB)
-    (at 182.769999 65.08)
+    (at 170.863749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD6E4)
@@ -5325,7 +5325,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDED0)
-    (at 200.179999 48.93)
+    (at 188.273749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD693)
@@ -5363,7 +5363,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDEB5)
-    (at 217.589999 32.78)
+    (at 205.683749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD641)
@@ -5401,7 +5401,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDE9A)
-    (at 147.949999 113.53)
+    (at 136.043749 -5.5325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD5ED)
@@ -5438,8 +5438,8 @@
       (net 16 /Col5))
   )
 
-  (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDE7F)
-    (at 165.359999 97.38)
+  (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBB8CBD)
+    (at 153.453749 -21.6825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD599)
@@ -5477,7 +5477,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDE64)
-    (at 182.769999 81.23)
+    (at 170.863749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD545)
@@ -5515,7 +5515,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDE49)
-    (at 60.899999 81.23)
+    (at 48.993749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD4F2)
@@ -5553,7 +5553,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDE2E)
-    (at 165.359999 81.23)
+    (at 153.453749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD4A0)
@@ -5591,7 +5591,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDE13)
-    (at 147.949999 97.38)
+    (at 136.043749 -21.6825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD44C)
@@ -5629,7 +5629,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDDF8)
-    (at 130.539999 113.53)
+    (at 118.633749 -5.5325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD6D6)
@@ -5667,7 +5667,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDDDD)
-    (at 217.589999 16.63)
+    (at 205.683749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD686)
@@ -5705,7 +5705,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDDC2)
-    (at 200.179999 32.78)
+    (at 188.273749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD633)
@@ -5743,7 +5743,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDDA7)
-    (at 182.769999 48.93)
+    (at 170.863749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD5DF)
@@ -5781,7 +5781,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDD8C)
-    (at 165.359999 65.08)
+    (at 153.453749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD58B)
@@ -5819,7 +5819,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDD71)
-    (at 147.949999 81.23)
+    (at 136.043749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD537)
@@ -5857,7 +5857,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDD56)
-    (at 130.539999 97.38)
+    (at 118.633749 -21.6825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD4E5)
@@ -5895,7 +5895,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDD3B)
-    (at 113.129999 113.53)
+    (at 101.223749 -5.5325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD492)
@@ -5933,7 +5933,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDD20)
-    (at 200.179999 16.63)
+    (at 188.273749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD43E)
@@ -5971,7 +5971,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDD05)
-    (at 165.359999 48.93)
+    (at 153.453749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD6C8)
@@ -6009,7 +6009,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDCEA)
-    (at 182.769999 32.78)
+    (at 170.863749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD679)
@@ -6047,7 +6047,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDCCF)
-    (at 113.129999 97.38)
+    (at 101.223749 -21.6825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD625)
@@ -6085,7 +6085,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDCB4)
-    (at 130.539999 81.23)
+    (at 118.633749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD5D1)
@@ -6123,7 +6123,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDC99)
-    (at 147.949999 65.08)
+    (at 136.043749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD57D)
@@ -6161,7 +6161,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDC7E)
-    (at 95.719999 16.63)
+    (at 83.813749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD529)
@@ -6199,7 +6199,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDC63)
-    (at 26.079999 32.78)
+    (at 14.173749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD4D8)
@@ -6237,7 +6237,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDC48)
-    (at 43.489999 16.63)
+    (at 31.583749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD484)
@@ -6275,7 +6275,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDC2D)
-    (at 26.079999 48.93)
+    (at 14.173749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E6DD430)
@@ -6313,7 +6313,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDC12)
-    (at 43.489999 32.78)
+    (at 31.583749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B6002)
@@ -6351,7 +6351,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDBF7)
-    (at 60.899999 16.63)
+    (at 48.993749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5FAE)
@@ -6389,7 +6389,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDBDC)
-    (at 26.079999 65.08)
+    (at 14.173749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F5D)
@@ -6427,7 +6427,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDBC1)
-    (at 43.489999 48.93)
+    (at 31.583749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F08)
@@ -6465,7 +6465,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDBA6)
-    (at 113.129999 16.63)
+    (at 101.223749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5EB3)
@@ -6503,7 +6503,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDB8B)
-    (at 78.309999 16.63)
+    (at 66.403749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E5E)
@@ -6541,7 +6541,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDB70)
-    (at 26.079999 81.23)
+    (at 14.173749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E09)
@@ -6579,7 +6579,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDB55)
-    (at 43.489999 65.08)
+    (at 31.583749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5DB7)
@@ -6617,7 +6617,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDB3A)
-    (at 60.899999 48.93)
+    (at 48.993749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5D5F)
@@ -6655,7 +6655,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDB1F)
-    (at 78.309999 32.78)
+    (at 66.403749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5FF4)
@@ -6693,7 +6693,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDB04)
-    (at 26.079999 16.63)
+    (at 14.173749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5FA1)
@@ -6731,7 +6731,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDAE9)
-    (at 26.079999 97.38)
+    (at 14.173749 -21.6825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F4F)
@@ -6769,7 +6769,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDACE)
-    (at 43.489999 81.23)
+    (at 31.583749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5EFA)
@@ -6807,7 +6807,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDAB3)
-    (at 60.899999 65.08)
+    (at 48.993749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5EA5)
@@ -6845,7 +6845,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDA98)
-    (at 78.309999 48.93)
+    (at 66.403749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E50)
@@ -6883,7 +6883,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDA7D)
-    (at 95.719999 32.78)
+    (at 83.813749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5DFC)
@@ -6921,7 +6921,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDA62)
-    (at 60.899999 32.78)
+    (at 48.993749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5DA9)
@@ -6959,7 +6959,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDA47)
-    (at 43.489999 113.53)
+    (at 31.583749 -5.5325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5D51)
@@ -6997,7 +6997,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDA2C)
-    (at 60.899999 97.38)
+    (at 48.993749 -21.6825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5FE6)
@@ -7035,7 +7035,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCDA11)
-    (at 78.309999 81.23)
+    (at 66.403749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F94)
@@ -7073,7 +7073,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD9F6)
-    (at 95.719999 65.08)
+    (at 83.813749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F41)
@@ -7111,7 +7111,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD9DB)
-    (at 113.129999 48.93)
+    (at 101.223749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5EEC)
@@ -7149,7 +7149,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD9C0)
-    (at 130.539999 32.78)
+    (at 118.633749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E97)
@@ -7187,7 +7187,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD9A5)
-    (at 147.949999 16.63)
+    (at 136.043749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E42)
@@ -7225,7 +7225,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD98A)
-    (at 60.899999 113.53)
+    (at 48.993749 -5.5325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5DEE)
@@ -7263,7 +7263,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD96F)
-    (at 78.309999 97.38)
+    (at 66.403749 -21.6825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5D9B)
@@ -7301,7 +7301,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD954)
-    (at 95.719999 81.23)
+    (at 83.813749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5D43)
@@ -7339,7 +7339,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD939)
-    (at 95.719999 113.53)
+    (at 83.813749 -5.5325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5FD8)
@@ -7377,7 +7377,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD91E)
-    (at 113.129999 65.08)
+    (at 101.223749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F87)
@@ -7415,7 +7415,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD903)
-    (at 130.539999 48.93)
+    (at 118.633749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F33)
@@ -7453,7 +7453,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD8E8)
-    (at 130.539999 16.63)
+    (at 118.633749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5EDE)
@@ -7491,7 +7491,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD8CD)
-    (at 165.359999 16.63)
+    (at 153.453749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E89)
@@ -7529,7 +7529,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD8B2)
-    (at 78.309999 113.53)
+    (at 66.403749 -5.5325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E34)
@@ -7567,7 +7567,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD897)
-    (at 95.719999 97.38)
+    (at 83.813749 -21.6825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5DE1)
@@ -7605,7 +7605,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD87C)
-    (at 113.129999 81.23)
+    (at 101.223749 -37.8325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5D8D)
@@ -7643,7 +7643,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD861)
-    (at 130.539999 65.08)
+    (at 118.633749 -53.9825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5D34)
@@ -7681,7 +7681,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD846)
-    (at 147.949999 48.93)
+    (at 136.043749 -70.1325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5FC9)
@@ -7719,7 +7719,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD82B)
-    (at 165.359999 32.78)
+    (at 153.453749 -86.2825)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F79)
@@ -7757,7 +7757,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD810)
-    (at 182.769999 16.63)
+    (at 170.863749 -102.4325)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5F24)
@@ -7795,7 +7795,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD7F5)
-    (at 26.079999 113.53)
+    (at 21.43125 116.68125)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5ECF)
@@ -7833,7 +7833,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD7DA)
-    (at 43.489999 97.38)
+    (at 21.43125 97.63125)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E7A)
@@ -7871,7 +7871,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD7BF)
-    (at 147.949999 32.78)
+    (at 21.43125 78.58125)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5E25)
@@ -7909,7 +7909,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD7A4)
-    (at 78.309999 65.08)
+    (at 21.43125 59.53125)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5DD3)
@@ -7947,7 +7947,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD789)
-    (at 95.719999 48.93)
+    (at 21.43125 40.48125)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5D7E)
@@ -7985,7 +7985,7 @@
   )
 
   (module keyswitches:Kailh_socket (layer F.Cu) (tedit 5ACB038C) (tstamp 5DBCD76E)
-    (at 113.129999 32.78)
+    (at 21.43125 21.43125)
     (descr "MX-style keyswitch with Kailh socket mount")
     (tags MX,cherry,gateron,kailh,pg1511,socket)
     (path /5E3F7D97/5E5B5D25)
@@ -8023,7 +8023,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD753)
-    (at 125.944999 127.005)
+    (at 340.257499 88.905)
     (path /5E3F7D97/5E6DD6DE)
     (attr smd)
     (fp_text reference D572 (at 0 1.925) (layer F.SilkS)
@@ -8056,7 +8056,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD740)
-    (at 196.044999 58.805)
+    (at 319.869999 27.84875)
     (path /5E3F7D97/5E6DD68D)
     (attr smd)
     (fp_text reference D571 (at 0 1.925) (layer F.SilkS)
@@ -8089,7 +8089,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD72D)
-    (at 213.454999 42.655)
+    (at 337.279999 11.69875)
     (path /5E3F7D97/5E6DD63B)
     (attr smd)
     (fp_text reference D570 (at 0 1.925) (layer F.SilkS)
@@ -8122,7 +8122,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD71A)
-    (at 230.864999 24.755)
+    (at 297.539999 27.13625)
     (path /5E3F7D97/5E6DD5E7)
     (attr smd)
     (fp_text reference D569 (at 0 1.925) (layer F.SilkS)
@@ -8155,7 +8155,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD707)
-    (at 115.544999 123.405)
+    (at 329.857499 85.305)
     (path /5E3F7D97/5E6DD593)
     (attr smd)
     (fp_text reference D568 (at 0 1.925) (layer F.SilkS)
@@ -8188,7 +8188,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD6F4)
-    (at 136.344999 123.405)
+    (at 350.657499 85.305)
     (path /5E3F7D97/5E6DD53F)
     (attr smd)
     (fp_text reference D567 (at 0 1.925) (layer F.SilkS)
@@ -8221,7 +8221,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD6E1)
-    (at 115.544999 127.005)
+    (at 329.857499 88.905)
     (path /5E3F7D97/5E6DD4EC)
     (attr smd)
     (fp_text reference D566 (at 0 1.925) (layer F.SilkS)
@@ -8254,7 +8254,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD6CE)
-    (at 230.864999 28.355)
+    (at 297.539999 30.73625)
     (path /5E3F7D97/5E6DD49A)
     (attr smd)
     (fp_text reference D565 (at 0 1.925) (layer F.SilkS)
@@ -8287,7 +8287,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD6BB)
-    (at 230.864999 31.955)
+    (at 297.539999 34.33625)
     (path /5E3F7D97/5E6DD446)
     (attr smd)
     (fp_text reference D564 (at 0 1.925) (layer F.SilkS)
@@ -8320,7 +8320,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD6A8)
-    (at 223.854999 42.655)
+    (at 347.679999 11.69875)
     (path /5E3F7D97/5E6DD6D0)
     (attr smd)
     (fp_text reference D563 (at 0 1.925) (layer F.SilkS)
@@ -8353,7 +8353,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD695)
-    (at 230.864999 35.555)
+    (at 297.539999 37.93625)
     (path /5E3F7D97/5E6DD680)
     (attr smd)
     (fp_text reference D562 (at 0 1.925) (layer F.SilkS)
@@ -8386,7 +8386,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD682)
-    (at 213.454999 46.255)
+    (at 337.279999 15.29875)
     (path /5E3F7D97/5E6DD62D)
     (attr smd)
     (fp_text reference D561 (at 0 1.925) (layer F.SilkS)
@@ -8419,7 +8419,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD66F)
-    (at 213.454999 49.855)
+    (at 337.279999 18.89875)
     (path /5E3F7D97/5E6DD5D9)
     (attr smd)
     (fp_text reference D560 (at 0 1.925) (layer F.SilkS)
@@ -8452,7 +8452,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD65C)
-    (at 206.444999 58.805)
+    (at 330.269999 27.84875)
     (path /5E3F7D97/5E6DD585)
     (attr smd)
     (fp_text reference D559 (at 0 1.925) (layer F.SilkS)
@@ -8485,7 +8485,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD649)
-    (at 196.044999 62.405)
+    (at 319.869999 31.44875)
     (path /5E3F7D97/5E6DD531)
     (attr smd)
     (fp_text reference D558 (at 0 1.925) (layer F.SilkS)
@@ -8518,7 +8518,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD636)
-    (at 223.854999 49.855)
+    (at 347.679999 18.89875)
     (path /5E3F7D97/5E6DD4DF)
     (attr smd)
     (fp_text reference D557 (at 0 1.925) (layer F.SilkS)
@@ -8551,7 +8551,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD623)
-    (at 230.864999 21.155)
+    (at 297.539999 23.53625)
     (path /5E3F7D97/5E6DD48C)
     (attr smd)
     (fp_text reference D556 (at 0 1.925) (layer F.SilkS)
@@ -8584,7 +8584,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD610)
-    (at 115.544999 130.605)
+    (at 329.857499 92.505)
     (path /5E3F7D97/5E6DD438)
     (attr smd)
     (fp_text reference D555 (at 0 1.925) (layer F.SilkS)
@@ -8617,7 +8617,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD5FD)
-    (at 136.344999 127.005)
+    (at 350.657499 88.905)
     (path /5E3F7D97/5E6DD6C2)
     (attr smd)
     (fp_text reference D554 (at 0 1.925) (layer F.SilkS)
@@ -8650,7 +8650,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD5EA)
-    (at 161.224999 107.255)
+    (at 306.481249 100.11125)
     (path /5E3F7D97/5E6DD673)
     (attr smd)
     (fp_text reference D553 (at 0 1.925) (layer F.SilkS)
@@ -8683,7 +8683,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD5D7)
-    (at 213.454999 53.455)
+    (at 337.279999 22.49875)
     (path /5E3F7D97/5E6DD61F)
     (attr smd)
     (fp_text reference D552 (at 0 1.925) (layer F.SilkS)
@@ -8716,7 +8716,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD5C4)
-    (at 136.344999 130.605)
+    (at 350.657499 92.505)
     (path /5E3F7D97/5E6DD5CB)
     (attr smd)
     (fp_text reference D551 (at 0 1.925) (layer F.SilkS)
@@ -8749,7 +8749,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD5B1)
-    (at 178.634999 91.105)
+    (at 354.847499 105.3925)
     (path /5E3F7D97/5E6DD577)
     (attr smd)
     (fp_text reference D550 (at 0 1.925) (layer F.SilkS)
@@ -8782,7 +8782,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD59E)
-    (at 196.044999 73.205)
+    (at 319.869999 42.24875)
     (path /5E3F7D97/5E6DD523)
     (attr smd)
     (fp_text reference D549 (at 0 1.925) (layer F.SilkS)
@@ -8815,7 +8815,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD58B)
-    (at 206.444999 62.405)
+    (at 330.269999 31.44875)
     (path /5E3F7D97/5E6DD4D2)
     (attr smd)
     (fp_text reference D548 (at 0 1.925) (layer F.SilkS)
@@ -8848,7 +8848,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD578)
-    (at 223.854999 46.255)
+    (at 347.679999 15.29875)
     (path /5E3F7D97/5E6DD47E)
     (attr smd)
     (fp_text reference D547 (at 0 1.925) (layer F.SilkS)
@@ -8881,7 +8881,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD565)
-    (at 146.744999 123.405)
+    (at 361.057499 85.305)
     (path /5E3F7D97/5E6DD42A)
     (attr smd)
     (fp_text reference D546 (at 0 1.925) (layer F.SilkS)
@@ -8914,7 +8914,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD552)
-    (at 146.744999 127.005)
+    (at 361.057499 88.905)
     (path /5E3F7D97/5E5B5FFC)
     (attr smd)
     (fp_text reference D545 (at 0 1.925) (layer F.SilkS)
@@ -8947,7 +8947,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD53F)
-    (at 196.044999 66.005)
+    (at 319.869999 35.04875)
     (path /5E3F7D97/5E5B5FA8)
     (attr smd)
     (fp_text reference D544 (at 0 1.925) (layer F.SilkS)
@@ -8980,7 +8980,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD52C)
-    (at 125.944999 123.405)
+    (at 340.257499 85.305)
     (path /5E3F7D97/5E5B5F57)
     (attr smd)
     (fp_text reference D543 (at 0 1.925) (layer F.SilkS)
@@ -9013,7 +9013,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD519)
-    (at 196.044999 76.805)
+    (at 319.869999 45.84875)
     (path /5E3F7D97/5E5B5F02)
     (attr smd)
     (fp_text reference D542 (at 0 1.925) (layer F.SilkS)
@@ -9046,7 +9046,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD506)
-    (at 178.634999 94.705)
+    (at 354.847499 108.9925)
     (path /5E3F7D97/5E5B5EAD)
     (attr smd)
     (fp_text reference D541 (at 0 1.925) (layer F.SilkS)
@@ -9079,7 +9079,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD4F3)
-    (at 161.224999 110.855)
+    (at 306.481249 103.71125)
     (path /5E3F7D97/5E5B5E58)
     (attr smd)
     (fp_text reference D540 (at 0 1.925) (layer F.SilkS)
@@ -9112,7 +9112,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD4E0)
-    (at 161.224999 114.455)
+    (at 306.481249 107.31125)
     (path /5E3F7D97/5E5B5E03)
     (attr smd)
     (fp_text reference D539 (at 0 1.925) (layer F.SilkS)
@@ -9145,7 +9145,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD4CD)
-    (at 196.044999 80.405)
+    (at 319.869999 49.44875)
     (path /5E3F7D97/5E5B5DB1)
     (attr smd)
     (fp_text reference D538 (at 0 1.925) (layer F.SilkS)
@@ -9178,7 +9178,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD4BA)
-    (at 206.444999 69.605)
+    (at 330.269999 38.64875)
     (path /5E3F7D97/5E5B5D59)
     (attr smd)
     (fp_text reference D537 (at 0 1.925) (layer F.SilkS)
@@ -9211,7 +9211,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD4A7)
-    (at 216.844999 57.055)
+    (at 340.669999 26.09875)
     (path /5E3F7D97/5E5B5FEE)
     (attr smd)
     (fp_text reference D536 (at 0 1.925) (layer F.SilkS)
@@ -9244,7 +9244,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD494)
-    (at 171.624999 107.255)
+    (at 316.881249 100.11125)
     (path /5E3F7D97/5E5B5F9B)
     (attr smd)
     (fp_text reference D535 (at 0 1.925) (layer F.SilkS)
@@ -9277,7 +9277,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD481)
-    (at 216.844999 60.655)
+    (at 340.669999 29.69875)
     (path /5E3F7D97/5E5B5F49)
     (attr smd)
     (fp_text reference D534 (at 0 1.925) (layer F.SilkS)
@@ -9310,7 +9310,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD46E)
-    (at 125.944999 130.605)
+    (at 340.257499 92.505)
     (path /5E3F7D97/5E5B5EF4)
     (attr smd)
     (fp_text reference D533 (at 0 1.925) (layer F.SilkS)
@@ -9343,7 +9343,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD45B)
-    (at 230.864999 10.355)
+    (at 297.539999 12.73625)
     (path /5E3F7D97/5E5B5E9F)
     (attr smd)
     (fp_text reference D532 (at 0 1.925) (layer F.SilkS)
@@ -9376,7 +9376,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD448)
-    (at 94.744999 127.005)
+    (at 309.057499 88.905)
     (path /5E3F7D97/5E5B5E4A)
     (attr smd)
     (fp_text reference D531 (at 0 1.925) (layer F.SilkS)
@@ -9409,7 +9409,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD435)
-    (at 94.744999 130.605)
+    (at 309.057499 92.505)
     (path /5E3F7D97/5E5B5DF6)
     (attr smd)
     (fp_text reference D530 (at 0 1.925) (layer F.SilkS)
@@ -9442,7 +9442,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD422)
-    (at 105.144999 127.005)
+    (at 319.457499 88.905)
     (path /5E3F7D97/5E5B5DA3)
     (attr smd)
     (fp_text reference D529 (at 0 1.925) (layer F.SilkS)
@@ -9475,7 +9475,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD40F)
-    (at 105.144999 123.405)
+    (at 319.457499 85.305)
     (path /5E3F7D97/5E5B5D4B)
     (attr smd)
     (fp_text reference D528 (at 0 1.925) (layer F.SilkS)
@@ -9508,7 +9508,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD3FC)
-    (at 94.744999 123.405)
+    (at 309.057499 85.305)
     (path /5E3F7D97/5E5B5FE0)
     (attr smd)
     (fp_text reference D527 (at 0 1.925) (layer F.SilkS)
@@ -9541,7 +9541,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD3E9)
-    (at 105.144999 130.605)
+    (at 319.457499 92.505)
     (path /5E3F7D97/5E5B5F8E)
     (attr smd)
     (fp_text reference D526 (at 0 1.925) (layer F.SilkS)
@@ -9574,7 +9574,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD3D6)
-    (at 42.744999 127.005)
+    (at 318.969999 72.23625)
     (path /5E3F7D97/5E5B5F3B)
     (attr smd)
     (fp_text reference D525 (at 0 1.925) (layer F.SilkS)
@@ -9607,7 +9607,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD3C3)
-    (at 230.864999 17.555)
+    (at 297.539999 19.93625)
     (path /5E3F7D97/5E5B5EE6)
     (attr smd)
     (fp_text reference D524 (at 0 1.925) (layer F.SilkS)
@@ -9640,7 +9640,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD3B0)
-    (at 230.864999 13.955)
+    (at 297.539999 16.33625)
     (path /5E3F7D97/5E5B5E91)
     (attr smd)
     (fp_text reference D523 (at 0 1.925) (layer F.SilkS)
@@ -9673,7 +9673,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD39D)
-    (at 206.444999 66.005)
+    (at 330.269999 35.04875)
     (path /5E3F7D97/5E5B5E3C)
     (attr smd)
     (fp_text reference D522 (at 0 1.925) (layer F.SilkS)
@@ -9706,7 +9706,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD38A)
-    (at 196.044999 69.605)
+    (at 319.869999 38.64875)
     (path /5E3F7D97/5E5B5DE8)
     (attr smd)
     (fp_text reference D521 (at 0 1.925) (layer F.SilkS)
@@ -9739,7 +9739,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD377)
-    (at 73.944999 123.405)
+    (at 350.169999 68.63625)
     (path /5E3F7D97/5E5B5D95)
     (attr smd)
     (fp_text reference D520 (at 0 1.925) (layer F.SilkS)
@@ -9772,7 +9772,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD364)
-    (at 42.744999 123.405)
+    (at 318.969999 68.63625)
     (path /5E3F7D97/5E5B5D3D)
     (attr smd)
     (fp_text reference D519 (at 0 1.925) (layer F.SilkS)
@@ -9805,7 +9805,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD351)
-    (at 63.544999 123.405)
+    (at 339.769999 68.63625)
     (path /5E3F7D97/5E5B5FD2)
     (attr smd)
     (fp_text reference D518 (at 0 1.925) (layer F.SilkS)
@@ -9838,7 +9838,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD33E)
-    (at 53.144999 130.605)
+    (at 329.369999 75.83625)
     (path /5E3F7D97/5E5B5F81)
     (attr smd)
     (fp_text reference D517 (at 0 1.925) (layer F.SilkS)
@@ -9871,7 +9871,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD32B)
-    (at 42.744999 130.605)
+    (at 318.969999 75.83625)
     (path /5E3F7D97/5E5B5F2D)
     (attr smd)
     (fp_text reference D516 (at 0 1.925) (layer F.SilkS)
@@ -9904,7 +9904,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD318)
-    (at 53.144999 127.005)
+    (at 329.369999 72.23625)
     (path /5E3F7D97/5E5B5ED8)
     (attr smd)
     (fp_text reference D515 (at 0 1.925) (layer F.SilkS)
@@ -9937,7 +9937,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD305)
-    (at 53.144999 123.405)
+    (at 329.369999 68.63625)
     (path /5E3F7D97/5E5B5E83)
     (attr smd)
     (fp_text reference D514 (at 0 1.925) (layer F.SilkS)
@@ -9970,7 +9970,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD2F2)
-    (at 84.344999 130.605)
+    (at 298.657499 92.505)
     (path /5E3F7D97/5E5B5E2E)
     (attr smd)
     (fp_text reference D513 (at 0 1.925) (layer F.SilkS)
@@ -10003,7 +10003,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD2DF)
-    (at 21.944999 127.005)
+    (at 298.169999 72.23625)
     (path /5E3F7D97/5E5B5DDB)
     (attr smd)
     (fp_text reference D512 (at 0 1.925) (layer F.SilkS)
@@ -10036,7 +10036,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD2CC)
-    (at 21.944999 130.605)
+    (at 298.169999 75.83625)
     (path /5E3F7D97/5E5B5D87)
     (attr smd)
     (fp_text reference D511 (at 0 1.925) (layer F.SilkS)
@@ -10069,7 +10069,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD2B9)
-    (at 32.344999 123.405)
+    (at 308.569999 68.63625)
     (path /5E3F7D97/5E5B5D2E)
     (attr smd)
     (fp_text reference D510 (at 0 1.925) (layer F.SilkS)
@@ -10102,7 +10102,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD2A6)
-    (at 32.344999 127.005)
+    (at 308.569999 72.23625)
     (path /5E3F7D97/5E5B5FC3)
     (attr smd)
     (fp_text reference D509 (at 0 1.925) (layer F.SilkS)
@@ -10135,7 +10135,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD293)
-    (at 32.344999 130.605)
+    (at 308.569999 75.83625)
     (path /5E3F7D97/5E5B5F73)
     (attr smd)
     (fp_text reference D508 (at 0 1.925) (layer F.SilkS)
@@ -10168,7 +10168,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD280)
-    (at 21.944999 123.405)
+    (at 298.169999 68.63625)
     (path /5E3F7D97/5E5B5F1E)
     (attr smd)
     (fp_text reference D507 (at 0 1.925) (layer F.SilkS)
@@ -10201,7 +10201,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD26D)
-    (at 63.544999 127.005)
+    (at 21.43125 121.44375)
     (path /5E3F7D97/5E5B5EC9)
     (attr smd)
     (fp_text reference D506 (at 0 1.925) (layer F.SilkS)
@@ -10234,7 +10234,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD25A)
-    (at 63.544999 130.605)
+    (at 21.43125 102.39375)
     (path /5E3F7D97/5E5B5E74)
     (attr smd)
     (fp_text reference D505 (at 0 1.925) (layer F.SilkS)
@@ -10267,7 +10267,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD247)
-    (at 73.944999 127.005)
+    (at 21.43125 83.34375)
     (path /5E3F7D97/5E5B5E1F)
     (attr smd)
     (fp_text reference D504 (at 0 1.925) (layer F.SilkS)
@@ -10300,7 +10300,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD234)
-    (at 73.944999 130.605)
+    (at 21.43125 64.29375)
     (path /5E3F7D97/5E5B5DCD)
     (attr smd)
     (fp_text reference D503 (at 0 1.925) (layer F.SilkS)
@@ -10333,7 +10333,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD221)
-    (at 84.344999 123.405)
+    (at 21.43125 45.24375)
     (path /5E3F7D97/5E5B5D78)
     (attr smd)
     (fp_text reference D502 (at 0 1.925) (layer F.SilkS)
@@ -10366,7 +10366,7 @@
   )
 
   (module keyboard_parts:D_SOD123_axial (layer F.Cu) (tedit 561B6A12) (tstamp 5DBCD20E)
-    (at 84.344999 127.005)
+    (at 21.43125 26.19375)
     (path /5E3F7D97/5E5B5D1F)
     (attr smd)
     (fp_text reference D501 (at 0 1.925) (layer F.SilkS)
@@ -10399,7 +10399,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCD1FB)
-    (at 134.26 156.18)
+    (at 84.25375 227.6175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6E64)
@@ -10484,7 +10484,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCD1BA)
-    (at 122.66 144.48)
+    (at 72.65375 215.9175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6D90)
@@ -10569,7 +10569,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCD179)
-    (at 128.46 156.58)
+    (at 78.45375 228.0175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6E8C)
@@ -10654,7 +10654,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCD138)
-    (at 134.26 150.13)
+    (at 84.25375 221.5675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6DB8)
@@ -10739,7 +10739,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCD0F7)
-    (at 128.46 150.53)
+    (at 78.45375 221.9675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6EB4)
@@ -10824,7 +10824,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCD0B6)
-    (at 134.26 144.08)
+    (at 84.25375 215.5175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6DE0)
@@ -10909,7 +10909,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCD075)
-    (at 122.66 156.58)
+    (at 72.65375 228.0175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6EDC)
@@ -10994,7 +10994,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCD034)
-    (at 128.46 144.48)
+    (at 78.45375 215.9175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6E08)
@@ -11079,7 +11079,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCFF3)
-    (at 122.66 150.53)
+    (at 72.65375 221.9675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6F03)
@@ -11164,7 +11164,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCFB2)
-    (at 131.11 138.03)
+    (at 81.10375 209.4675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E39F395/5E3F6E2F)
@@ -11249,7 +11249,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCF71)
-    (at 274.56 42.33)
+    (at 210.26625 242.355)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B907)
@@ -11334,7 +11334,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCF30)
-    (at 285.66 22.98)
+    (at 221.36625 223.005)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B833)
@@ -11419,7 +11419,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCEEF)
-    (at 294.11 16.53)
+    (at 229.81625 216.555)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B757)
@@ -11504,7 +11504,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCEAE)
-    (at 268.76 42.33)
+    (at 204.46625 242.355)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B683)
@@ -11589,7 +11589,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCE6D)
-    (at 277.21 35.88)
+    (at 212.91625 235.905)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B5AB)
@@ -11674,7 +11674,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCE2C)
-    (at 285.66 29.03)
+    (at 221.36625 229.055)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B4D5)
@@ -11759,7 +11759,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCDEB)
-    (at 291.46 22.98)
+    (at 227.16625 223.005)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B92F)
@@ -11844,7 +11844,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCDAA)
-    (at 302.56 10.08)
+    (at 238.26625 210.105)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B85B)
@@ -11929,7 +11929,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCD69)
-    (at 300.41 34.68)
+    (at 236.11625 234.705)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B77F)
@@ -12014,7 +12014,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCD28)
-    (at 297.26 28.63)
+    (at 232.96625 228.655)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B6AB)
@@ -12099,7 +12099,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCCE7)
-    (at 303.06 22.58)
+    (at 238.76625 222.605)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B5D3)
@@ -12184,7 +12184,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCCA6)
-    (at 311.51 16.13)
+    (at 247.21625 216.155)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B4FD)
@@ -12269,7 +12269,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCC65)
-    (at 286.16 41.93)
+    (at 221.86625 241.955)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B957)
@@ -12354,7 +12354,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCC24)
-    (at 294.61 35.08)
+    (at 230.31625 235.105)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B883)
@@ -12439,7 +12439,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCBE3)
-    (at 308.86 22.18)
+    (at 244.56625 222.205)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B7A7)
@@ -12524,7 +12524,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCBA2)
-    (at 303.06 28.63)
+    (at 238.76625 228.655)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B6D3)
@@ -12609,7 +12609,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCB61)
-    (at 291.96 41.13)
+    (at 227.66625 241.155)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B5FB)
@@ -12694,7 +12694,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCB20)
-    (at 291.46 29.03)
+    (at 227.16625 229.055)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B525)
@@ -12779,7 +12779,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCADF)
-    (at 308.36 10.08)
+    (at 244.06625 210.105)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B97F)
@@ -12864,7 +12864,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCA9E)
-    (at 283.01 35.88)
+    (at 218.71625 235.905)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B8AB)
@@ -12949,7 +12949,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCA5D)
-    (at 297.26 22.58)
+    (at 232.96625 222.605)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B7CF)
@@ -13034,7 +13034,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCCA1C)
-    (at 305.71 16.13)
+    (at 241.41625 216.155)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B6FB)
@@ -13119,7 +13119,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC9DB)
-    (at 299.91 16.53)
+    (at 235.61625 216.555)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B623)
@@ -13204,7 +13204,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC99A)
-    (at 308.86 28.23)
+    (at 244.56625 228.255)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B54D)
@@ -13289,7 +13289,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC959)
-    (at 288.81 35.08)
+    (at 224.51625 235.105)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B9A6)
@@ -13374,7 +13374,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC918)
-    (at 280.36 41.93)
+    (at 216.06625 241.955)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B8D2)
@@ -13459,7 +13459,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC8D7)
-    (at 297.76 41.13)
+    (at 233.46625 241.155)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B7F6)
@@ -13544,7 +13544,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC896)
-    (at 306.21 34.68)
+    (at 241.91625 234.705)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B722)
@@ -13629,7 +13629,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC855)
-    (at 303.56 40.73)
+    (at 239.26625 240.755)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B64A)
@@ -13714,7 +13714,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC814)
-    (at 312.01 34.28)
+    (at 247.71625 234.305)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5E1DFCF0/5E22B574)
@@ -13799,7 +13799,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC7D3)
-    (at 43.62 170.28)
+    (at 122.20125 241.7175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE604B7)
@@ -13884,7 +13884,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC792)
-    (at 74.77 144.48)
+    (at 153.35125 215.9175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE603E3)
@@ -13969,7 +13969,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC751)
-    (at 49.42 170.28)
+    (at 128.00125 241.7175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60307)
@@ -14054,7 +14054,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC710)
-    (at 83.22 138.03)
+    (at 161.80125 209.4675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60233)
@@ -14139,7 +14139,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC6CF)
-    (at 57.87 163.83)
+    (at 136.45125 235.2675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE6015B)
@@ -14224,7 +14224,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC68E)
-    (at 72.12 150.53)
+    (at 150.70125 221.9675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60084)
@@ -14309,7 +14309,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC64D)
-    (at 66.32 156.98)
+    (at 144.90125 228.4175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE604DF)
@@ -14394,7 +14394,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC60C)
-    (at 55.22 169.88)
+    (at 133.80125 241.3175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE6040B)
@@ -14479,7 +14479,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC5CB)
-    (at 69.47 163.03)
+    (at 148.05125 234.4675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE6032F)
@@ -14564,7 +14564,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC58A)
-    (at 78.42 168.68)
+    (at 157.00125 240.1175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE6025B)
@@ -14649,7 +14649,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC549)
-    (at 81.07 162.63)
+    (at 159.65125 234.0675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60183)
@@ -14734,7 +14734,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC508)
-    (at 72.62 169.08)
+    (at 151.20125 240.5175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE600AC)
@@ -14819,7 +14819,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC4C7)
-    (at 83.72 156.18)
+    (at 162.30125 227.6175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60507)
@@ -14904,7 +14904,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC486)
-    (at 75.27 162.63)
+    (at 153.85125 234.0675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60433)
@@ -14989,7 +14989,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC445)
-    (at 66.82 169.08)
+    (at 145.40125 240.5175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60357)
@@ -15074,7 +15074,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC404)
-    (at 77.92 156.58)
+    (at 156.50125 228.0175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60283)
@@ -15159,7 +15159,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC3C3)
-    (at 83.72 150.13)
+    (at 162.30125 221.5675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE601AB)
@@ -15244,7 +15244,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC382)
-    (at 86.87 162.23)
+    (at 165.45125 233.6675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE600D4)
@@ -15329,7 +15329,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC341)
-    (at 61.02 169.88)
+    (at 139.60125 241.3175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE6052F)
@@ -15414,7 +15414,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC300)
-    (at 86.37 144.08)
+    (at 164.95125 215.5175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE6045B)
@@ -15499,7 +15499,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC2BF)
-    (at 77.92 150.53)
+    (at 156.50125 221.9675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE6037F)
@@ -15584,7 +15584,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC27E)
-    (at 72.12 156.58)
+    (at 150.70125 228.0175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE602AB)
@@ -15669,7 +15669,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC23D)
-    (at 63.67 163.03)
+    (at 142.25125 234.4675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE601D3)
@@ -15754,7 +15754,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC1FC)
-    (at 60.52 150.93)
+    (at 139.10125 222.3675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE600FC)
@@ -15839,7 +15839,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC1BB)
-    (at 68.97 144.48)
+    (at 147.55125 215.9175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60556)
@@ -15924,7 +15924,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC17A)
-    (at 77.42 138.03)
+    (at 156.00125 209.4675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60482)
@@ -16009,7 +16009,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC139)
-    (at 66.32 150.93)
+    (at 144.90125 222.3675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE603A6)
@@ -16094,7 +16094,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC0F8)
-    (at 60.52 156.98)
+    (at 139.10125 228.4175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE602D2)
@@ -16179,7 +16179,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC0B7)
-    (at 80.57 144.08)
+    (at 159.15125 215.5175)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE601FA)
@@ -16264,7 +16264,7 @@
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal (layer F.Cu) (tedit 59FED737) (tstamp 5DBCC076)
-    (at 52.07 163.83)
+    (at 130.65125 235.2675)
     (descr "Through hole angled pin header, 1x04, 1.00mm pitch, 2.0mm pin length, single row")
     (tags "Through hole angled pin header THT 1x04 1.00mm single row")
     (path /5DD36755/5DE60123)
