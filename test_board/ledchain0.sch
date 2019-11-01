@@ -36,7 +36,7 @@ AR Path="/5DE60084" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE60084" Ref="D205"  Part="1" 
 F 0 "D205" H 2950 6597 50  0000 C CNN
 F 1 "LED_RCBG" H 2950 6506 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2950 6050 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 2950 6050 50  0001 C CNN
 F 3 "~" H 2950 6050 50  0001 C CNN
 	1    2950 6100
 	1    0    0    -1  
@@ -120,7 +120,7 @@ AR Path="/5DE600AC" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE600AC" Ref="D204"  Part="1" 
 F 0 "D204" H 2950 5447 50  0000 C CNN
 F 1 "LED_RCBG" H 2950 5356 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2950 4900 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 2950 4900 50  0001 C CNN
 F 3 "~" H 2950 4900 50  0001 C CNN
 	1    2950 4950
 	1    0    0    -1  
@@ -204,7 +204,7 @@ AR Path="/5DE600D4" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE600D4" Ref="D203"  Part="1" 
 F 0 "D203" H 2950 4297 50  0000 C CNN
 F 1 "LED_RCBG" H 2950 4206 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2950 3750 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 2950 3750 50  0001 C CNN
 F 3 "~" H 2950 3750 50  0001 C CNN
 	1    2950 3800
 	1    0    0    -1  
@@ -288,7 +288,7 @@ AR Path="/5DE600FC" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE600FC" Ref="D202"  Part="1" 
 F 0 "D202" H 2950 3147 50  0000 C CNN
 F 1 "LED_RCBG" H 2950 3056 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2950 2600 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 2950 2600 50  0001 C CNN
 F 3 "~" H 2950 2600 50  0001 C CNN
 	1    2950 2650
 	1    0    0    -1  
@@ -370,7 +370,7 @@ AR Path="/5DE60123" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE60123" Ref="D201"  Part="1" 
 F 0 "D201" H 2950 1997 50  0000 C CNN
 F 1 "LED_RCBG" H 2950 1906 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 2950 1450 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 2950 1450 50  0001 C CNN
 F 3 "~" H 2950 1450 50  0001 C CNN
 	1    2950 1500
 	1    0    0    -1  
@@ -482,7 +482,7 @@ AR Path="/5DE6015B" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE6015B" Ref="D210"  Part="1" 
 F 0 "D210" H 4500 6597 50  0000 C CNN
 F 1 "LED_RCBG" H 4500 6506 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4500 6050 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 4500 6050 50  0001 C CNN
 F 3 "~" H 4500 6050 50  0001 C CNN
 	1    4500 6100
 	1    0    0    -1  
@@ -566,7 +566,7 @@ AR Path="/5DE60183" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE60183" Ref="D209"  Part="1" 
 F 0 "D209" H 4500 5447 50  0000 C CNN
 F 1 "LED_RCBG" H 4500 5356 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4500 4900 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 4500 4900 50  0001 C CNN
 F 3 "~" H 4500 4900 50  0001 C CNN
 	1    4500 4950
 	1    0    0    -1  
@@ -650,7 +650,7 @@ AR Path="/5DE601AB" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE601AB" Ref="D208"  Part="1" 
 F 0 "D208" H 4500 4297 50  0000 C CNN
 F 1 "LED_RCBG" H 4500 4206 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4500 3750 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 4500 3750 50  0001 C CNN
 F 3 "~" H 4500 3750 50  0001 C CNN
 	1    4500 3800
 	1    0    0    -1  
@@ -734,7 +734,7 @@ AR Path="/5DE601D3" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE601D3" Ref="D207"  Part="1" 
 F 0 "D207" H 4500 3147 50  0000 C CNN
 F 1 "LED_RCBG" H 4500 3056 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4500 2600 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 4500 2600 50  0001 C CNN
 F 3 "~" H 4500 2600 50  0001 C CNN
 	1    4500 2650
 	1    0    0    -1  
@@ -816,7 +816,7 @@ AR Path="/5DE601FA" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE601FA" Ref="D206"  Part="1" 
 F 0 "D206" H 4500 1997 50  0000 C CNN
 F 1 "LED_RCBG" H 4500 1906 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 4500 1450 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 4500 1450 50  0001 C CNN
 F 3 "~" H 4500 1450 50  0001 C CNN
 	1    4500 1500
 	1    0    0    -1  
@@ -932,7 +932,7 @@ AR Path="/5DE60233" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE60233" Ref="D215"  Part="1" 
 F 0 "D215" H 6050 6597 50  0000 C CNN
 F 1 "LED_RCBG" H 6050 6506 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 6050 6050 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6050 6050 50  0001 C CNN
 F 3 "~" H 6050 6050 50  0001 C CNN
 	1    6050 6100
 	1    0    0    -1  
@@ -1016,7 +1016,7 @@ AR Path="/5DE6025B" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE6025B" Ref="D214"  Part="1" 
 F 0 "D214" H 6050 5447 50  0000 C CNN
 F 1 "LED_RCBG" H 6050 5356 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 6050 4900 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6050 4900 50  0001 C CNN
 F 3 "~" H 6050 4900 50  0001 C CNN
 	1    6050 4950
 	1    0    0    -1  
@@ -1100,7 +1100,7 @@ AR Path="/5DE60283" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE60283" Ref="D213"  Part="1" 
 F 0 "D213" H 6050 4297 50  0000 C CNN
 F 1 "LED_RCBG" H 6050 4206 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 6050 3750 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6050 3750 50  0001 C CNN
 F 3 "~" H 6050 3750 50  0001 C CNN
 	1    6050 3800
 	1    0    0    -1  
@@ -1184,7 +1184,7 @@ AR Path="/5DE602AB" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE602AB" Ref="D212"  Part="1" 
 F 0 "D212" H 6050 3147 50  0000 C CNN
 F 1 "LED_RCBG" H 6050 3056 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 6050 2600 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6050 2600 50  0001 C CNN
 F 3 "~" H 6050 2600 50  0001 C CNN
 	1    6050 2650
 	1    0    0    -1  
@@ -1266,7 +1266,7 @@ AR Path="/5DE602D2" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE602D2" Ref="D211"  Part="1" 
 F 0 "D211" H 6050 1997 50  0000 C CNN
 F 1 "LED_RCBG" H 6050 1906 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 6050 1450 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6050 1450 50  0001 C CNN
 F 3 "~" H 6050 1450 50  0001 C CNN
 	1    6050 1500
 	1    0    0    -1  
@@ -1374,7 +1374,7 @@ AR Path="/5DE603A6" Ref="D?"  Part="1"
 AR Path="/5DD36755/5DE603A6" Ref="D216"  Part="1" 
 F 0 "D216" H 7600 1997 50  0000 C CNN
 F 1 "LED_RCBG" H 7600 1906 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Horizontal" H 7600 1450 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 7600 1450 50  0001 C CNN
 F 3 "~" H 7600 1450 50  0001 C CNN
 	1    7600 1500
 	1    0    0    -1  
