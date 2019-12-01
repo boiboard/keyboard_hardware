@@ -3,4 +3,5 @@
   (lib (name keyboard_parts)(type KiCad)(uri ${KIPRJMOD}/../libraries/keyboard_parts.pretty)(options "")(descr ""))
   (lib (name keyswitches)(type KiCad)(uri ${KIPRJMOD}/../libraries/keyswitches.pretty)(options "")(descr ""))
   (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/../libraries/teensy.pretty)(options "")(descr ""))
+  (lib (name keyboard_project)(type KiCad)(uri ${KIPRJMOD}/../libraries/keyboard_project)(options "")(descr ""))
 )
