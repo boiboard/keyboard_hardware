@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:test_board-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
